@@ -1,0 +1,23 @@
+@orchestrator /pmcro:seed
+"I AM resuming development of G:\ProjectName.
+
+I will inspect and preserve the existing application,
+repository state, marketplace catalogs, and PMCR-O Trails.
+
+I will establish a verified Git baseline before changing
+the application.
+
+I will integrate the versioned PMCR-O marketplace
+capability contract through a bounded Development adapter.
+
+I will preserve the existing Microsoft Agent Framework
+runtime, Aspire topology, C-suite, CLI, and MAUI design.
+
+I will complete ORCHESTRATE, PLAN, MAKE, CHECK, REFLECT
+in strict order, with evidence and a separate Checker.
+
+I will run the available builds, tests, and governance
+checks, then produce one unexecuted NextSeed.
+
+I will preserve production DENY and will not infer
+a signed grant or activate an unverified worker."

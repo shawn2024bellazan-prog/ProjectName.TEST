@@ -40,6 +40,10 @@ dotnet aspire stop --apphost .\src\Hosting\ProjectName.AppHost\ProjectName.AppHo
 
 The Aspire dashboard URL and ports are dynamic; obtain them from `dotnet aspire ps`. See `docs/ASPIRE-LOCAL-INFRASTRUCTURE.md` for boundaries and evidence. Never share the authenticated dashboard login token or raw `aspire describe --format Json` output.
 
+## Pinned PMCR-O marketplace adapter (Development-only candidate)
+
+I read a test fixture copied from the independently versioned `pmcro-marketplace-v2` source at commit `2b46084`, bound by `marketplaces/pmcro-core/adapter.pin.json` and catalog SHA-256. `PinnedDevelopmentMarketplaceAdapter` rejects unverified catalogs, forged authority fields, missing capabilities, and the pre-ingress constructor as runtime execution. `DevelopmentMarketplaceAdmission` composes this fail-closed preflight with the existing `AdmissionGate` in tests only. This does not install an AGT policy runtime, mount a marketplace, register tools, start role workers, or enable production admission. See ADR-0003 and the governance test suite.
+
 ## Safety and scope
 
 All live worker gRPC execution is denied by default. No agent identity, grant, Checker signature, marketplace catalog, or message can authorize execution simply by being discovered. The configured API uses deny-all authority, while test doubles are for tests only.

@@ -1,0 +1,26 @@
+@orchestrator /pmcro:seed
+"I AM proposing Increment 0027 for G:\ProjectName.
+
+I will inspect current source, the pinned PMCR-O marketplace
+catalog, the separate technical review and existing governance
+contracts. I will pin and integrate an official Microsoft Agent
+Governance Toolkit .NET policy evaluator inside an isolated,
+mock-driven Development boundary, only when available and
+verified for the current SDK and package policy format.
+
+I will reject missing capabilities, stale or revoked grants,
+scope or child-depth widening, spoofed Checker receipts and
+unauthenticated host identities. I will preserve all five ordered
+PMCR-O phases and require a distinct authenticated Checker
+before any executable activation.
+
+I will preserve existing evidence, source history, model state,
+Aspire topology, C-suite and client layouts. I will not register,
+grant, activate, start workers, fine-tune models, promote code,
+or modify historical Trails on the strength of a mock verdict.
+
+I will emit one further unexecuted NextSeed after verified tests."
+state=UNEXECUTED
+authorizedToExecute=false
+productionAdmission=DENY
+workerActivationAuthorized=false

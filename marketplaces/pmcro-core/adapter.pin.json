@@ -1,0 +1,16 @@
+{
+  "schema": "projectname.marketplace-adapter-pin/v1",
+  "sourceMarketplace": "pmcro-marketplace-v2",
+  "sourceCommit": "2b4608416f9e4cf8742788154c9428d2884df5e8",
+  "sourceManifestSha256": "62f87721c72f36be64971fbb1bc9c3e49f982373783209b314704e65efab1408",
+  "catalogPath": ".agents/marketplace.json",
+  "catalogVersion": "0.3.0-dev",
+  "catalogSha256": "2d2c63cdee1aeb189db33bf68784b0a1e0f9288a82cca7b8a60efa9170650d5e",
+  "integrationMode": "TEST_ONLY_DENY",
+  "allowedRuntimeCapabilityIds": [],
+  "hostTrustRootConfigured": false,
+  "independentCheckerPass": false,
+  "grantsIssued": 0,
+  "workersStarted": 0,
+  "promotionAuthorized": false
+}

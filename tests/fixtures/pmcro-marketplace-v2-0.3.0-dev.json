@@ -1,0 +1,52 @@
+{
+  "schema": "pmcro.marketplace-index/v1",
+  "version": "0.3.0-dev",
+  "state": "DRAFT_UNREGISTERED",
+  "productionAdmission": "DENY",
+  "developmentAdmission": "DENY",
+  "phaseOrder": [
+    "ORCHESTRATE",
+    "PLAN",
+    "MAKE",
+    "CHECK",
+    "REFLECT"
+  ],
+  "primordialCapabilities": [
+    {
+      "id": "pmcro-bootstrap:create-skill",
+      "path": "plugins/pmcro-bootstrap/skills/create-skill",
+      "mode": "PRE_INGRESS_AUTHORING_ONLY",
+      "registered": false,
+      "granted": false,
+      "activated": false,
+      "executionAuthorized": false
+    }
+  ],
+  "plugins": [
+    {
+      "name": "pmcro-bootstrap",
+      "path": "plugins/pmcro-bootstrap",
+      "state": "DRAFT_UNREGISTERED"
+    }
+  ],
+  "checker": {
+    "independentIdentityVerified": false,
+    "verdict": null
+  },
+  "nextSeedExecuted": false,
+  "capabilities": [],
+  "admissionGate": {
+    "path": "eng/admission/capability-gate.psm1",
+    "state": "DRAFT_DENY_ONLY",
+    "hostTrustedVerifierInstalled": false,
+    "mayReturnAllow": false
+  },
+  "trustAdapter": {
+    "path": "eng/trust/attestation.psm1",
+    "state": "DRAFT_UNTRUSTED",
+    "algorithmContract": "Ed25519",
+    "hostTrustRootConfigured": false,
+    "mayIssueGrants": false,
+    "mayActivateWorkers": false
+  }
+}

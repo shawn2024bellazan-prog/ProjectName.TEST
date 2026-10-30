@@ -1,0 +1,72 @@
+{
+  "schema": "pmcro.trail.cycle/v1",
+  "trailId": "TS-0026",
+  "cycleId": "C-0026",
+  "date": "2026-10-29",
+  "domain": "projectname/governance/marketplace-adapter",
+  "principal": "OWNER_INTENT_NOT_HOST_SIGNED",
+  "ownerSeed": ".pmcro/seeds/seed-0026-projectname-marketplace-adapter.txt",
+  "roleExecution": "SIMULATED_ROLE_PRESENTATIONS_ONLY",
+  "phaseOrder": [
+    "ORCHESTRATE",
+    "PLAN",
+    "MAKE",
+    "CHECK",
+    "REFLECT"
+  ],
+  "charter": {
+    "scope": "G:\\ProjectName development source and validation only",
+    "maxDepth": 1,
+    "canWidenScope": false,
+    "allowedRuntimeCapabilities": [],
+    "productionAdmission": "DENY"
+  },
+  "frames": [
+    {
+      "phase": "ORCHESTRATE",
+      "iAm": "I AM the Orchestrator",
+      "result": "reconciled ProjectName with pinned external marketplace; inspected Git history and protected sensitive roots"
+    },
+    {
+      "phase": "PLAN",
+      "iAm": "I AM the Planner",
+      "result": "minimal verified source baseline, test-only catalog adapter, no live ingress"
+    },
+    {
+      "phase": "MAKE",
+      "iAm": "I AM the Maker",
+      "result": "created source baseline commit b7f241f and implementation/fixture/pin/ADR/test candidate"
+    },
+    {
+      "phase": "CHECK",
+      "iAm": "I AM the Checker",
+      "result": "136 local tests, Release build and catalog validator pass; separate technical review HALT / NOT_VERIFIED because independent reproduction incomplete",
+      "hostAuthenticatedVerdict": null
+    },
+    {
+      "phase": "REFLECT",
+      "iAm": "I AM the Reflector",
+      "result": "catalog digest is provenance not authority; AGT and host-authenticated policy require later bounded seed"
+    }
+  ],
+  "baselineCommit": "b7f241f",
+  "marketplaceSourceCommit": "2b4608416f9e4cf8742788154c9428d2884df5e8",
+  "catalogSha256": "2d2c63cdee1aeb189db33bf68784b0a1e0f9288a82cca7b8a60efa9170650d5e",
+  "validation": {
+    "baselineGovernanceTests": 114,
+    "newGovernanceTests": 136,
+    "releaseBuild": "PASS",
+    "catalogs": "PASS",
+    "technicalChecker": "HALT_NOT_VERIFIED",
+    "independentCheckerPass": false
+  },
+  "grantsIssued": 0,
+  "workersStarted": 0,
+  "modelCalls": 0,
+  "liveIngressMounted": false,
+  "priorEvidenceMutated": false,
+  "productionAdmission": "DENY",
+  "nextSeedRef": ".pmcro/seeds/nextseed-after-0026-unexecuted.txt",
+  "nextSeedExecuted": false,
+  "result": "LOCAL_PASS__AUTHORITY_HALTED"
+}

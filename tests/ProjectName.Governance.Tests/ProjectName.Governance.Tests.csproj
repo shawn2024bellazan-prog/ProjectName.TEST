@@ -28,4 +28,12 @@
     <ProjectReference Include="../ProjectName.CheckpointProbe/ProjectName.CheckpointProbe.csproj" ReferenceOutputAssembly="false" />
     <ProjectReference Include="../../src/Protocols/ProjectName.Grpc.Contracts/ProjectName.Grpc.Contracts.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="../fixtures/pmcro-marketplace-v2-0.3.0-dev.json"
+          Link="fixtures/pmcro-marketplace-v2-0.3.0-dev.json"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../marketplaces/pmcro-core/adapter.pin.json"
+          Link="fixtures/adapter.pin.json"
+          CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 </Project>
