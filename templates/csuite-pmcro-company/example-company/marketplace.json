@@ -1,0 +1,333 @@
+{
+  "schema": "projectname.marketplace/v1",
+  "name": "your-company",
+  "version": "0.1.0",
+  "state": "DRAFT_UNREGISTERED",
+  "registration": false,
+  "grant": false,
+  "activation": false,
+  "executionAllowed": false,
+  "a2aMounted": false,
+  "agentCount": 40,
+  "skillCount": 19,
+  "agents": [
+    {
+      "id": "ceo",
+      "name": "Chief Executive Officer",
+      "kind": "executive",
+      "path": "agents/ceo"
+    },
+    {
+      "id": "ceo-planner-seat",
+      "name": "CEO Plan Seat",
+      "kind": "planner-seat",
+      "path": "agents/ceo-planner-seat"
+    },
+    {
+      "id": "ceo-maker-seat",
+      "name": "CEO Make Seat",
+      "kind": "maker-seat",
+      "path": "agents/ceo-maker-seat"
+    },
+    {
+      "id": "ceo-checker-seat",
+      "name": "CEO Check Seat",
+      "kind": "checker-seat",
+      "path": "agents/ceo-checker-seat"
+    },
+    {
+      "id": "cto",
+      "name": "Chief Technology Officer",
+      "kind": "executive",
+      "path": "agents/cto"
+    },
+    {
+      "id": "cto-planner-seat",
+      "name": "CTO Plan Seat",
+      "kind": "planner-seat",
+      "path": "agents/cto-planner-seat"
+    },
+    {
+      "id": "cto-maker-seat",
+      "name": "CTO Make Seat",
+      "kind": "maker-seat",
+      "path": "agents/cto-maker-seat"
+    },
+    {
+      "id": "cto-checker-seat",
+      "name": "CTO Check Seat",
+      "kind": "checker-seat",
+      "path": "agents/cto-checker-seat"
+    },
+    {
+      "id": "coo",
+      "name": "Chief Operating Officer",
+      "kind": "executive",
+      "path": "agents/coo"
+    },
+    {
+      "id": "coo-planner-seat",
+      "name": "COO Plan Seat",
+      "kind": "planner-seat",
+      "path": "agents/coo-planner-seat"
+    },
+    {
+      "id": "coo-maker-seat",
+      "name": "COO Make Seat",
+      "kind": "maker-seat",
+      "path": "agents/coo-maker-seat"
+    },
+    {
+      "id": "coo-checker-seat",
+      "name": "COO Check Seat",
+      "kind": "checker-seat",
+      "path": "agents/coo-checker-seat"
+    },
+    {
+      "id": "cfo",
+      "name": "Chief Financial Officer",
+      "kind": "executive",
+      "path": "agents/cfo"
+    },
+    {
+      "id": "cfo-planner-seat",
+      "name": "CFO Plan Seat",
+      "kind": "planner-seat",
+      "path": "agents/cfo-planner-seat"
+    },
+    {
+      "id": "cfo-maker-seat",
+      "name": "CFO Make Seat",
+      "kind": "maker-seat",
+      "path": "agents/cfo-maker-seat"
+    },
+    {
+      "id": "cfo-checker-seat",
+      "name": "CFO Check Seat",
+      "kind": "checker-seat",
+      "path": "agents/cfo-checker-seat"
+    },
+    {
+      "id": "cpo",
+      "name": "Chief Product Officer",
+      "kind": "executive",
+      "path": "agents/cpo"
+    },
+    {
+      "id": "cpo-planner-seat",
+      "name": "CPO Plan Seat",
+      "kind": "planner-seat",
+      "path": "agents/cpo-planner-seat"
+    },
+    {
+      "id": "cpo-maker-seat",
+      "name": "CPO Make Seat",
+      "kind": "maker-seat",
+      "path": "agents/cpo-maker-seat"
+    },
+    {
+      "id": "cpo-checker-seat",
+      "name": "CPO Check Seat",
+      "kind": "checker-seat",
+      "path": "agents/cpo-checker-seat"
+    },
+    {
+      "id": "cmo",
+      "name": "Chief Marketing Officer",
+      "kind": "executive",
+      "path": "agents/cmo"
+    },
+    {
+      "id": "cmo-planner-seat",
+      "name": "CMO Plan Seat",
+      "kind": "planner-seat",
+      "path": "agents/cmo-planner-seat"
+    },
+    {
+      "id": "cmo-maker-seat",
+      "name": "CMO Make Seat",
+      "kind": "maker-seat",
+      "path": "agents/cmo-maker-seat"
+    },
+    {
+      "id": "cmo-checker-seat",
+      "name": "CMO Check Seat",
+      "kind": "checker-seat",
+      "path": "agents/cmo-checker-seat"
+    },
+    {
+      "id": "clo",
+      "name": "Chief Legal Officer",
+      "kind": "executive",
+      "path": "agents/clo"
+    },
+    {
+      "id": "clo-planner-seat",
+      "name": "CLO Plan Seat",
+      "kind": "planner-seat",
+      "path": "agents/clo-planner-seat"
+    },
+    {
+      "id": "clo-maker-seat",
+      "name": "CLO Make Seat",
+      "kind": "maker-seat",
+      "path": "agents/clo-maker-seat"
+    },
+    {
+      "id": "clo-checker-seat",
+      "name": "CLO Check Seat",
+      "kind": "checker-seat",
+      "path": "agents/clo-checker-seat"
+    },
+    {
+      "id": "chro",
+      "name": "Chief Human Resources Officer",
+      "kind": "executive",
+      "path": "agents/chro"
+    },
+    {
+      "id": "chro-planner-seat",
+      "name": "CHRO Plan Seat",
+      "kind": "planner-seat",
+      "path": "agents/chro-planner-seat"
+    },
+    {
+      "id": "chro-maker-seat",
+      "name": "CHRO Make Seat",
+      "kind": "maker-seat",
+      "path": "agents/chro-maker-seat"
+    },
+    {
+      "id": "chro-checker-seat",
+      "name": "CHRO Check Seat",
+      "kind": "checker-seat",
+      "path": "agents/chro-checker-seat"
+    },
+    {
+      "id": "cso",
+      "name": "Chief Strategy Officer",
+      "kind": "executive",
+      "path": "agents/cso"
+    },
+    {
+      "id": "cso-planner-seat",
+      "name": "CSO Plan Seat",
+      "kind": "planner-seat",
+      "path": "agents/cso-planner-seat"
+    },
+    {
+      "id": "cso-maker-seat",
+      "name": "CSO Make Seat",
+      "kind": "maker-seat",
+      "path": "agents/cso-maker-seat"
+    },
+    {
+      "id": "cso-checker-seat",
+      "name": "CSO Check Seat",
+      "kind": "checker-seat",
+      "path": "agents/cso-checker-seat"
+    },
+    {
+      "id": "cio",
+      "name": "Chief Information Officer",
+      "kind": "executive",
+      "path": "agents/cio"
+    },
+    {
+      "id": "cio-planner-seat",
+      "name": "CIO Plan Seat",
+      "kind": "planner-seat",
+      "path": "agents/cio-planner-seat"
+    },
+    {
+      "id": "cio-maker-seat",
+      "name": "CIO Make Seat",
+      "kind": "maker-seat",
+      "path": "agents/cio-maker-seat"
+    },
+    {
+      "id": "cio-checker-seat",
+      "name": "CIO Check Seat",
+      "kind": "checker-seat",
+      "path": "agents/cio-checker-seat"
+    }
+  ],
+  "skills": [
+    {
+      "id": "pmcro-orchestrate",
+      "name": "Orchestrate"
+    },
+    {
+      "id": "pmcro-plan",
+      "name": "Plan"
+    },
+    {
+      "id": "pmcro-make",
+      "name": "Make"
+    },
+    {
+      "id": "pmcro-check",
+      "name": "Check"
+    },
+    {
+      "id": "pmcro-reflect",
+      "name": "Reflect"
+    },
+    {
+      "id": "pmcro-delegation",
+      "name": "Delegate"
+    },
+    {
+      "id": "pmcro-evidence-intake",
+      "name": "Prepare evidence"
+    },
+    {
+      "id": "pmcro-identity-trust",
+      "name": "Review identity and trust"
+    },
+    {
+      "id": "governance-authority-boundaries",
+      "name": "Respect authority boundaries"
+    },
+    {
+      "id": "ceo-domain",
+      "name": "Chief Executive Officer domain"
+    },
+    {
+      "id": "cto-domain",
+      "name": "Chief Technology Officer domain"
+    },
+    {
+      "id": "coo-domain",
+      "name": "Chief Operating Officer domain"
+    },
+    {
+      "id": "cfo-domain",
+      "name": "Chief Financial Officer domain"
+    },
+    {
+      "id": "cpo-domain",
+      "name": "Chief Product Officer domain"
+    },
+    {
+      "id": "cmo-domain",
+      "name": "Chief Marketing Officer domain"
+    },
+    {
+      "id": "clo-domain",
+      "name": "Chief Legal Officer domain"
+    },
+    {
+      "id": "chro-domain",
+      "name": "Chief Human Resources Officer domain"
+    },
+    {
+      "id": "cso-domain",
+      "name": "Chief Strategy Officer domain"
+    },
+    {
+      "id": "cio-domain",
+      "name": "Chief Information Officer domain"
+    }
+  ]
+}

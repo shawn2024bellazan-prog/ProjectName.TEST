@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "ProjectName.Grpc";
+package projectname.phase.v1;
+
+service PhaseWorker {
+  rpc Execute (PhaseRequest) returns (PhaseReply);
+}
+message PhaseRequest {
+  string trail_id = 1;
+  string actor_id = 2;
+  string capability_id = 3;
+  string phase = 4;
+  string payload = 5;
+}
+message PhaseReply {
+  string verdict = 1;
+  string reason = 2;
+  string evidence_reference = 3;
+}

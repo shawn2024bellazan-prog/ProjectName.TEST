@@ -1,0 +1,55 @@
+{
+  "schema": "projectname.standards-lock/v1",
+  "checkedOn": "2026-10-29",
+  "note": "Upstream release snapshot; re-check before implementation or deployment.",
+  "standards": [
+    {
+      "name": "A2A Protocol",
+      "version": "1.0.1",
+      "source": "https://github.com/a2aproject/A2A/releases/tag/v1.0.1",
+      "use": "Agent Card interface fields and protocol version."
+    },
+    {
+      "name": "Microsoft Agent Framework for .NET",
+      "version": "dotnet-1.26.0",
+      "source": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.26.0",
+      "use": "Candidate native .NET runtime integration; not included or activated in this package."
+    },
+    {
+      "name": ".NET Aspire",
+      "version": "13.6.4",
+      "source": "https://github.com/microsoft/aspire/releases/tag/v13.6.4",
+      "use": "Candidate .NET 10 hosting and local topology integration."
+    },
+    {
+      "name": "Model Context Protocol C# SDK",
+      "version": "2.3.0",
+      "source": "https://github.com/modelcontextprotocol/csharp-sdk/releases/tag/v2.3.0",
+      "use": "Candidate MCP integration; no MCP server or tool is generated."
+    },
+    {
+      "name": "AG-UI",
+      "version": "repository release 2026-10-21",
+      "source": "https://github.com/ag-ui-protocol/ag-ui/releases/tag/release/2026-10-21",
+      "use": "Interoperability reference; this package does not implement a UI transport."
+    },
+    {
+      "name": "Agent Skills Specification",
+      "version": "unversioned specification",
+      "source": "https://agentskills.io/specification",
+      "use": "Skill directory and SKILL.md conventions."
+    },
+    {
+      "name": ".NET SDK",
+      "version": "10.0.403",
+      "source": "https://dotnet.microsoft.com/en-us/download/dotnet/10.0",
+      "use": "Active-support SDK version reported by Microsoft on 2026-10-29."
+    },
+    {
+      "name": "OpenTelemetry GenAI semantic conventions",
+      "version": "evolving; no version pinned",
+      "source": "https://github.com/open-telemetry/semantic-conventions-genai",
+      "use": "The prior OpenTelemetry GenAI documentation points to this maintained project; defer telemetry instrumentation until re-checked."
+    }
+  ]
+}

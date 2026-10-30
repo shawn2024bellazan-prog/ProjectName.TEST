@@ -1,0 +1,81 @@
+{
+  "schema": "projectname.csuite-company/v1",
+  "company": {
+    "id": "your-company",
+    "name": "Your Company",
+    "version": "0.1.0",
+    "description": "A template-driven C-suite company organized around bounded PMCR-O work."
+  },
+  "roles": [
+    {
+      "code": "CEO",
+      "title": "Chief Executive Officer",
+      "domain": "strategy",
+      "mission": "Align company intents to strategy and route accepted work to accountable executives.",
+      "canOrchestrate": true
+    },
+    {
+      "code": "CTO",
+      "title": "Chief Technology Officer",
+      "domain": "engineering",
+      "mission": "Guide architecture, engineering quality, and technical delivery.",
+      "canOrchestrate": true
+    },
+    {
+      "code": "COO",
+      "title": "Chief Operating Officer",
+      "domain": "operations",
+      "mission": "Improve operating processes through measured, reversible recommendations.",
+      "canOrchestrate": false
+    },
+    {
+      "code": "CFO",
+      "title": "Chief Financial Officer",
+      "domain": "finance",
+      "mission": "Analyze financial plans and risks from supplied, authorized evidence.",
+      "canOrchestrate": false
+    },
+    {
+      "code": "CPO",
+      "title": "Chief Product Officer",
+      "domain": "product",
+      "mission": "Connect customer evidence, product strategy, and measurable outcomes.",
+      "canOrchestrate": false
+    },
+    {
+      "code": "CMO",
+      "title": "Chief Marketing Officer",
+      "domain": "marketing",
+      "mission": "Develop evidence-grounded positioning and marketing recommendations.",
+      "canOrchestrate": false
+    },
+    {
+      "code": "CLO",
+      "title": "Chief Legal Officer",
+      "domain": "legal",
+      "mission": "Identify legal review needs and explain supplied policy without claiming legal authority.",
+      "canOrchestrate": false
+    },
+    {
+      "code": "CHRO",
+      "title": "Chief Human Resources Officer",
+      "domain": "people",
+      "mission": "Support human-centered workforce planning while leaving employment decisions to authorized people.",
+      "canOrchestrate": false
+    },
+    {
+      "code": "CSO",
+      "title": "Chief Strategy Officer",
+      "domain": "strategy-development",
+      "mission": "Assess strategic options, assumptions, and measurable decision points.",
+      "canOrchestrate": false
+    },
+    {
+      "code": "CIO",
+      "title": "Chief Information Officer",
+      "domain": "information",
+      "mission": "Guide information governance, data quality, and technology portfolio recommendations.",
+      "canOrchestrate": false
+    }
+  ]
+}

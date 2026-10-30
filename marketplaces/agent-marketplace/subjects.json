@@ -1,0 +1,194 @@
+{
+    "schema":  "projectname.agent-subjects/v1",
+    "subjects":  [
+                     {
+                         "id":  "microsoft-agent-framework",
+                         "kind":  "repo",
+                         "group":  "repos",
+                         "name":  "Microsoft Agent Framework",
+                         "ref":  "github:microsoft/agent-framework",
+                         "purpose":  "keep ProjectName\u0027s use of the native Microsoft Agent Framework abstractions correct",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "dotnet-skills",
+                         "kind":  "repo",
+                         "group":  "repos",
+                         "name":  "dotnet skills",
+                         "ref":  "github:dotnet/skills",
+                         "purpose":  "learn the skill and .agents layout conventions ProjectName should follow instead of inventing its own",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "dotnet-aspire",
+                         "kind":  "repo",
+                         "group":  "repos",
+                         "name":  "dotnet Aspire",
+                         "ref":  "github:dotnet/aspire",
+                         "purpose":  "keep the Aspire AppHost topology idiomatic and healthy",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "mcp-csharp-sdk",
+                         "kind":  "repo",
+                         "group":  "repos",
+                         "name":  "MCP C# SDK",
+                         "ref":  "github:modelcontextprotocol/csharp-sdk",
+                         "purpose":  "understand the official .NET MCP SDK before any MCP server is ported",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "a2a-protocol",
+                         "kind":  "repo",
+                         "group":  "repos",
+                         "name":  "A2A Protocol",
+                         "ref":  "github:a2aproject/A2A",
+                         "purpose":  "track the A2A specification that the Agent Cards must match",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "ag-ui-protocol",
+                         "kind":  "repo",
+                         "group":  "repos",
+                         "name":  "AG-UI Protocol",
+                         "ref":  "github:ag-ui-protocol/ag-ui",
+                         "purpose":  "understand the AG-UI surface planned for ProjectName",
+                         "mode":  "guide"
+                     },
+                     {
+                         "id":  "agent-skills-spec",
+                         "kind":  "repo",
+                         "group":  "repos",
+                         "name":  "Agent Skills Specification",
+                         "ref":  "github:agentskills/agentskills",
+                         "purpose":  "keep every skill folder aligned with the open skill format",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "anthropic-skills",
+                         "kind":  "repo",
+                         "group":  "repos",
+                         "name":  "Anthropic Skills",
+                         "ref":  "github:anthropics/skills",
+                         "purpose":  "learn the skill-creator patterns the company skill-creator must compete with",
+                         "mode":  "guide"
+                     },
+                     {
+                         "id":  "agent-governance-toolkit",
+                         "kind":  "repo",
+                         "group":  "repos",
+                         "name":  "Microsoft Agent Governance Toolkit",
+                         "ref":  "github:(location unconfirmed) Microsoft Agent Governance Toolkit",
+                         "purpose":  "decide how the reject and approve gate on skill calls can reuse the governance toolkit",
+                         "mode":  "guide"
+                     },
+                     {
+                         "id":  "projectname-repo",
+                         "kind":  "local-repo",
+                         "group":  "local",
+                         "name":  "ProjectName",
+                         "ref":  "G:\\ProjectName (read-only)",
+                         "purpose":  "report what is implemented versus placeholder and name the smallest next increment",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "messy-bed",
+                         "kind":  "object",
+                         "group":  "objects",
+                         "name":  "Messy Bed",
+                         "ref":  "owner-supplied photo of a messy bed (none supplied yet)",
+                         "purpose":  "turn a photo of a messy bed into an ordered, reversible tidy-up plan",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "tv",
+                         "kind":  "object",
+                         "group":  "objects",
+                         "name":  "TV",
+                         "ref":  "owner-supplied description of a TV problem (none supplied yet)",
+                         "purpose":  "guide the owner through diagnosing and fixing a TV problem step by step",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "download-folder-clutter",
+                         "kind":  "object",
+                         "group":  "objects",
+                         "name":  "Download Folder Clutter",
+                         "ref":  "owner-supplied listing of a cluttered downloads folder (none supplied yet)",
+                         "purpose":  "propose a reversible sorting plan for a cluttered downloads folder",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "claude-export-mining",
+                         "kind":  "process",
+                         "group":  "processes",
+                         "name":  "Claude Export Mining",
+                         "ref":  "D:\\Accounts (read-only exports)",
+                         "purpose":  "find the reasoning skills in the downloaded Claude data exports and propose them as templated skills",
+                         "mode":  "guide"
+                     },
+                     {
+                         "id":  "trail-to-product",
+                         "kind":  "process",
+                         "group":  "processes",
+                         "name":  "Trail To Product",
+                         "ref":  "the process of packaging a finished Trail as a marketplace product",
+                         "purpose":  "make a Trail sellable with a buyer guarantee and identity injection",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "loop-schedule",
+                         "kind":  "process",
+                         "group":  "processes",
+                         "name":  "Loop Schedule",
+                         "ref":  "the schedule that runs the PMCR-O loop over the backlog",
+                         "purpose":  "design the loop schedule as part of the company\u0027s own design",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "desktop-commander",
+                         "kind":  "tool",
+                         "group":  "tools",
+                         "name":  "Desktop Commander",
+                         "ref":  "Desktop Commander MCP on PMCRO_Company",
+                         "purpose":  "list its operations and which need per-call human approval before any port",
+                         "mode":  "guide"
+                     },
+                     {
+                         "id":  "aspire-cli",
+                         "kind":  "tool",
+                         "group":  "tools",
+                         "name":  "Aspire CLI",
+                         "ref":  "dotnet aspire CLI 13.x",
+                         "purpose":  "list its read-only and side-effecting commands for the AppHost",
+                         "mode":  "guide"
+                     },
+                     {
+                         "id":  "ollama-qwen3-4b",
+                         "kind":  "tool",
+                         "group":  "tools",
+                         "name":  "Ollama qwen3:4b",
+                         "ref":  "local Ollama model qwen3:4b",
+                         "purpose":  "state what the local model is trusted for and what it is not",
+                         "mode":  "guide"
+                     },
+                     {
+                         "id":  "agent-creator-self",
+                         "kind":  "skill",
+                         "group":  "meta",
+                         "name":  "Agent Creator",
+                         "ref":  "marketplaces/agent-marketplace/agent-creator",
+                         "purpose":  "inspect the agent-creator itself through its validator and propose template improvements",
+                         "mode":  "both"
+                     },
+                     {
+                         "id":  "host-authority-liaison",
+                         "kind":  "process",
+                         "group":  "meta",
+                         "name":  "Host Authority Liaison",
+                         "ref":  "docs/HOST-ADMIN-REQUEST-SIGNER-ALLOWLIST-2026-10-29.md and docs/CORECLR-DIAGNOSIS-0025-2026-10-29.md",
+                         "purpose":  "when work is blocked by a host or runtime fault or by a missing human authority: diagnose with bounded synthetic repros instead of adding verification layers, draft a one-page request asking the host administrator to name an approval signer and sign an exact read-only allowlist, hand it over for a human to deliver, and record the administrators written reply as evidence only, never as a grant I apply",
+                         "mode":  "both"
+                     }
+                 ]
+}

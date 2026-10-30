@@ -1,0 +1,38 @@
+{
+  "name": "CFO Make Seat",
+  "description": "Draft CFO Make Seat; recommendation only, with no tools or grants.",
+  "version": "0.1.0",
+  "supportedInterfaces": [
+    {
+      "url": "https://agents.invalid/your-company/cfo-maker-seat/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "cfo-maker-seat.inspect",
+      "name": "Make seat review",
+      "description": "prepare the MAKE phase for finance work under the executive's declared scope",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied make seat intent and return evidence-bound recommendations."
+      ]
+    }
+  ]
+}

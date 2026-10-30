@@ -1,0 +1,50 @@
+{
+  "name": "Chief Executive Officer",
+  "description": "Draft Chief Executive Officer; recommendation only, with no tools or grants.",
+  "version": "0.1.0",
+  "supportedInterfaces": [
+    {
+      "url": "https://agents.invalid/your-company/ceo/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "ceo.inspect",
+      "name": "Chief Executive Officer review",
+      "description": "Align company intents to strategy and route accepted work to accountable executives.",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied chief executive officer intent and return evidence-bound recommendations."
+      ]
+    },
+    {
+      "id": "ceo.inspect",
+      "name": "PMCR-O review",
+      "description": "Coordinate only a bounded, advisory PMCR-O workflow.",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied pmcr-o intent and return evidence-bound recommendations."
+      ]
+    }
+  ]
+}

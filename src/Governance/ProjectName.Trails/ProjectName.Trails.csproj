@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../BuildingBlocks/ProjectName.Contracts/ProjectName.Contracts.csproj" />
+    <ProjectReference Include="../ProjectName.Evidence/ProjectName.Evidence.csproj" />
+  </ItemGroup>
+</Project>

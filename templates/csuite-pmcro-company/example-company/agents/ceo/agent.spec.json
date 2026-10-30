@@ -1,0 +1,40 @@
+{
+  "schema": "projectname.company-agent/v1",
+  "id": "ceo",
+  "name": "Chief Executive Officer",
+  "state": "DRAFT_UNREGISTERED",
+  "company": "your-company",
+  "executiveRole": "CEO",
+  "domain": "strategy",
+  "responsibility": "Align company intents to strategy and route accepted work to accountable executives.",
+  "phase": "ORCHESTRATE",
+  "pmcro": [
+    "ORCHESTRATE",
+    "PLAN",
+    "MAKE",
+    "CHECK",
+    "REFLECT"
+  ],
+  "authority": {
+    "defaultAdmission": "DENY",
+    "registration": false,
+    "grant": false,
+    "activation": false,
+    "execution": false,
+    "tools": [],
+    "mcpGrants": []
+  },
+  "checker": {
+    "independentPrincipalRequired": true,
+    "evidenceDigestBindingRequired": true,
+    "verdict": "NOT_CLAIMED"
+  },
+  "a2a": {
+    "card": "agent-card.json",
+    "protocolVersion": "1.0",
+    "mounted": false
+  },
+  "earnedConstraint": "This draft can recommend only; implementation and approval require separately authorized humans and independent checks.",
+  "nextSeed": "@ceo /pmcro:plan \"Continue one owner-authorized strategy intent; return the minimum evidence-bound plan, one earned constraint, and one UNEXECUTED next seed. Do not claim Checker PASS or execute.\"",
+  "nextSeedExecuted": false
+}

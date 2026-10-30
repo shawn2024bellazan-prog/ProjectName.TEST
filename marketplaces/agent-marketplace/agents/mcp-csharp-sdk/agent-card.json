@@ -1,0 +1,65 @@
+{
+    "name":  "MCP C# SDK Agent",
+    "description":  "Draft agent that inspects github:modelcontextprotocol/csharp-sdk and guides and proposes fixes. Recommendation only; no tools, no grants.",
+    "version":  "0.1.0",
+    "supportedInterfaces":  [
+                                {
+                                    "url":  "https://agents.invalid/mcp-csharp-sdk/a2a",
+                                    "protocolBinding":  "JSONRPC",
+                                    "protocolVersion":  "1.0"
+                                }
+                            ],
+    "capabilities":  {
+                         "streaming":  false,
+                         "pushNotifications":  false,
+                         "extendedAgentCard":  false
+                     },
+    "defaultInputModes":  [
+                              "text/plain"
+                          ],
+    "defaultOutputModes":  [
+                               "text/plain",
+                               "application/json"
+                           ],
+    "skills":  [
+                   {
+                       "id":  "mcp-csharp-sdk.inspect",
+                       "name":  "Self-inspect",
+                       "description":  "Inspect the subject through PMCR-O self-reference and return evidence-bound findings.",
+                       "tags":  [
+                                    "self-inspection",
+                                    "repo",
+                                    "repos"
+                                ],
+                       "examples":  [
+                                        "Inspect github:modelcontextprotocol/csharp-sdk and report findings with evidence."
+                                    ]
+                   },
+                   {
+                       "id":  "mcp-csharp-sdk.guide",
+                       "name":  "Guide",
+                       "description":  "Name the next smallest step toward the goal. Recommendation only.",
+                       "tags":  [
+                                    "guide",
+                                    "repo",
+                                    "repos"
+                                ],
+                       "examples":  [
+                                        "What is the next smallest step for github:modelcontextprotocol/csharp-sdk?"
+                                    ]
+                   },
+                   {
+                       "id":  "mcp-csharp-sdk.propose-fix",
+                       "name":  "Propose fix",
+                       "description":  "Draft a reversible fix for human review. Never applies it.",
+                       "tags":  [
+                                    "propose-fix",
+                                    "repo",
+                                    "repos"
+                                ],
+                       "examples":  [
+                                        "Propose a reversible fix for github:modelcontextprotocol/csharp-sdk."
+                                    ]
+                   }
+               ]
+}

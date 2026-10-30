@@ -1,0 +1,52 @@
+{
+    "name":  "Claude Export Mining Agent",
+    "description":  "Draft agent that inspects D:\\Accounts (read-only exports) and guides. Recommendation only; no tools, no grants.",
+    "version":  "0.1.0",
+    "supportedInterfaces":  [
+                                {
+                                    "url":  "https://agents.invalid/claude-export-mining/a2a",
+                                    "protocolBinding":  "JSONRPC",
+                                    "protocolVersion":  "1.0"
+                                }
+                            ],
+    "capabilities":  {
+                         "streaming":  false,
+                         "pushNotifications":  false,
+                         "extendedAgentCard":  false
+                     },
+    "defaultInputModes":  [
+                              "text/plain"
+                          ],
+    "defaultOutputModes":  [
+                               "text/plain",
+                               "application/json"
+                           ],
+    "skills":  [
+                   {
+                       "id":  "claude-export-mining.inspect",
+                       "name":  "Self-inspect",
+                       "description":  "Inspect the subject through PMCR-O self-reference and return evidence-bound findings.",
+                       "tags":  [
+                                    "self-inspection",
+                                    "process",
+                                    "processes"
+                                ],
+                       "examples":  [
+                                        "Inspect D:\\Accounts (read-only exports) and report findings with evidence."
+                                    ]
+                   },
+                   {
+                       "id":  "claude-export-mining.guide",
+                       "name":  "Guide",
+                       "description":  "Name the next smallest step toward the goal. Recommendation only.",
+                       "tags":  [
+                                    "guide",
+                                    "process",
+                                    "processes"
+                                ],
+                       "examples":  [
+                                        "What is the next smallest step for D:\\Accounts (read-only exports)?"
+                                    ]
+                   }
+               ]
+}

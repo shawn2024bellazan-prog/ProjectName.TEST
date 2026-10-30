@@ -1,0 +1,52 @@
+{
+    "name":  "CSO Maker Seat",
+    "description":  "Draft agent that inspects csuite-marketplace:CSO and guides. Recommendation only; no tools, no grants.",
+    "version":  "0.1.0",
+    "supportedInterfaces":  [
+                                {
+                                    "url":  "https://agents.invalid/cso-maker-seat/a2a",
+                                    "protocolBinding":  "JSONRPC",
+                                    "protocolVersion":  "1.0"
+                                }
+                            ],
+    "capabilities":  {
+                         "streaming":  false,
+                         "pushNotifications":  false,
+                         "extendedAgentCard":  false
+                     },
+    "defaultInputModes":  [
+                              "text/plain"
+                          ],
+    "defaultOutputModes":  [
+                               "text/plain",
+                               "application/json"
+                           ],
+    "skills":  [
+                   {
+                       "id":  "cso-maker-seat.inspect",
+                       "name":  "Self-inspect",
+                       "description":  "Inspect the subject through PMCR-O self-reference and return evidence-bound findings.",
+                       "tags":  [
+                                    "self-inspection",
+                                    "seat",
+                                    "seats"
+                                ],
+                       "examples":  [
+                                        "Inspect csuite-marketplace:CSO and report findings with evidence."
+                                    ]
+                   },
+                   {
+                       "id":  "cso-maker-seat.guide",
+                       "name":  "Guide",
+                       "description":  "Name the next smallest step toward the goal. Recommendation only.",
+                       "tags":  [
+                                    "guide",
+                                    "seat",
+                                    "seats"
+                                ],
+                       "examples":  [
+                                        "What is the next smallest step for csuite-marketplace:CSO?"
+                                    ]
+                   }
+               ]
+}

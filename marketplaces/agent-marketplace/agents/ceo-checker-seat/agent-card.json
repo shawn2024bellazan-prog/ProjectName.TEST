@@ -1,0 +1,52 @@
+{
+    "name":  "CEO Checker Seat",
+    "description":  "Draft agent that inspects csuite-marketplace:CEO and guides. Recommendation only; no tools, no grants.",
+    "version":  "0.1.0",
+    "supportedInterfaces":  [
+                                {
+                                    "url":  "https://agents.invalid/ceo-checker-seat/a2a",
+                                    "protocolBinding":  "JSONRPC",
+                                    "protocolVersion":  "1.0"
+                                }
+                            ],
+    "capabilities":  {
+                         "streaming":  false,
+                         "pushNotifications":  false,
+                         "extendedAgentCard":  false
+                     },
+    "defaultInputModes":  [
+                              "text/plain"
+                          ],
+    "defaultOutputModes":  [
+                               "text/plain",
+                               "application/json"
+                           ],
+    "skills":  [
+                   {
+                       "id":  "ceo-checker-seat.inspect",
+                       "name":  "Self-inspect",
+                       "description":  "Inspect the subject through PMCR-O self-reference and return evidence-bound findings.",
+                       "tags":  [
+                                    "self-inspection",
+                                    "seat",
+                                    "seats"
+                                ],
+                       "examples":  [
+                                        "Inspect csuite-marketplace:CEO and report findings with evidence."
+                                    ]
+                   },
+                   {
+                       "id":  "ceo-checker-seat.guide",
+                       "name":  "Guide",
+                       "description":  "Name the next smallest step toward the goal. Recommendation only.",
+                       "tags":  [
+                                    "guide",
+                                    "seat",
+                                    "seats"
+                                ],
+                       "examples":  [
+                                        "What is the next smallest step for csuite-marketplace:CEO?"
+                                    ]
+                   }
+               ]
+}

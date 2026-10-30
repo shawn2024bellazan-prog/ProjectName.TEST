@@ -1,0 +1,41 @@
+@page "/"
+@rendermode InteractiveServer
+<PageTitle>ProjectName</PageTitle>
+
+<section class="workspace">
+  <div class="intro">
+    <h1>ProjectName</h1>
+    <p>Agent workspace • PMCR-O governed</p>
+    <span class="chip">Development • Workers not admitted</span>
+  </div>
+  <div class="conversation" aria-live="polite">
+    @foreach (var entry in Messages)
+    {
+      <article class="message">
+        <strong>@entry.Role</strong>
+        <p>@entry.Text</p>
+      </article>
+    }
+  </div>
+  <div class="compose">
+    <label for="agent-prompt">Ask the orchestration agent</label>
+    <textarea id="agent-prompt" rows="3" @bind="Prompt" placeholder="Describe a task or next seed"></textarea>
+    <button @onclick="Submit" disabled="@string.IsNullOrWhiteSpace(Prompt)">Submit</button>
+    <small>Submissions are local previews only. No external model, tools, or workers execute.</small>
+  </div>
+</section>
+
+@code {
+  private string Prompt = "";
+  private readonly List<(string Role, string Text)> Messages =
+    [("System", "PMCR-O requires authenticated registration, effective grants, and an independent Checker before activation.")];
+
+  private void Submit()
+  {
+    string request = Prompt.Trim();
+    if (request.Length == 0) return;
+    Messages.Add(("You", request));
+    Messages.Add(("Control Plane", "HALT — NO_EFFECTIVE_GRANT. Request not executed."));
+    Prompt = "";
+  }
+}

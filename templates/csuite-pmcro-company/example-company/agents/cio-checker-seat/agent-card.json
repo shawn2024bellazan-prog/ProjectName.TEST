@@ -1,0 +1,38 @@
+{
+  "name": "CIO Check Seat",
+  "description": "Draft CIO Check Seat; recommendation only, with no tools or grants.",
+  "version": "0.1.0",
+  "supportedInterfaces": [
+    {
+      "url": "https://agents.invalid/your-company/cio-checker-seat/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "cio-checker-seat.inspect",
+      "name": "Check seat review",
+      "description": "prepare the CHECK phase for information work under the executive's declared scope",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied check seat intent and return evidence-bound recommendations."
+      ]
+    }
+  ]
+}

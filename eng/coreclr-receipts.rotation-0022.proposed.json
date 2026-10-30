@@ -1,0 +1,19 @@
+{
+  "schema": "projectname.redacted-event-rotation-proposal/v1",
+  "scope": "ISOLATED_DEVELOPMENT_ONLY",
+  "state": "PROPOSED_UNEXECUTED",
+  "previousRevision": 1,
+  "proposedRevision": 2,
+  "previousManifestSha256": "B0C99A92CCE29CC30C6432351484B61CC773702CF9E1E01BA868E8AA22FB3D95",
+  "previousReceiptName": "coreclr-events-20261029-175538-8528699-65d45e4a.json",
+  "previousReceiptSha256": "62A723AD1223DCF48F90158B0B66AA1D3342372341BAE5E11712DBA5775D6F81",
+  "replacementReceipt": {
+    "name": "coreclr-events-20261029-181618-6338113-6b4f6a42.json",
+    "sha256": "4E15D1038865CDF9596054A2F393A34BCD754F13B677087B98FC40E9FED1DA5A",
+    "validUntilUtc": "2026-10-30T23:06:18Z"
+  },
+  "approvalRecord": null,
+  "checkerPass": false,
+  "productionActivationAllowed": false,
+  "note": "Unexecuted development proposal only. Not a grant, active allowlist, authenticated Checker, or migration."
+}

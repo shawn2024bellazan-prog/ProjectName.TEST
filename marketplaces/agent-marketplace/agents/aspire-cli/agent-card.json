@@ -1,0 +1,52 @@
+{
+    "name":  "Aspire CLI Agent",
+    "description":  "Draft agent that inspects dotnet aspire CLI 13.x and guides. Recommendation only; no tools, no grants.",
+    "version":  "0.1.0",
+    "supportedInterfaces":  [
+                                {
+                                    "url":  "https://agents.invalid/aspire-cli/a2a",
+                                    "protocolBinding":  "JSONRPC",
+                                    "protocolVersion":  "1.0"
+                                }
+                            ],
+    "capabilities":  {
+                         "streaming":  false,
+                         "pushNotifications":  false,
+                         "extendedAgentCard":  false
+                     },
+    "defaultInputModes":  [
+                              "text/plain"
+                          ],
+    "defaultOutputModes":  [
+                               "text/plain",
+                               "application/json"
+                           ],
+    "skills":  [
+                   {
+                       "id":  "aspire-cli.inspect",
+                       "name":  "Self-inspect",
+                       "description":  "Inspect the subject through PMCR-O self-reference and return evidence-bound findings.",
+                       "tags":  [
+                                    "self-inspection",
+                                    "tool",
+                                    "tools"
+                                ],
+                       "examples":  [
+                                        "Inspect dotnet aspire CLI 13.x and report findings with evidence."
+                                    ]
+                   },
+                   {
+                       "id":  "aspire-cli.guide",
+                       "name":  "Guide",
+                       "description":  "Name the next smallest step toward the goal. Recommendation only.",
+                       "tags":  [
+                                    "guide",
+                                    "tool",
+                                    "tools"
+                                ],
+                       "examples":  [
+                                        "What is the next smallest step for dotnet aspire CLI 13.x?"
+                                    ]
+                   }
+               ]
+}

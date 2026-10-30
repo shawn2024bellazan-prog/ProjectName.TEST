@@ -1,0 +1,50 @@
+{
+  "name": "Chief Financial Officer",
+  "description": "Draft Chief Financial Officer; recommendation only, with no tools or grants.",
+  "version": "0.1.0",
+  "supportedInterfaces": [
+    {
+      "url": "https://agents.invalid/your-company/cfo/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "cfo.inspect",
+      "name": "Chief Financial Officer review",
+      "description": "Analyze financial plans and risks from supplied, authorized evidence.",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied chief financial officer intent and return evidence-bound recommendations."
+      ]
+    },
+    {
+      "id": "cfo.inspect",
+      "name": "PMCR-O review",
+      "description": "Coordinate only a bounded, advisory PMCR-O workflow.",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied pmcr-o intent and return evidence-bound recommendations."
+      ]
+    }
+  ]
+}

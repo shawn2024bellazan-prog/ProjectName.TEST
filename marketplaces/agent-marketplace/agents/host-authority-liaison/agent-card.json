@@ -1,0 +1,65 @@
+{
+    "name":  "Host Authority Liaison Agent",
+    "description":  "Draft agent that inspects docs/HOST-ADMIN-REQUEST-SIGNER-ALLOWLIST-2026-10-29.md and docs/CORECLR-DIAGNOSIS-0025-2026-10-29.md and guides and proposes fixes. Recommendation only; no tools, no grants.",
+    "version":  "0.1.0",
+    "supportedInterfaces":  [
+                                {
+                                    "url":  "https://agents.invalid/host-authority-liaison/a2a",
+                                    "protocolBinding":  "JSONRPC",
+                                    "protocolVersion":  "1.0"
+                                }
+                            ],
+    "capabilities":  {
+                         "streaming":  false,
+                         "pushNotifications":  false,
+                         "extendedAgentCard":  false
+                     },
+    "defaultInputModes":  [
+                              "text/plain"
+                          ],
+    "defaultOutputModes":  [
+                               "text/plain",
+                               "application/json"
+                           ],
+    "skills":  [
+                   {
+                       "id":  "host-authority-liaison.inspect",
+                       "name":  "Self-inspect",
+                       "description":  "Inspect the subject through PMCR-O self-reference and return evidence-bound findings.",
+                       "tags":  [
+                                    "self-inspection",
+                                    "process",
+                                    "meta"
+                                ],
+                       "examples":  [
+                                        "Inspect docs/HOST-ADMIN-REQUEST-SIGNER-ALLOWLIST-2026-10-29.md and docs/CORECLR-DIAGNOSIS-0025-2026-10-29.md and report findings with evidence."
+                                    ]
+                   },
+                   {
+                       "id":  "host-authority-liaison.guide",
+                       "name":  "Guide",
+                       "description":  "Name the next smallest step toward the goal. Recommendation only.",
+                       "tags":  [
+                                    "guide",
+                                    "process",
+                                    "meta"
+                                ],
+                       "examples":  [
+                                        "What is the next smallest step for docs/HOST-ADMIN-REQUEST-SIGNER-ALLOWLIST-2026-10-29.md and docs/CORECLR-DIAGNOSIS-0025-2026-10-29.md?"
+                                    ]
+                   },
+                   {
+                       "id":  "host-authority-liaison.propose-fix",
+                       "name":  "Propose fix",
+                       "description":  "Draft a reversible fix for human review. Never applies it.",
+                       "tags":  [
+                                    "propose-fix",
+                                    "process",
+                                    "meta"
+                                ],
+                       "examples":  [
+                                        "Propose a reversible fix for docs/HOST-ADMIN-REQUEST-SIGNER-ALLOWLIST-2026-10-29.md and docs/CORECLR-DIAGNOSIS-0025-2026-10-29.md."
+                                    ]
+                   }
+               ]
+}

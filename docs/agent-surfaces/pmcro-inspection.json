@@ -1,0 +1,79 @@
+{
+  "surfaceId": "projectname.pmcro.inspection.v1",
+  "version": 1,
+  "component": {
+    "project": "ProjectName.OrchestrationApi",
+    "path": "src/Services/ProjectName.OrchestrationApi/AdmissionInspectionTools.cs",
+    "type": "mcp-endpoint",
+    "version": "ModelContextProtocol.AspNetCore/2.3.0"
+  },
+  "agent": {
+    "agentId": "pmcro-inspection",
+    "iAm": "I AM the PMCR-O admission inspection surface.",
+    "skillType": "read-only-governance-inspection",
+    "activation": "tool"
+  },
+  "dependencies": [
+    {
+      "kind": "package",
+      "name": "ModelContextProtocol.AspNetCore",
+      "version": "2.3.0",
+      "trust": "candidate",
+      "adapterRef": "/mcp"
+    },
+    {
+      "kind": "service",
+      "name": "orchestration-api",
+      "version": "local-development",
+      "trust": "candidate",
+      "adapterRef": "ProjectName.AppHost"
+    }
+  ],
+  "interface": {
+    "entrypoint": "POST /mcp -> GetAdmissionStatus",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    },
+    "outputSchema": {
+      "type": "object",
+      "required": [
+        "workerAdmission",
+        "executionAuthorized"
+      ],
+      "properties": {
+        "workerAdmission": {
+          "const": "deny-all"
+        },
+        "executionAuthorized": {
+          "const": false
+        }
+      }
+    },
+    "sideEffects": []
+  },
+  "mode": "inspect",
+  "grantRef": "NONE; inspect only, development mode",
+  "limits": {
+    "iterations": 1,
+    "toolCalls": 1,
+    "deadlineMs": 30000,
+    "maxDepth": 1
+  },
+  "trace": {
+    "runId": "",
+    "parentRunId": "",
+    "actionIds": []
+  },
+  "evidence": {
+    "tier": "unknown",
+    "refs": []
+  },
+  "checker": {
+    "separateRun": true,
+    "verdict": "pending",
+    "refs": []
+  },
+  "nextSeed": "Verify development-only MCP and Scalar endpoints, authenticate an independent Checker before any production agent hosting."
+}

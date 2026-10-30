@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Npgsql" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Xunit" />
+    <ProjectReference Include="../../src/Governance/ProjectName.ControlPlane/ProjectName.ControlPlane.csproj" />
+    <ProjectReference Include="../../src/BuildingBlocks/ProjectName.Persistence/ProjectName.Persistence.csproj" />
+    <ProjectReference Include="../../src/Services/ProjectName.OrchestrationApi/ProjectName.OrchestrationApi.csproj" />
+    <ProjectReference Include="../../src/Governance/ProjectName.Trails/ProjectName.Trails.csproj" />
+    <ProjectReference Include="../../src/Runtime/ProjectName.Runtime/ProjectName.Runtime.csproj" />
+    <ProjectReference Include="../../src/Services/ProjectName.AgentGateway/ProjectName.AgentGateway.csproj" />
+    <ProjectReference Include="../ProjectName.CheckpointProbe/ProjectName.CheckpointProbe.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Protocols/ProjectName.Grpc.Contracts/ProjectName.Grpc.Contracts.csproj" />
+  </ItemGroup>
+</Project>

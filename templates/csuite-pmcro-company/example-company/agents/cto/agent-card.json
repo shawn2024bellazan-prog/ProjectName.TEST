@@ -1,0 +1,50 @@
+{
+  "name": "Chief Technology Officer",
+  "description": "Draft Chief Technology Officer; recommendation only, with no tools or grants.",
+  "version": "0.1.0",
+  "supportedInterfaces": [
+    {
+      "url": "https://agents.invalid/your-company/cto/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "cto.inspect",
+      "name": "Chief Technology Officer review",
+      "description": "Guide architecture, engineering quality, and technical delivery.",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied chief technology officer intent and return evidence-bound recommendations."
+      ]
+    },
+    {
+      "id": "cto.inspect",
+      "name": "PMCR-O review",
+      "description": "Coordinate only a bounded, advisory PMCR-O workflow.",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied pmcr-o intent and return evidence-bound recommendations."
+      ]
+    }
+  ]
+}

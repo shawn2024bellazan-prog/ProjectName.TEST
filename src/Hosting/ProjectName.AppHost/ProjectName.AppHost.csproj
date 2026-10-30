@@ -1,0 +1,22 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.6.4">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <AspireUseCliBundle>true</AspireUseCliBundle>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AgentFramework.DevUI" />
+    <PackageReference Include="Microsoft.Agents.AI.DevUI" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" />
+    <PackageReference Include="Aspire.Hosting.Redis" />
+    <PackageReference Include="CommunityToolkit.Aspire.Hosting.Ollama" />
+    <ProjectReference Include="../../Services/ProjectName.OrchestrationApi/ProjectName.OrchestrationApi.csproj" />
+    <ProjectReference Include="../../Services/ProjectName.AgentGateway/ProjectName.AgentGateway.csproj" />
+    <ProjectReference Include="../../Services/ProjectName.OrchestratorService/ProjectName.OrchestratorService.csproj" />
+    <ProjectReference Include="../../Services/ProjectName.PlannerService/ProjectName.PlannerService.csproj" />
+    <ProjectReference Include="../../Services/ProjectName.MakerService/ProjectName.MakerService.csproj" />
+    <ProjectReference Include="../../Services/ProjectName.CheckerService/ProjectName.CheckerService.csproj" />
+    <ProjectReference Include="../../Services/ProjectName.ReflectorService/ProjectName.ReflectorService.csproj" />
+    <ProjectReference Include="../../../apps/ProjectName.Web/ProjectName.Web.csproj" />
+  </ItemGroup>
+</Project>

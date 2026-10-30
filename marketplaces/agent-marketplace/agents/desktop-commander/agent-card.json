@@ -1,0 +1,52 @@
+{
+    "name":  "Desktop Commander Agent",
+    "description":  "Draft agent that inspects Desktop Commander MCP on PMCRO_Company and guides. Recommendation only; no tools, no grants.",
+    "version":  "0.1.0",
+    "supportedInterfaces":  [
+                                {
+                                    "url":  "https://agents.invalid/desktop-commander/a2a",
+                                    "protocolBinding":  "JSONRPC",
+                                    "protocolVersion":  "1.0"
+                                }
+                            ],
+    "capabilities":  {
+                         "streaming":  false,
+                         "pushNotifications":  false,
+                         "extendedAgentCard":  false
+                     },
+    "defaultInputModes":  [
+                              "text/plain"
+                          ],
+    "defaultOutputModes":  [
+                               "text/plain",
+                               "application/json"
+                           ],
+    "skills":  [
+                   {
+                       "id":  "desktop-commander.inspect",
+                       "name":  "Self-inspect",
+                       "description":  "Inspect the subject through PMCR-O self-reference and return evidence-bound findings.",
+                       "tags":  [
+                                    "self-inspection",
+                                    "tool",
+                                    "tools"
+                                ],
+                       "examples":  [
+                                        "Inspect Desktop Commander MCP on PMCRO_Company and report findings with evidence."
+                                    ]
+                   },
+                   {
+                       "id":  "desktop-commander.guide",
+                       "name":  "Guide",
+                       "description":  "Name the next smallest step toward the goal. Recommendation only.",
+                       "tags":  [
+                                    "guide",
+                                    "tool",
+                                    "tools"
+                                ],
+                       "examples":  [
+                                        "What is the next smallest step for Desktop Commander MCP on PMCRO_Company?"
+                                    ]
+                   }
+               ]
+}

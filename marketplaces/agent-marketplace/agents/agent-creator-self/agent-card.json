@@ -1,0 +1,65 @@
+{
+    "name":  "Agent Creator Agent",
+    "description":  "Draft agent that inspects marketplaces/agent-marketplace/agent-creator and guides and proposes fixes. Recommendation only; no tools, no grants.",
+    "version":  "0.1.0",
+    "supportedInterfaces":  [
+                                {
+                                    "url":  "https://agents.invalid/agent-creator-self/a2a",
+                                    "protocolBinding":  "JSONRPC",
+                                    "protocolVersion":  "1.0"
+                                }
+                            ],
+    "capabilities":  {
+                         "streaming":  false,
+                         "pushNotifications":  false,
+                         "extendedAgentCard":  false
+                     },
+    "defaultInputModes":  [
+                              "text/plain"
+                          ],
+    "defaultOutputModes":  [
+                               "text/plain",
+                               "application/json"
+                           ],
+    "skills":  [
+                   {
+                       "id":  "agent-creator-self.inspect",
+                       "name":  "Self-inspect",
+                       "description":  "Inspect the subject through PMCR-O self-reference and return evidence-bound findings.",
+                       "tags":  [
+                                    "self-inspection",
+                                    "skill",
+                                    "meta"
+                                ],
+                       "examples":  [
+                                        "Inspect marketplaces/agent-marketplace/agent-creator and report findings with evidence."
+                                    ]
+                   },
+                   {
+                       "id":  "agent-creator-self.guide",
+                       "name":  "Guide",
+                       "description":  "Name the next smallest step toward the goal. Recommendation only.",
+                       "tags":  [
+                                    "guide",
+                                    "skill",
+                                    "meta"
+                                ],
+                       "examples":  [
+                                        "What is the next smallest step for marketplaces/agent-marketplace/agent-creator?"
+                                    ]
+                   },
+                   {
+                       "id":  "agent-creator-self.propose-fix",
+                       "name":  "Propose fix",
+                       "description":  "Draft a reversible fix for human review. Never applies it.",
+                       "tags":  [
+                                    "propose-fix",
+                                    "skill",
+                                    "meta"
+                                ],
+                       "examples":  [
+                                        "Propose a reversible fix for marketplaces/agent-marketplace/agent-creator."
+                                    ]
+                   }
+               ]
+}

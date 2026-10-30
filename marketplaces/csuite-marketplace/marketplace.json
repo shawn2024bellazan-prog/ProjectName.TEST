@@ -1,0 +1,77 @@
+{
+  "schema": "projectname.marketplace/v1",
+  "name": "csuite-marketplace",
+  "state": "DRAFT_UNREGISTERED",
+  "registration": false,
+  "grant": false,
+  "activation": false,
+  "agentTemplate": "csuite/executive",
+  "runtime": "ProjectName.Runtime",
+  "agents": [
+    {
+      "role": "CEO",
+      "name": "Chief Executive Officer",
+      "domain": "strategy",
+      "canOrchestrate": true
+    },
+    {
+      "role": "CTO",
+      "name": "Chief Technology Officer",
+      "domain": "engineering",
+      "canOrchestrate": true
+    },
+    {
+      "role": "COO",
+      "name": "Chief Operating Officer",
+      "domain": "operations",
+      "canOrchestrate": false
+    },
+    {
+      "role": "CFO",
+      "name": "Chief Financial Officer",
+      "domain": "finance",
+      "canOrchestrate": false
+    },
+    {
+      "role": "CPO",
+      "name": "Chief Product Officer",
+      "domain": "product",
+      "canOrchestrate": false
+    },
+    {
+      "role": "CMO",
+      "name": "Chief Marketing Officer",
+      "domain": "marketing",
+      "canOrchestrate": false
+    },
+    {
+      "role": "CLO",
+      "name": "Chief Legal Officer",
+      "domain": "legal",
+      "canOrchestrate": false
+    },
+    {
+      "role": "CHRO",
+      "name": "Chief Human Resources Officer",
+      "domain": "people",
+      "canOrchestrate": false
+    },
+    {
+      "role": "CSO",
+      "name": "Chief Strategy Officer",
+      "domain": "strategy-development",
+      "canOrchestrate": false
+    },
+    {
+      "role": "CIO",
+      "name": "Chief Information Officer",
+      "domain": "information",
+      "canOrchestrate": false
+    }
+  ],
+  "council": {
+    "name": "executive-council",
+    "requiresIndependentChecker": true,
+    "decisionAuthority": "recommendation-only"
+  }
+}

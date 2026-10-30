@@ -1,0 +1,40 @@
+{
+  "schema": "projectname.marketplace/v1",
+  "name": "pmcro-core",
+  "state": "DRAFT_UNREGISTERED",
+  "activation": false,
+  "executionAllowed": false,
+  "roles": [
+    "orchestrator",
+    "planner",
+    "maker",
+    "checker",
+    "reflector"
+  ],
+  "cycle": [
+    "ORCHESTRATE",
+    "PLAN",
+    "MAKE",
+    "CHECK",
+    "REFLECT"
+  ],
+  "authorityLaws": [
+    "DISCOVERY != REGISTRATION",
+    "REGISTRATION != GRANT",
+    "GRANT != ACTIVATION",
+    "ACTIVATION != EXECUTION",
+    "MESSAGE_ARRIVAL != PHASE_TRANSITION"
+  ],
+  "checker": {
+    "independentPrincipalRequired": true,
+    "evidenceDigestBindingRequired": true
+  },
+  "cascadingCandidate": {
+    "path": "cascading-orchestration.candidate.json",
+    "state": "DRAFT_UNREGISTERED",
+    "selfApplication": "TEST_ONLY",
+    "productionAdmission": "DENY",
+    "checkerPass": false
+  },
+  "nextSeedExecuted": false
+}

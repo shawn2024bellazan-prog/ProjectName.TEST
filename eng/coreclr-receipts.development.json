@@ -1,0 +1,14 @@
+{
+  "schema": "projectname.redacted-event-allowlist/v1",
+  "scope": "ISOLATED_DEVELOPMENT_ONLY",
+  "purpose": "Local development correlation only; never authorization",
+  "receipts": [
+    {
+      "name": "coreclr-events-20261029-175538-8528699-65d45e4a.json",
+      "sha256": "62A723AD1223DCF48F90158B0B66AA1D3342372341BAE5E11712DBA5775D6F81",
+      "validUntilUtc": "2026-10-30T22:55:39Z"
+    }
+  ],
+  "checkerPass": false,
+  "productionActivationAllowed": false
+}

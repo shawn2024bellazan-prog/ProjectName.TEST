@@ -1,0 +1,50 @@
+{
+  "name": "Chief Operating Officer",
+  "description": "Draft Chief Operating Officer; recommendation only, with no tools or grants.",
+  "version": "0.1.0",
+  "supportedInterfaces": [
+    {
+      "url": "https://agents.invalid/your-company/coo/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "coo.inspect",
+      "name": "Chief Operating Officer review",
+      "description": "Improve operating processes through measured, reversible recommendations.",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied chief operating officer intent and return evidence-bound recommendations."
+      ]
+    },
+    {
+      "id": "coo.inspect",
+      "name": "PMCR-O review",
+      "description": "Coordinate only a bounded, advisory PMCR-O workflow.",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied pmcr-o intent and return evidence-bound recommendations."
+      ]
+    }
+  ]
+}

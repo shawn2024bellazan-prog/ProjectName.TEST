@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectName.Maui.MainPage"
+             Title="ProjectName">
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+            <Label Text="ProjectName" FontSize="32" FontAttributes="Bold"
+                   SemanticProperties.HeadingLevel="Level1" />
+            <Label Text="AI agent workspace • PMCR-O governed" FontSize="16" />
+            <Border Stroke="#D8B56C" BackgroundColor="#FFF3D0" Padding="12">
+                <Label Text="Development mode — no workers admitted" TextColor="#654900" />
+            </Border>
+            <Label Text="Orchestrator" FontAttributes="Bold" FontSize="20" />
+            <Label Text="Tasks follow ORCHESTRATE → PLAN → MAKE → CHECK → REFLECT. Activation requires verified authority and an independent Checker." />
+            <Editor x:Name="PromptInput" AutoSize="TextChanges"
+                    Placeholder="Describe a task or next seed"
+                    MinimumHeightRequest="120" />
+            <Button Text="Submit governed request" Clicked="OnSubmitClicked" />
+            <Label x:Name="Response" Text="No task has been submitted."
+                   SemanticProperties.HeadingLevel="Level2" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,52 @@
+{
+    "name":  "CLO Planner Seat",
+    "description":  "Draft agent that inspects csuite-marketplace:CLO and guides. Recommendation only; no tools, no grants.",
+    "version":  "0.1.0",
+    "supportedInterfaces":  [
+                                {
+                                    "url":  "https://agents.invalid/clo-planner-seat/a2a",
+                                    "protocolBinding":  "JSONRPC",
+                                    "protocolVersion":  "1.0"
+                                }
+                            ],
+    "capabilities":  {
+                         "streaming":  false,
+                         "pushNotifications":  false,
+                         "extendedAgentCard":  false
+                     },
+    "defaultInputModes":  [
+                              "text/plain"
+                          ],
+    "defaultOutputModes":  [
+                               "text/plain",
+                               "application/json"
+                           ],
+    "skills":  [
+                   {
+                       "id":  "clo-planner-seat.inspect",
+                       "name":  "Self-inspect",
+                       "description":  "Inspect the subject through PMCR-O self-reference and return evidence-bound findings.",
+                       "tags":  [
+                                    "self-inspection",
+                                    "seat",
+                                    "seats"
+                                ],
+                       "examples":  [
+                                        "Inspect csuite-marketplace:CLO and report findings with evidence."
+                                    ]
+                   },
+                   {
+                       "id":  "clo-planner-seat.guide",
+                       "name":  "Guide",
+                       "description":  "Name the next smallest step toward the goal. Recommendation only.",
+                       "tags":  [
+                                    "guide",
+                                    "seat",
+                                    "seats"
+                                ],
+                       "examples":  [
+                                        "What is the next smallest step for csuite-marketplace:CLO?"
+                                    ]
+                   }
+               ]
+}

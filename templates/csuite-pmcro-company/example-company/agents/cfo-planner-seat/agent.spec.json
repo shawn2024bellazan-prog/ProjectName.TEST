@@ -1,0 +1,40 @@
+{
+  "schema": "projectname.company-agent/v1",
+  "id": "cfo-planner-seat",
+  "name": "CFO Plan Seat",
+  "state": "DRAFT_UNREGISTERED",
+  "company": "your-company",
+  "executiveRole": "CFO",
+  "domain": "finance",
+  "responsibility": "prepare the PLAN phase for finance work under the executive's declared scope",
+  "phase": "PLAN",
+  "pmcro": [
+    "ORCHESTRATE",
+    "PLAN",
+    "MAKE",
+    "CHECK",
+    "REFLECT"
+  ],
+  "authority": {
+    "defaultAdmission": "DENY",
+    "registration": false,
+    "grant": false,
+    "activation": false,
+    "execution": false,
+    "tools": [],
+    "mcpGrants": []
+  },
+  "checker": {
+    "independentPrincipalRequired": true,
+    "evidenceDigestBindingRequired": true,
+    "verdict": "NOT_CLAIMED"
+  },
+  "a2a": {
+    "card": "agent-card.json",
+    "protocolVersion": "1.0",
+    "mounted": false
+  },
+  "earnedConstraint": "This draft can recommend only; implementation and approval require separately authorized humans and independent checks.",
+  "nextSeed": "@cfo-planner-seat /pmcro:make \"Continue one owner-authorized finance intent; return the minimum evidence-bound plan, one earned constraint, and one UNEXECUTED next seed. Do not claim Checker PASS or execute.\"",
+  "nextSeedExecuted": false
+}

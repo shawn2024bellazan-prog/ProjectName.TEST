@@ -1,0 +1,76 @@
+{
+  "schema": "projectname.cascading-orchestration/v1",
+  "status": "DRAFT_UNREGISTERED",
+  "authority": "CANDIDATE_ONLY",
+  "productionAdmission": "DENY",
+  "selfApplication": {
+    "target": "pmcro-core",
+    "mode": "DECLARATIVE_TEST_ONLY",
+    "maxDepth": 1,
+    "weightTraining": false
+  },
+  "commandGrammar": "@{agent} /pmcro:{skill} \"{intent}\"",
+  "agents": [
+    "orchestrator",
+    "planner",
+    "maker",
+    "checker",
+    "reflector"
+  ],
+  "skills": [
+    "orchestrate",
+    "plan",
+    "make",
+    "check",
+    "reflect"
+  ],
+  "invariant": {
+    "ordered": true,
+    "noSkippedPhases": true,
+    "delegationContract": "child-domain-strict-subset",
+    "toolContract": "child-tools-subset",
+    "independentCheckerRequired": true,
+    "checkerPass": false,
+    "nextSeedExecuted": false
+  },
+  "sample": [
+    {
+      "agent": "orchestrator",
+      "domain": "pmcro",
+      "command": "@orchestrator /pmcro:orchestrate \"I orchestrate how PMCR-O orchestrates itself.\""
+    },
+    {
+      "agent": "planner",
+      "domain": "pmcro/planning",
+      "command": "@planner /pmcro:orchestrate \"I orchestrate a bounded plan for planning.\""
+    },
+    {
+      "agent": "maker",
+      "domain": "pmcro/making",
+      "command": "@maker /pmcro:orchestrate \"I orchestrate bounded making within my domain.\""
+    },
+    {
+      "agent": "checker",
+      "domain": "pmcro/checking",
+      "command": "@checker /pmcro:orchestrate \"I orchestrate checks without granting myself independent approval.\""
+    },
+    {
+      "agent": "reflector",
+      "domain": "pmcro/reflection",
+      "command": "@reflector /pmcro:orchestrate \"I orchestrate bounded reflection and an unexecuted next seed.\""
+    }
+  ],
+  "trailTraining": {
+    "state": "CANDIDATE_ONLY",
+    "sourceConsentRequired": true,
+    "redactionRequired": true,
+    "provenanceRequired": true,
+    "independentCheckerRequired": true,
+    "autoFineTune": false
+  },
+  "activation": false,
+  "registration": false,
+  "grant": false,
+  "workersStarted": 0,
+  "modelsCalled": 0
+}

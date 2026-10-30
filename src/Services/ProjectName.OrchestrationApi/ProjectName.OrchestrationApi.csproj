@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework></PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Negotiate" />
+    <PackageReference Include="Scalar.AspNetCore" />
+    <PackageReference Include="ModelContextProtocol.AspNetCore" />
+    <PackageReference Include="Aspire.Npgsql" />
+    <PackageReference Include="Aspire.StackExchange.Redis" />
+    <ProjectReference Include="../../Governance/ProjectName.ControlPlane/ProjectName.ControlPlane.csproj" />
+    <ProjectReference Include="../../Governance/ProjectName.Governance/ProjectName.Governance.csproj" />
+    <ProjectReference Include="../../BuildingBlocks/ProjectName.Contracts/ProjectName.Contracts.csproj" />
+    <ProjectReference Include="../../Runtime/ProjectName.Runtime/ProjectName.Runtime.csproj" />
+  </ItemGroup>
+</Project>

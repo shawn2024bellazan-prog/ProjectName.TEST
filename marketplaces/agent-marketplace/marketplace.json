@@ -1,0 +1,423 @@
+{
+    "schema":  "projectname.marketplace/v1",
+    "name":  "agent-marketplace",
+    "state":  "DRAFT_UNREGISTERED",
+    "registration":  false,
+    "grant":  false,
+    "activation":  false,
+    "executionAllowed":  false,
+    "pattern":  "everything-as-agent",
+    "creator":  "agent-creator",
+    "agentTemplate":  "agent-creator/skills/create-agent/assets",
+    "count":  51,
+    "agents":  [
+                   {
+                       "id":  "projectname-repo",
+                       "name":  "ProjectName Agent",
+                       "group":  "local",
+                       "kind":  "local-repo",
+                       "mode":  "both",
+                       "path":  "agents/projectname-repo"
+                   },
+                   {
+                       "id":  "agent-creator-self",
+                       "name":  "Agent Creator Agent",
+                       "group":  "meta",
+                       "kind":  "skill",
+                       "mode":  "both",
+                       "path":  "agents/agent-creator-self"
+                   },
+                   {
+                       "id":  "host-authority-liaison",
+                       "name":  "Host Authority Liaison Agent",
+                       "group":  "meta",
+                       "kind":  "process",
+                       "mode":  "both",
+                       "path":  "agents/host-authority-liaison"
+                   },
+                   {
+                       "id":  "download-folder-clutter",
+                       "name":  "Download Folder Clutter Agent",
+                       "group":  "objects",
+                       "kind":  "object",
+                       "mode":  "both",
+                       "path":  "agents/download-folder-clutter"
+                   },
+                   {
+                       "id":  "messy-bed",
+                       "name":  "Messy Bed Agent",
+                       "group":  "objects",
+                       "kind":  "object",
+                       "mode":  "both",
+                       "path":  "agents/messy-bed"
+                   },
+                   {
+                       "id":  "tv",
+                       "name":  "TV Agent",
+                       "group":  "objects",
+                       "kind":  "object",
+                       "mode":  "both",
+                       "path":  "agents/tv"
+                   },
+                   {
+                       "id":  "claude-export-mining",
+                       "name":  "Claude Export Mining Agent",
+                       "group":  "processes",
+                       "kind":  "process",
+                       "mode":  "guide",
+                       "path":  "agents/claude-export-mining"
+                   },
+                   {
+                       "id":  "loop-schedule",
+                       "name":  "Loop Schedule Agent",
+                       "group":  "processes",
+                       "kind":  "process",
+                       "mode":  "both",
+                       "path":  "agents/loop-schedule"
+                   },
+                   {
+                       "id":  "trail-to-product",
+                       "name":  "Trail To Product Agent",
+                       "group":  "processes",
+                       "kind":  "process",
+                       "mode":  "both",
+                       "path":  "agents/trail-to-product"
+                   },
+                   {
+                       "id":  "a2a-protocol",
+                       "name":  "A2A Protocol Agent",
+                       "group":  "repos",
+                       "kind":  "repo",
+                       "mode":  "both",
+                       "path":  "agents/a2a-protocol"
+                   },
+                   {
+                       "id":  "agent-governance-toolkit",
+                       "name":  "Microsoft Agent Governance Toolkit Agent",
+                       "group":  "repos",
+                       "kind":  "repo",
+                       "mode":  "guide",
+                       "path":  "agents/agent-governance-toolkit"
+                   },
+                   {
+                       "id":  "agent-skills-spec",
+                       "name":  "Agent Skills Specification Agent",
+                       "group":  "repos",
+                       "kind":  "repo",
+                       "mode":  "both",
+                       "path":  "agents/agent-skills-spec"
+                   },
+                   {
+                       "id":  "ag-ui-protocol",
+                       "name":  "AG-UI Protocol Agent",
+                       "group":  "repos",
+                       "kind":  "repo",
+                       "mode":  "guide",
+                       "path":  "agents/ag-ui-protocol"
+                   },
+                   {
+                       "id":  "anthropic-skills",
+                       "name":  "Anthropic Skills Agent",
+                       "group":  "repos",
+                       "kind":  "repo",
+                       "mode":  "guide",
+                       "path":  "agents/anthropic-skills"
+                   },
+                   {
+                       "id":  "dotnet-aspire",
+                       "name":  "dotnet Aspire Agent",
+                       "group":  "repos",
+                       "kind":  "repo",
+                       "mode":  "both",
+                       "path":  "agents/dotnet-aspire"
+                   },
+                   {
+                       "id":  "dotnet-skills",
+                       "name":  "dotnet skills Agent",
+                       "group":  "repos",
+                       "kind":  "repo",
+                       "mode":  "both",
+                       "path":  "agents/dotnet-skills"
+                   },
+                   {
+                       "id":  "mcp-csharp-sdk",
+                       "name":  "MCP C# SDK Agent",
+                       "group":  "repos",
+                       "kind":  "repo",
+                       "mode":  "both",
+                       "path":  "agents/mcp-csharp-sdk"
+                   },
+                   {
+                       "id":  "microsoft-agent-framework",
+                       "name":  "Microsoft Agent Framework Agent",
+                       "group":  "repos",
+                       "kind":  "repo",
+                       "mode":  "both",
+                       "path":  "agents/microsoft-agent-framework"
+                   },
+                   {
+                       "id":  "ceo-checker-seat",
+                       "name":  "CEO Checker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/ceo-checker-seat"
+                   },
+                   {
+                       "id":  "ceo-maker-seat",
+                       "name":  "CEO Maker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/ceo-maker-seat"
+                   },
+                   {
+                       "id":  "ceo-planner-seat",
+                       "name":  "CEO Planner Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/ceo-planner-seat"
+                   },
+                   {
+                       "id":  "cfo-checker-seat",
+                       "name":  "CFO Checker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cfo-checker-seat"
+                   },
+                   {
+                       "id":  "cfo-maker-seat",
+                       "name":  "CFO Maker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cfo-maker-seat"
+                   },
+                   {
+                       "id":  "cfo-planner-seat",
+                       "name":  "CFO Planner Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cfo-planner-seat"
+                   },
+                   {
+                       "id":  "chro-checker-seat",
+                       "name":  "CHRO Checker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/chro-checker-seat"
+                   },
+                   {
+                       "id":  "chro-maker-seat",
+                       "name":  "CHRO Maker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/chro-maker-seat"
+                   },
+                   {
+                       "id":  "chro-planner-seat",
+                       "name":  "CHRO Planner Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/chro-planner-seat"
+                   },
+                   {
+                       "id":  "cio-checker-seat",
+                       "name":  "CIO Checker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cio-checker-seat"
+                   },
+                   {
+                       "id":  "cio-maker-seat",
+                       "name":  "CIO Maker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cio-maker-seat"
+                   },
+                   {
+                       "id":  "cio-planner-seat",
+                       "name":  "CIO Planner Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cio-planner-seat"
+                   },
+                   {
+                       "id":  "clo-checker-seat",
+                       "name":  "CLO Checker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/clo-checker-seat"
+                   },
+                   {
+                       "id":  "clo-maker-seat",
+                       "name":  "CLO Maker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/clo-maker-seat"
+                   },
+                   {
+                       "id":  "clo-planner-seat",
+                       "name":  "CLO Planner Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/clo-planner-seat"
+                   },
+                   {
+                       "id":  "cmo-checker-seat",
+                       "name":  "CMO Checker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cmo-checker-seat"
+                   },
+                   {
+                       "id":  "cmo-maker-seat",
+                       "name":  "CMO Maker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cmo-maker-seat"
+                   },
+                   {
+                       "id":  "cmo-planner-seat",
+                       "name":  "CMO Planner Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cmo-planner-seat"
+                   },
+                   {
+                       "id":  "coo-checker-seat",
+                       "name":  "COO Checker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/coo-checker-seat"
+                   },
+                   {
+                       "id":  "coo-maker-seat",
+                       "name":  "COO Maker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/coo-maker-seat"
+                   },
+                   {
+                       "id":  "coo-planner-seat",
+                       "name":  "COO Planner Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/coo-planner-seat"
+                   },
+                   {
+                       "id":  "cpo-checker-seat",
+                       "name":  "CPO Checker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cpo-checker-seat"
+                   },
+                   {
+                       "id":  "cpo-maker-seat",
+                       "name":  "CPO Maker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cpo-maker-seat"
+                   },
+                   {
+                       "id":  "cpo-planner-seat",
+                       "name":  "CPO Planner Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cpo-planner-seat"
+                   },
+                   {
+                       "id":  "cso-checker-seat",
+                       "name":  "CSO Checker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cso-checker-seat"
+                   },
+                   {
+                       "id":  "cso-maker-seat",
+                       "name":  "CSO Maker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cso-maker-seat"
+                   },
+                   {
+                       "id":  "cso-planner-seat",
+                       "name":  "CSO Planner Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cso-planner-seat"
+                   },
+                   {
+                       "id":  "cto-checker-seat",
+                       "name":  "CTO Checker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cto-checker-seat"
+                   },
+                   {
+                       "id":  "cto-maker-seat",
+                       "name":  "CTO Maker Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cto-maker-seat"
+                   },
+                   {
+                       "id":  "cto-planner-seat",
+                       "name":  "CTO Planner Seat",
+                       "group":  "seats",
+                       "kind":  "seat",
+                       "mode":  "guide",
+                       "path":  "agents/cto-planner-seat"
+                   },
+                   {
+                       "id":  "aspire-cli",
+                       "name":  "Aspire CLI Agent",
+                       "group":  "tools",
+                       "kind":  "tool",
+                       "mode":  "guide",
+                       "path":  "agents/aspire-cli"
+                   },
+                   {
+                       "id":  "desktop-commander",
+                       "name":  "Desktop Commander Agent",
+                       "group":  "tools",
+                       "kind":  "tool",
+                       "mode":  "guide",
+                       "path":  "agents/desktop-commander"
+                   },
+                   {
+                       "id":  "ollama-qwen3-4b",
+                       "name":  "Ollama qwen3:4b Agent",
+                       "group":  "tools",
+                       "kind":  "tool",
+                       "mode":  "guide",
+                       "path":  "agents/ollama-qwen3-4b"
+                   }
+               ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "projectname.company-agent/v1",
+  "id": "chro-planner-seat",
+  "name": "CHRO Plan Seat",
+  "state": "DRAFT_UNREGISTERED",
+  "company": "your-company",
+  "executiveRole": "CHRO",
+  "domain": "people",
+  "responsibility": "prepare the PLAN phase for people work under the executive's declared scope",
+  "phase": "PLAN",
+  "pmcro": [
+    "ORCHESTRATE",
+    "PLAN",
+    "MAKE",
+    "CHECK",
+    "REFLECT"
+  ],
+  "authority": {
+    "defaultAdmission": "DENY",
+    "registration": false,
+    "grant": false,
+    "activation": false,
+    "execution": false,
+    "tools": [],
+    "mcpGrants": []
+  },
+  "checker": {
+    "independentPrincipalRequired": true,
+    "evidenceDigestBindingRequired": true,
+    "verdict": "NOT_CLAIMED"
+  },
+  "a2a": {
+    "card": "agent-card.json",
+    "protocolVersion": "1.0",
+    "mounted": false
+  },
+  "earnedConstraint": "This draft can recommend only; implementation and approval require separately authorized humans and independent checks.",
+  "nextSeed": "@chro-planner-seat /pmcro:make \"Continue one owner-authorized people intent; return the minimum evidence-bound plan, one earned constraint, and one UNEXECUTED next seed. Do not claim Checker PASS or execute.\"",
+  "nextSeedExecuted": false
+}

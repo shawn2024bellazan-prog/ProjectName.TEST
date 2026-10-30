@@ -1,0 +1,27 @@
+{
+  "schema": "projectname.marketplace-index/v1",
+  "status": "development",
+  "entries": [
+    {
+      "path": "marketplaces/pmcro-core",
+      "state": "DRAFT_UNREGISTERED"
+    },
+    {
+      "path": "marketplaces/csuite-marketplace",
+      "state": "DRAFT_UNREGISTERED"
+    },
+    {
+      "path": "marketplaces/coding-marketplace",
+      "state": "PLANNED"
+    },
+    {
+      "path": "marketplaces/inspection-marketplace",
+      "state": "PLANNED"
+    },
+    {
+      "path": "marketplaces/agent-marketplace",
+      "state": "DRAFT_UNREGISTERED"
+    }
+  ],
+  "activated": []
+}

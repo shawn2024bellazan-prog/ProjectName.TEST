@@ -1,0 +1,38 @@
+{
+  "name": "CLO Plan Seat",
+  "description": "Draft CLO Plan Seat; recommendation only, with no tools or grants.",
+  "version": "0.1.0",
+  "supportedInterfaces": [
+    {
+      "url": "https://agents.invalid/your-company/clo-planner-seat/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "clo-planner-seat.inspect",
+      "name": "Plan seat review",
+      "description": "prepare the PLAN phase for legal work under the executive's declared scope",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied plan seat intent and return evidence-bound recommendations."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Chief Information Officer",
+  "description": "Draft Chief Information Officer; recommendation only, with no tools or grants.",
+  "version": "0.1.0",
+  "supportedInterfaces": [
+    {
+      "url": "https://agents.invalid/your-company/cio/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "cio.inspect",
+      "name": "Chief Information Officer review",
+      "description": "Guide information governance, data quality, and technology portfolio recommendations.",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied chief information officer intent and return evidence-bound recommendations."
+      ]
+    },
+    {
+      "id": "cio.inspect",
+      "name": "PMCR-O review",
+      "description": "Coordinate only a bounded, advisory PMCR-O workflow.",
+      "tags": [
+        "pmcro",
+        "recommendation-only"
+      ],
+      "examples": [
+        "Review a supplied pmcr-o intent and return evidence-bound recommendations."
+      ]
+    }
+  ]
+}
