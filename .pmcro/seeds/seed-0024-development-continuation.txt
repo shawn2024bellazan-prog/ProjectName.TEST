@@ -1,0 +1,9 @@
+Cycle: 0024
+RawUserIntent: continue
+DerivedScope: Integrate Cycle0023 25-assertion mock rotation replay into development gateway observability before any synthetic child launch; enforce missing, malformed, failed replay output HALT; read-only AppHost/Gateway/API source isolation.
+Authorization: Fresh user continue authorizes only bounded development files and tests. No independently authenticated issuer, Checker or activation grant.
+PriorNextSeedArchive: .pmcro/seeds/staged-nextseed-after-seed-0023.txt
+PriorNextSeedSha256: 1F50C2E4468A68CB83C8CE83CDBB641F5D5532BF4CE4C61C16633F0826ADDEB4
+ProductionAdmission: DENY
+WorkerStarts: 0
+ModelCalls: 0

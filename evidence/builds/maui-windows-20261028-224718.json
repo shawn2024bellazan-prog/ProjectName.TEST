@@ -1,0 +1,7 @@
+﻿{
+    "sdk":  "10.0.403",
+    "targetFramework":  "net10.0-windows10.0.19041.0",
+    "build":  "PASS",
+    "checkerPass":  false,
+    "timestampUtc":  "2026-10-29T03:47:23.9383514Z"
+}

@@ -1,0 +1,658 @@
+{
+    "schema":  "projectname.evidence/v1",
+    "kind":  "agent-marketplace-self-validation",
+    "utc":  "2026-10-29T18:12:30.8873929Z",
+    "agentCount":  50,
+    "failureCount":  0,
+    "result":  "SELF_VALIDATION_PASS",
+    "checkerPass":  false,
+    "productionActivationAllowed":  false,
+    "note":  "Self-validation is not an independent authenticated Checker PASS.",
+    "manifestSha256":  "c3927054eac38f038d7b5257bab71dd66b5d5a13b1263710142aa5086460673c",
+    "files":  [
+                  {
+                      "path":  "marketplaces/agent-marketplace/agent-creator/agents/agent-creator.agent.md",
+                      "sha256":  "45b2df20290d2f35c331f5a962235b8a0b1fe29a55eb9ac5ce68c4a51bd0e246"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agent-creator/skills/create-agent/assets/agent.md.template",
+                      "sha256":  "70bc6ad65de044f640fb2ae1070250bb227ecac7d69d29ec442097595888206e"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agent-creator/skills/create-agent/assets/agent-card.template.json",
+                      "sha256":  "d5fcb4abf12c943f36bdee0b6212d66a20d74534621324478b963812f29bbd2a"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agent-creator/skills/create-agent/assets/agent-spec.template.json",
+                      "sha256":  "bb1dcfd03dee20161caf0024e740154c02a747104eca433272fa22064b4ff0ec"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agent-creator/skills/create-agent/references/a2a-card.md",
+                      "sha256":  "3209816cec7fdc74b8573fb57a4524d6a8b08746dd0d30bbcf1438243077eb96"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agent-creator/skills/create-agent/references/everything-as-agent.md",
+                      "sha256":  "521165379ac2c03de00ce00e7c6d8e74f13dd590883947391b47aeb005acbbe6"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agent-creator/skills/create-agent/scripts/new-agent.ps1",
+                      "sha256":  "1e7edc940fdde8c415f510ed06b0d9c024d386626e92af02568d4523f649dc53"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agent-creator/skills/create-agent/scripts/validate-agents.ps1",
+                      "sha256":  "8423d6c30b0c12768264230beaf1b6ae05c4261ad482af67d8cf323ebf23dd98"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agent-creator/skills/create-agent/SKILL.md",
+                      "sha256":  "3b754b2198c7ef9b8f3de869f8e7f742b7d76ca2da2e037504fbb02b76c54c65"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/a2a-protocol/a2a-protocol.agent.md",
+                      "sha256":  "d93306d377eae66d17008d6d544d590a78aef1e91b9b35a984894ddcf1745a04"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/a2a-protocol/agent.spec.json",
+                      "sha256":  "e2cd4025d7d91d5eb7de57950add6123fe6d10d9d7e92b59563901f67461f8c5"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/a2a-protocol/agent-card.json",
+                      "sha256":  "733be3d891f7de6e4b82a0a4cc21b5af142e4fd7acf70c7cbc2087af50ab2154"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/agent-creator-self/agent.spec.json",
+                      "sha256":  "54229f6572ecfa3e717a69a1d085b44dc826258ff64ad840f6c35fbe53327a72"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/agent-creator-self/agent-card.json",
+                      "sha256":  "b031e52dc5e4f02b888f37e5dd6d9d52286e491a8d8bda9e63715f7f0f7b540d"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/agent-creator-self/agent-creator-self.agent.md",
+                      "sha256":  "099b3707b37806138033be4be1a8a5e7dab728d0cd418946eba8e29d5da3a106"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/agent-governance-toolkit/agent.spec.json",
+                      "sha256":  "e234f4e98ebf0e5e7171fe1f409ff52451051b540a0dc4680724e55bea233ed5"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/agent-governance-toolkit/agent-card.json",
+                      "sha256":  "fc1b5af89e2c98fe70b19ee7ff05770b8be42228baafa1a16c2126086b50af06"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/agent-governance-toolkit/agent-governance-toolkit.agent.md",
+                      "sha256":  "de4501121a8780d10c0054dbdc8c5e447fb8771aa3938fd2cefcc837aaa7ed68"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/agent-skills-spec/agent.spec.json",
+                      "sha256":  "8aaae9722b78c0e1aee714db54ca49dc36f2e813f258c7ba70cce2a59444e6b6"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/agent-skills-spec/agent-card.json",
+                      "sha256":  "b003dd0986fbf1081db2b08c17374ba57517814f793a80032bbef48d3c69cc89"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/agent-skills-spec/agent-skills-spec.agent.md",
+                      "sha256":  "dfaf1f3758430334b1179ca868c9b915306c48e6db033ddf0247e4994002accd"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ag-ui-protocol/agent.spec.json",
+                      "sha256":  "9b6f03c2162d1a1f0fe5f37515b2b9550f76e87c5c6ef970946b10cdfceb8ce2"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ag-ui-protocol/agent-card.json",
+                      "sha256":  "0e38943bd3685b5d4473490a1e9bd9e3618b5f2e4a120029b3388d2d93d74eb4"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ag-ui-protocol/ag-ui-protocol.agent.md",
+                      "sha256":  "b879e7b7ffae5b6a8cda90c856d111af2110be957ff6e1cd54cd594ca24e20c2"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/anthropic-skills/agent.spec.json",
+                      "sha256":  "fcae72443964f3c81c9edd98b0a9d45eef26d2b8ee3a8debbd20a3558f5c408f"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/anthropic-skills/agent-card.json",
+                      "sha256":  "65be7476b815c656a0ca9d3f7daf1f26482c19ded233f792300d23ca9a931ed8"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/anthropic-skills/anthropic-skills.agent.md",
+                      "sha256":  "121d641e73bd472a97ff7b25be59c315f246d6a07139a04bc925549e74a0e41c"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/aspire-cli/agent.spec.json",
+                      "sha256":  "fd1aab134df3e0dd4f1b52a54b7b76f17b4fa8b3c1be49c07260166b49024fe2"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/aspire-cli/agent-card.json",
+                      "sha256":  "300bb0cb048fcf8dd51a2538866381ec46c71849b8942769e25e35e061b8bfb2"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/aspire-cli/aspire-cli.agent.md",
+                      "sha256":  "c0d0044dcb93b2c3df983c00fe144edad174dc9bdb092fa95ac9391058c3acd8"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ceo-checker-seat/agent.spec.json",
+                      "sha256":  "ad02cf9a4814960c213deff0d1b5ebd766f7a74c12e41682b0b4d95b015030c2"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ceo-checker-seat/agent-card.json",
+                      "sha256":  "6ef0355adc9591fe9d80ac2558c3b7eca0a457028a98616f92d136157c2790b4"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ceo-checker-seat/ceo-checker-seat.agent.md",
+                      "sha256":  "796b819145379619633d3e385ecf5767b87cb7f2e1e55108ebb3eab8575573df"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ceo-maker-seat/agent.spec.json",
+                      "sha256":  "9c8004ce9e369773f41ced3e55cdd55ba7e4911fdb1e25f0f60029f2dc3ec9e9"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ceo-maker-seat/agent-card.json",
+                      "sha256":  "c68b14f4a40fd67a56ed0869f71dedb4b971445d115f2f60060b93b2a05b455d"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ceo-maker-seat/ceo-maker-seat.agent.md",
+                      "sha256":  "d801b9378666f89036e4eef2f363e9c14ebbf9dfbe0e95d335f16a734e45f042"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ceo-planner-seat/agent.spec.json",
+                      "sha256":  "9831b419a4aae4898be8eef2d6f08b7e04cfc8841729341d498d2dacc5230ffa"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ceo-planner-seat/agent-card.json",
+                      "sha256":  "4852a7d2b66be76c9f37884baaffc266b4e0972266d20e8a079638fae874d439"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ceo-planner-seat/ceo-planner-seat.agent.md",
+                      "sha256":  "b325fe034f8ef7f904086526651798ff9376bbc0bd5767e85679629459b09994"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cfo-checker-seat/agent.spec.json",
+                      "sha256":  "0b6bd9f14decfa168bb5554c95216c452dfd06edac4be076b3fb961323320b9a"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cfo-checker-seat/agent-card.json",
+                      "sha256":  "c9428f6a37d380d2a5707f7fad383a571a533849129cdfb8cd37e6af8558a5e2"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cfo-checker-seat/cfo-checker-seat.agent.md",
+                      "sha256":  "7a08228ff47b4286ca1d7f286bc73e425f7ec66a63103f6602b3e693c4ea566a"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cfo-maker-seat/agent.spec.json",
+                      "sha256":  "3f9fc941849520dd6bf6be912f9aab194b968287cd94937ac7834424e469722b"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cfo-maker-seat/agent-card.json",
+                      "sha256":  "105355c1e72400977d39d8ec3b76502e6e49db072ea1eff56c58af2b22d4edd6"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cfo-maker-seat/cfo-maker-seat.agent.md",
+                      "sha256":  "5f870eea597e7f41e7a67e1c7bde22a5ffc96da0ece997f03419079d1c6a1bbf"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cfo-planner-seat/agent.spec.json",
+                      "sha256":  "821ac488edc9c1638387fb5902f5127aace8d7738890012f65e466aec2d22389"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cfo-planner-seat/agent-card.json",
+                      "sha256":  "f6ad3dfa0780b89b8022fe8664b1ddceb1ebab51b91e1bb23d0974688d5aae40"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cfo-planner-seat/cfo-planner-seat.agent.md",
+                      "sha256":  "eb394f1c340b8d7d871802a4740c901fbb262d6faeeab71356a220d9f60aa18a"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/chro-checker-seat/agent.spec.json",
+                      "sha256":  "1ea1c636b7fcdf0a88381b25f3b21480829291f7fb3ce83511190a76eb313fad"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/chro-checker-seat/agent-card.json",
+                      "sha256":  "a2906692c323db6b8016d93fd9fb623be4f7fad112232e41bf1643344f77d05b"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/chro-checker-seat/chro-checker-seat.agent.md",
+                      "sha256":  "fbd73261e5008ba43e4a647e2de3219df7fc57da1d2675ca6cece413a806241d"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/chro-maker-seat/agent.spec.json",
+                      "sha256":  "2cb8a0ef22e9a97b576e0dc7257c36ce830eb081ea44b98b19cd418a9ed441bf"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/chro-maker-seat/agent-card.json",
+                      "sha256":  "0c8993024b9dc6c908f0f01c4e0220910bc6fe20d706503cd0376d3fd99ad383"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/chro-maker-seat/chro-maker-seat.agent.md",
+                      "sha256":  "70bda6c5d09c8c52915b1412bf5a90ce7f5cd6482a62b4289a6e88c8baf0c978"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/chro-planner-seat/agent.spec.json",
+                      "sha256":  "d441ef935f95291ad6072e2e9815d7d4e0cb2373d4051621b87808b6e1b5b8f9"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/chro-planner-seat/agent-card.json",
+                      "sha256":  "78d3f4945b4e5abb1eadfbf67d2031d2ba61e3498613ead48264c749b91b5cf7"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/chro-planner-seat/chro-planner-seat.agent.md",
+                      "sha256":  "9bfbd6c8af605f8862b15f133e9bd79f8aad2b0f01e16244f1e5948458416d20"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cio-checker-seat/agent.spec.json",
+                      "sha256":  "8cd8071dbefe8000894e37ce3858eb48cd2229984911526e7adfa553f3e386d6"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cio-checker-seat/agent-card.json",
+                      "sha256":  "563818133328ec96cf90ae4615b4ad205c856c1fc1abd505746434feab94e996"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cio-checker-seat/cio-checker-seat.agent.md",
+                      "sha256":  "ae47ab6c58aea29de80927f53b7b0d45c1277dc7e69d1c937c221b1400b148cb"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cio-maker-seat/agent.spec.json",
+                      "sha256":  "419584079fde0e3096b34b58529e517c1c5a9c9f5d48b40bdc62975c873b51e4"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cio-maker-seat/agent-card.json",
+                      "sha256":  "93bb6abbf785a88df739acbfe4aa12a1ef0567e7e3964a175a69b50192d28eee"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cio-maker-seat/cio-maker-seat.agent.md",
+                      "sha256":  "3cc099c66989a545fc3d0190f2757585173339ee1113345ab31a143b257e6722"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cio-planner-seat/agent.spec.json",
+                      "sha256":  "9afb5979e78632bb13c3a673b63f0b2bec194e866dd3e6b200abca39d0152772"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cio-planner-seat/agent-card.json",
+                      "sha256":  "73417b8573acae0a229b8fde13c93bb4e54687672b92b2196c7af512a8ddb0a5"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cio-planner-seat/cio-planner-seat.agent.md",
+                      "sha256":  "7b66eb8ac6878b214aa821c785f92b887ab1d9769d850cdaa832615d0e29e096"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/claude-export-mining/agent.spec.json",
+                      "sha256":  "dd3a19c3ddc75f22510da3832aafac77193a5e672cd11f3f283e9e7ee81934dd"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/claude-export-mining/agent-card.json",
+                      "sha256":  "4f2721e0fe9da8dde65a9001ba5425c5af001a85e820150ce0c29f7f38c273c5"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/claude-export-mining/claude-export-mining.agent.md",
+                      "sha256":  "49ae46e162ad9d8d1316c5e35d3fd2f800bcc9d46693635c95ade945a866ba1e"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/clo-checker-seat/agent.spec.json",
+                      "sha256":  "b60ef969608dbc3c0646b58495106d6718d4ae9dc94d2b6d643892e29c598688"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/clo-checker-seat/agent-card.json",
+                      "sha256":  "400bfc2d4008b83999aadbc0db9ce8388f7a2bc1d9f6d01e3c8ca96c1cd150d7"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/clo-checker-seat/clo-checker-seat.agent.md",
+                      "sha256":  "c7349cf5e18471eb3e75113f455899f1f0c06a3d8223459a8368de17487d6f44"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/clo-maker-seat/agent.spec.json",
+                      "sha256":  "057e6455d9322eb010dafb9aecee167d57cd8ffde4f515560ea112c9fe5dccf5"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/clo-maker-seat/agent-card.json",
+                      "sha256":  "91e4160fe22e79f92d06290a2fb90c8ab272678c6030ac54f968578d2fa6af10"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/clo-maker-seat/clo-maker-seat.agent.md",
+                      "sha256":  "fee1047ea345949c34049932187d073ef607be0fbdcc03ad0f422c4ac74fa01b"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/clo-planner-seat/agent.spec.json",
+                      "sha256":  "20d089c75cae2b2f8b4537e7a71c8b00206725dc12b4f8d2ef06d72ac341c620"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/clo-planner-seat/agent-card.json",
+                      "sha256":  "4201556c07d0c000e9ad872c85369d9d0cc89812599125d6575dc3a18033c778"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/clo-planner-seat/clo-planner-seat.agent.md",
+                      "sha256":  "71eb966ff3267fedfae2c3a5d397a612a6318805ff073f21e81960c1d7521379"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cmo-checker-seat/agent.spec.json",
+                      "sha256":  "ea9d27b6aa6c838b6dd9fc7ded1cf0f5784b68e349ae37a3acc01a9e39711e3c"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cmo-checker-seat/agent-card.json",
+                      "sha256":  "ae33c56c5f9ea557c5b4df08ab5490b83c4cd0c6357c4c2390b3745837886499"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cmo-checker-seat/cmo-checker-seat.agent.md",
+                      "sha256":  "a88f79173aedc88cec4d99fc8a0c0fa3043ea18bce2236ba19e04636f963ec8b"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cmo-maker-seat/agent.spec.json",
+                      "sha256":  "393550f342c36e1ff5c49dc6ff4961e348ba8443cc68ef25c42ff0f50ca0bcf9"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cmo-maker-seat/agent-card.json",
+                      "sha256":  "0d0cc2409f06ab14f680d454ab0bf98c10ab6adeafd46444b1d32286dba5fd80"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cmo-maker-seat/cmo-maker-seat.agent.md",
+                      "sha256":  "121761cd99163ecc5d19b2f72391c13fa3426949d98c79b7c6b9cae46eeb70fc"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cmo-planner-seat/agent.spec.json",
+                      "sha256":  "35682f07e11b8c76858d8baf4697fca6bd4101b81e8d737fd6e40284b42b1946"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cmo-planner-seat/agent-card.json",
+                      "sha256":  "7c157eecaa64463d16eb0dce633a7ce028e1d7814a4a9fced35f192005adcfe5"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cmo-planner-seat/cmo-planner-seat.agent.md",
+                      "sha256":  "0371d4e8c444c62f1aee769637f5b897028946e386328458ef56ab54a30e2f9e"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/coo-checker-seat/agent.spec.json",
+                      "sha256":  "f35b38c8c226245f68a927b2cbf482dee3a3e59c6aec8a09b8ee15aafb76d5cc"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/coo-checker-seat/agent-card.json",
+                      "sha256":  "6b638b1b6a401db33a34aa61e39da2e9183387c14ac205466df615ca7e68da43"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/coo-checker-seat/coo-checker-seat.agent.md",
+                      "sha256":  "9595f79217d48c9d0f696a559add83dc6d80b5f059140bb9acefd0ed4bce4bf6"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/coo-maker-seat/agent.spec.json",
+                      "sha256":  "b0fafcd028be062bb23b1838f9febb090158cdcc5eee512e9b874228736847e9"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/coo-maker-seat/agent-card.json",
+                      "sha256":  "b1d3b7cb88ffd60c8f66fe8a2274e2df1c0dcceb8e9d8076015785ecf974f867"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/coo-maker-seat/coo-maker-seat.agent.md",
+                      "sha256":  "2be418b6a929b6a689d468eb182edb97d53697b523d7b188b7a3333c15a60a0d"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/coo-planner-seat/agent.spec.json",
+                      "sha256":  "7961e48b8a3037b8cd18dcb9f8357e5cb75a712520aebb1bb080bd83d94921b5"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/coo-planner-seat/agent-card.json",
+                      "sha256":  "9dd0d269d0fc17fe1cb4af0946b65e6926f339f72ff45bbc56d24ea90af3075b"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/coo-planner-seat/coo-planner-seat.agent.md",
+                      "sha256":  "100d993824611433a74f51bd1c9bf8d9d7735b19c8dd69150bbd7876533cd973"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cpo-checker-seat/agent.spec.json",
+                      "sha256":  "1e4e51e1b85bcb00df582d5ab684929e3f8c377275bfdefc19404dd9d5a60eb5"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cpo-checker-seat/agent-card.json",
+                      "sha256":  "43b29ec11b380e87278da8b10fb9878afaf960a92ba4a8b1fa2db7c8b27475a4"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cpo-checker-seat/cpo-checker-seat.agent.md",
+                      "sha256":  "b17dbbe2745c1ebeae874eb040e708d808bf6149a43a78cd7c5b90da8ab636f6"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cpo-maker-seat/agent.spec.json",
+                      "sha256":  "05c076db947bc745827403dda3712f1979eb917e483ea213b6e2a5192774d419"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cpo-maker-seat/agent-card.json",
+                      "sha256":  "e1a70eecac4bbdcbbe72892bb2f7adf1aa7bf3939a7f3c9daf261403ce1a2cbf"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cpo-maker-seat/cpo-maker-seat.agent.md",
+                      "sha256":  "e6c7e81130cc2b346f9b748a018248ac15fdbd926a6f4a7476e94a92a389cc5a"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cpo-planner-seat/agent.spec.json",
+                      "sha256":  "b627059aa06a4e5ee60af216a0a87a69cc3d96bbb11f6354d485627a527e6238"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cpo-planner-seat/agent-card.json",
+                      "sha256":  "b57f9e173a032f0ea1b2ec66eb878a58ca5943ebc3dee92e83b45f259706daa4"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cpo-planner-seat/cpo-planner-seat.agent.md",
+                      "sha256":  "6ffdd9d9ee9bd6dab5fc3dc8ff0efd393491e473e0850c6065574962d56673ba"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cso-checker-seat/agent.spec.json",
+                      "sha256":  "8ee085f54558ea2b39d607c9ab564fcc93d45764f1bbfd9b99dc6d925e39c830"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cso-checker-seat/agent-card.json",
+                      "sha256":  "c1e7b392815f04e4bd1a611a22e91335fa89a12cfad8d8d0b564e7c890c7c7da"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cso-checker-seat/cso-checker-seat.agent.md",
+                      "sha256":  "1db1ac03ace10cd0f1ae0091e8a8b813aa6869d03c08f2df12644437ab0b88ea"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cso-maker-seat/agent.spec.json",
+                      "sha256":  "58df3caf62d4875d12c426b2ed93dfb0c7c48138e0fa18c49c31274dd7a31126"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cso-maker-seat/agent-card.json",
+                      "sha256":  "178f9d7efffe3a100082688251e1d158f0659c5e2aab8a11a0b5cd9de5f90188"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cso-maker-seat/cso-maker-seat.agent.md",
+                      "sha256":  "7f158e60ac073cae4fca210c3dd63c3ce49817da012eea304e72a49099594b6f"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cso-planner-seat/agent.spec.json",
+                      "sha256":  "98a66764abd56593592a49f04769ec86565d0ee25db91fc99450710617b3041a"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cso-planner-seat/agent-card.json",
+                      "sha256":  "ba768083ab5343e9a39daacf857a0ec46227c63bdfc76ddb2579d51c5ce0794a"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cso-planner-seat/cso-planner-seat.agent.md",
+                      "sha256":  "81f6d5113e112edad39afbc61798dbbc41d8fde9477cd71b850c2e2444618963"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cto-checker-seat/agent.spec.json",
+                      "sha256":  "ef94bff97e5f103f5f02fa3a023ef98339c3c43123ff2dc009c21883882ffef0"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cto-checker-seat/agent-card.json",
+                      "sha256":  "40df4a0fc7cb832f18560209266608e7d3eda0bceead7be6872656dd725ef644"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cto-checker-seat/cto-checker-seat.agent.md",
+                      "sha256":  "78f70b1765c5fd65db32f0366b99c6a4223d58e9aa0a1fea9a27f6c5bfb34f2c"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cto-maker-seat/agent.spec.json",
+                      "sha256":  "90b7ece0ad8e6d8f29f5437582c5f9d0ae534a349c873f695cd88d97366d4a2f"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cto-maker-seat/agent-card.json",
+                      "sha256":  "0f02c56f04009ba87203400049d41c49034048f8b5bf0aee2e516b0c759a6127"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cto-maker-seat/cto-maker-seat.agent.md",
+                      "sha256":  "ee7684c23544efbd1176b65dd789c17cd452ea8334da614b7fc31d460c5e24a2"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cto-planner-seat/agent.spec.json",
+                      "sha256":  "11834503c7687cf92f91210c3bd9bf20ed034a9a6408b4919fee7d24be06d7ef"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cto-planner-seat/agent-card.json",
+                      "sha256":  "2c0767a97fed80e5d4d019a590c0d8d1e331bfc961152e4a5c9b0ea30bd7d823"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/cto-planner-seat/cto-planner-seat.agent.md",
+                      "sha256":  "3ef02bed3c6cddea8f91f391a7d1600e539f14673a2b864f227e7c1f4996c248"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/desktop-commander/agent.spec.json",
+                      "sha256":  "789a30f628b14b51f527b2539f13fb51981b83498273a2b9928b7c58ec230734"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/desktop-commander/agent-card.json",
+                      "sha256":  "663b1a4c147aac46ee764c30aa244b603748a64d831192b4da0610eb90ce7987"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/desktop-commander/desktop-commander.agent.md",
+                      "sha256":  "3059524cb89b562166cfee7e3204e478b9b4366e6148348ae1e22070a6049680"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/dotnet-aspire/agent.spec.json",
+                      "sha256":  "662913fa9e4a0b393128730ce64a141c0e02343b77897488bc99324cd58161d3"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/dotnet-aspire/agent-card.json",
+                      "sha256":  "b5aa1af5fc71b718c1b42768acd50691a494c251fb35ca599c3533255382eba9"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/dotnet-aspire/dotnet-aspire.agent.md",
+                      "sha256":  "13ae2cac04a5b38555380b68bb9e69cba40f02203f9db8a76ba1b4b7a270d844"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/dotnet-skills/agent.spec.json",
+                      "sha256":  "093662395e929758c571e91cf58e5ad9b075abbeda9d21995963d9beb36e86db"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/dotnet-skills/agent-card.json",
+                      "sha256":  "3d85464a42ec8e6e6bb61251b6fbdadb5a58a20690a6526cbf8fdd8c7dcbc77d"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/dotnet-skills/dotnet-skills.agent.md",
+                      "sha256":  "5f8178ddbea6ce8f88ba1d7c5e1215068e7712ce06584ea7855181d3f53237bf"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/download-folder-clutter/agent.spec.json",
+                      "sha256":  "7baf17fb6c7b1e10624bc8359dbe217053d01098bf4a2e76a9bbcaefb178eb55"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/download-folder-clutter/agent-card.json",
+                      "sha256":  "1b741ddf4f448a7a644b79c68e56f50da3ebc4b4837c1957cf6658323f75ac3e"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/download-folder-clutter/download-folder-clutter.agent.md",
+                      "sha256":  "7c9308a3f2d84b4aa4f21e1f0029d4f109a1b105ce44180f0c3435acfd7ba177"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/loop-schedule/agent.spec.json",
+                      "sha256":  "8eadda97bf4d87b53d944c2efa4bac8fc72f2ea23177edf7a52a3048eaa8d24a"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/loop-schedule/agent-card.json",
+                      "sha256":  "1ba0c472ff72adc8ecf743cebf5b52f965f33b13f8be60159b124e1ab7153054"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/loop-schedule/loop-schedule.agent.md",
+                      "sha256":  "e670be6e9dba530a7bc2f85ab7a9762451b7439795ba3fa554c253fcebb8f73b"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/mcp-csharp-sdk/agent.spec.json",
+                      "sha256":  "d1a0e03c4201998937d5c1f911b40833d73151e9bd828dc2622857f13f7d5508"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/mcp-csharp-sdk/agent-card.json",
+                      "sha256":  "91c42e8ed64d4a022ffdc0c971b385b1fa30abb84f5f2796500754b5b4561cc1"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/mcp-csharp-sdk/mcp-csharp-sdk.agent.md",
+                      "sha256":  "5043bb2c20426ba2148c304e305105aaaf6abddedd7f19c070012a7f79285df0"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/messy-bed/agent.spec.json",
+                      "sha256":  "49b12107ad44e9b213296586d98ecc51e60854ab728ab37600bd01d1f43b62ef"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/messy-bed/agent-card.json",
+                      "sha256":  "5a13aa8dfe9612ed18a03ea0102106a0cc0875b83037922114df33e847dd1dfb"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/messy-bed/messy-bed.agent.md",
+                      "sha256":  "b526265be589602dc9f80886fd581b8c03926b679bdbe458100f918ad9e0ed46"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/microsoft-agent-framework/agent.spec.json",
+                      "sha256":  "9e7f1bf3e11527f107d4d86ffecd4abb92c86bd74fa7b7188bc957bf86f2a038"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/microsoft-agent-framework/agent-card.json",
+                      "sha256":  "61ce85dc6d8b0c5acf5a5e263046cb79d2d532b140f133f07bb4905aa0e6f5c3"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/microsoft-agent-framework/microsoft-agent-framework.agent.md",
+                      "sha256":  "929233ea31c344e793e0b50165e3db66d9f2b8104723aa2303a1b5e335ea581f"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ollama-qwen3-4b/agent.spec.json",
+                      "sha256":  "6df2020ee84d64c942da7165a296a41cbd2005ae909e21c2fb62b59589f7399b"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ollama-qwen3-4b/agent-card.json",
+                      "sha256":  "10fc045bc3af4ca399a7df71d2ef2f732cf94e5800acdd77b8013883c037acaf"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/ollama-qwen3-4b/ollama-qwen3-4b.agent.md",
+                      "sha256":  "e0ca30288b0f2dd4e559857dd3aeb9bfa68a234018a415398809db9673283ddd"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/projectname-repo/agent.spec.json",
+                      "sha256":  "6f3113558c46d50662fed23ac4379a52617c6f842af307b4a245a564046cb2a7"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/projectname-repo/agent-card.json",
+                      "sha256":  "41ce65d089e1f48ab65f7080b78d04616ecbd174d0f9823c98b5cc4f660b51af"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/projectname-repo/projectname-repo.agent.md",
+                      "sha256":  "3bf7cdeed617c72b2f0fa2b8afc64fe6b6ee7ca8f3ad53af77de6102efbd72b4"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/trail-to-product/agent.spec.json",
+                      "sha256":  "e7cb7e2cc83aa09557c8d82107b925f2b24fa9723730d88ce342400643467ced"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/trail-to-product/agent-card.json",
+                      "sha256":  "cb0107206525a804b075cc11458224685cb5b21d2c895da3acc098069f4e15f1"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/trail-to-product/trail-to-product.agent.md",
+                      "sha256":  "5aa7d523788128e2250ff6bb668814743e16224e7e265e99eb67c51decaaa05e"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/tv/agent.spec.json",
+                      "sha256":  "b413eb52ccd0fbcf109ba8d417b310e14f3c1c6b95140487a2ff1268246ec204"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/tv/agent-card.json",
+                      "sha256":  "dbd54d17efafd81476ccab7a5fd1836fbc14535834723d01ca8056f67764a207"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/agents/tv/tv.agent.md",
+                      "sha256":  "80cb0bddc53507fad169e59dd23b6aa4f63db281d2cdc37df30d47e665a40805"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/marketplace.json",
+                      "sha256":  "98d7e3c2b13f5e32b40c6d1c20bfdb7cfd98dd12b0c7c0f0d6d265c389b2c0b5"
+                  },
+                  {
+                      "path":  "marketplaces/agent-marketplace/subjects.json",
+                      "sha256":  "c30ecb43bad06ba027110f8527b6fdbf28e8fa7c613f35f3b187baef76c56c12"
+                  }
+              ]
+}

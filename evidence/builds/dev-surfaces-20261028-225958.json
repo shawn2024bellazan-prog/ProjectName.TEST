@@ -1,0 +1,10 @@
+﻿{
+    "development":  "NOT_RUN",
+    "production":  "NOT_RUN",
+    "mcp":  "NOT_RUN",
+    "cyclesDenied":  true,
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "failure":  "MCP tools/list HTTP 400, expected 200; {\"error\":{\"code\":-32020,\"message\":\"Missing required Mcp-Method header.\"},\"id\":1,\"jsonrpc\":\"2.0\"}",
+    "timestampUtc":  "2026-10-29T04:00:00.4078310Z"
+}

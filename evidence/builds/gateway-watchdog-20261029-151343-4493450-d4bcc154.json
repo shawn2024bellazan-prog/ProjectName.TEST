@@ -1,0 +1,51 @@
+{
+  "schema": "projectname.gateway-watchdog/v1",
+  "mode": "Gateway",
+  "scope": "ISOLATED_DEVELOPMENT_ONLY",
+  "maxIterations": 3,
+  "childTimeoutSeconds": 45,
+  "result": "PASS",
+  "events": null,
+  "runs": [
+    {
+      "iteration": 1,
+      "childProcessId": 51800,
+      "exitCodeSigned": 0,
+      "exitCodeHex": "0x00000000",
+      "status": "PASS",
+      "elapsedMs": 3258,
+      "stdoutFile": "evidence\\builds\\gateway-watchdog-20261029-151343-4493450-d4bcc154-run1.stdout.txt",
+      "stderrFile": "evidence\\builds\\gateway-watchdog-20261029-151343-4493450-d4bcc154-run1.stderr.txt",
+      "portReleased": true,
+      "errorClass": null
+    },
+    {
+      "iteration": 2,
+      "childProcessId": 28900,
+      "exitCodeSigned": 0,
+      "exitCodeHex": "0x00000000",
+      "status": "PASS",
+      "elapsedMs": 3218,
+      "stdoutFile": "evidence\\builds\\gateway-watchdog-20261029-151343-4493450-d4bcc154-run2.stdout.txt",
+      "stderrFile": "evidence\\builds\\gateway-watchdog-20261029-151343-4493450-d4bcc154-run2.stderr.txt",
+      "portReleased": true,
+      "errorClass": null
+    },
+    {
+      "iteration": 3,
+      "childProcessId": 37752,
+      "exitCodeSigned": 0,
+      "exitCodeHex": "0x00000000",
+      "status": "PASS",
+      "elapsedMs": 3302,
+      "stdoutFile": "evidence\\builds\\gateway-watchdog-20261029-151343-4493450-d4bcc154-run3.stdout.txt",
+      "stderrFile": "evidence\\builds\\gateway-watchdog-20261029-151343-4493450-d4bcc154-run3.stderr.txt",
+      "portReleased": true,
+      "errorClass": null
+    }
+  ],
+  "childProcessMemoryCaptured": false,
+  "checkerPass": false,
+  "productionActivationAllowed": false,
+  "timestampUtc": "2026-10-29T20:13:58.8820020Z"
+}

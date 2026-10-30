@@ -1,0 +1,51 @@
+{
+  "schema": "projectname.gateway-observability/v1",
+  "scope": "ISOLATED_DEVELOPMENT_ONLY",
+  "syntheticByDefault": true,
+  "liveGatewayExplicitlyOptedIn": false,
+  "liveGatewayIterations": 0,
+  "maxGatewayIterations": 3,
+  "status": "PASS",
+  "sourceHashes": {
+    "watch-agent-gateway.ps1": "E58D0F4D869C906F305BE0648BB5DADB07B93E8709E8C7A87C0927B4A9F8A971",
+    "correlate-gateway-exits.ps1": "E4D0FA4F0B7C004F75234E924907714BE07037E7EADB65500BD73FF8AC871923",
+    "validate-gateway-correlation.ps1": "3E6C2D495E0E91BFAA8818BB5CC9A2F6E4869F11165CB0E81FFB94F72A8536CC",
+    "test-gateway-port-guard.ps1": "BA607E010F120A0DFF40F44DA467594D78F9041D5605DBA0DCE5B98AB7727A5B"
+  },
+  "watchdogReceiptNames": [
+    "gateway-watchdog-20261029-174242-3331823-c53c78dc.json",
+    "gateway-watchdog-20261029-174244-0696619-9c464596.json",
+    "gateway-watchdog-20261029-174245-2328906-d61f752b.json",
+    "gateway-watchdog-20261029-174246-2211017-e5f738ac.json",
+    "gateway-watchdog-20261029-174247-1715942-c576215c.json",
+    "gateway-watchdog-20261029-174249-9141756-a4a16d64.json"
+  ],
+  "watchdogReceiptSha256": [
+    "A4FA7C28C57058926ECB2556732FEA2A38CDFBD7047A83B28FC85D12375EDB26",
+    "69AD6C33911BF4731BF8F74C7CE696BC63F43FCD36A8FA8C5B26DF5C144BDA09",
+    "03CF54E75823455389D25B57029B5796AE6C2E7CC2B3395DA964EF8343768C3B",
+    "2C7B48E7AB1A89E90DAE0F741F3BA7E3C9C1B78CD3B6DC015DA9B9B13737A4BF",
+    "6639D71D17967B999E27A3204275F5D9E00C1F102255B25BCEC7F5AB90748C2C",
+    "D13918F76EF9C64EE95E9C7F9D5B75A239BBA0CA656270E7FEEFF00C0813CC00"
+  ],
+  "correlationReceiptName": "gateway-correlation-20261029-174251-7663586-933b907d.json",
+  "correlationReceiptSha256": "4C979DBB4D73918542838503A10DFA3549AB97FA456AC4B99D5A4BB021709189",
+  "assertions": [
+    "FixturePass=PASS",
+    "FixtureFail=LOOP",
+    "FixtureAbruptExit=LOOP",
+    "FixtureSyntheticAccessViolation=LOOP",
+    "FixtureTimeout=LOOP",
+    "occupiedPort=REFUSED_BEFORE_CHILD",
+    "negative:pathTraversal=REJECTED",
+    "negative:duplicateReceipts=REJECTED",
+    "negative:malformedSchema=REJECTED"
+  ],
+  "rootCauseProven": false,
+  "checkerPass": false,
+  "productionActivationAllowed": false,
+  "fullAspireStarted": false,
+  "workerStarts": 0,
+  "modelCalls": 0,
+  "timestampUtc": "2026-10-29T22:42:52.2358438Z"
+}

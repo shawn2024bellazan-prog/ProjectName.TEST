@@ -1,0 +1,93 @@
+PMCR-O Cycle 0019 — Development gateway observability evidence
+Date=2026-10-29
+CanonicalRoot=G:\ProjectName
+OriginalUserIntent=Continue
+PhaseSequence=ORCHESTRATE -> PLAN -> MAKE -> CHECK -> REFLECT
+ReportingRoles=single-assistant narrated roles; no independently authenticated agent admission
+EngineeringVerdict=LOOP (local checks PASS, native crash cause and Git provenance unresolved)
+ProductionGovernanceVerdict=HALT
+IndependentAuthenticatedCheckerPass=false
+ProductionAdmission=DENY
+ProductionActivationAllowed=false
+WorkerStarts=0
+FullAspireAppHostStarts=0
+ModelCalls=0
+KeysProvisioned=0
+GrantsIssued=0
+HistoricalWorkspaceTrailEdits=0
+
+ORCHESTRATE
+- Read G:\ProjectName\AGENTS.md and frozen staged Cycle0018 seed.
+- Archived prior NextSeed byte-for-byte:
+  .pmcro/seeds/staged-nextseed-after-seed-0018.txt
+  SHA256=07AFE465085E5493B456E3A4FD4F810F1DFE74C3A20450823290FB9C4D0173C2
+- Recorded raw user continuation in .pmcro/seeds/seed-0019-development-continuation.txt.
+
+MAKE
+- New eng/verify-gateway-observability.ps1 synthetic-only by default,
+  with opt-in isolated Gateway 1..3 iterations and FileMode.CreateNew
+  parent evidence bound to source and child receipt hashes.
+- eng/correlate-gateway-exits.ps1 now provides no-write malformed schema
+  rejection in-memory using same schema assertion as file reads.
+- tests/fixtures/validate-gateway-correlation.ps1 parameterized to
+  require bounded 0..3 live runs, synthetic grouping, port guard,
+  SHA-256 binding and false authority flags.
+- docs/GATEWAY-OBSERVABILITY-0019-2026-10-29.md records provenance
+  recovery plan; no Git commits/remotes or promotions.
+
+CHECK
+- Synthetic-only target PASS, 0 live:
+  evidence/builds/gateway-observability-20261029-174242-0057689-929f1480.json
+  SHA256=D6FAAFE28853C5F184C71DE19B2F983DB1C684BCBFB92EF67574F69E38FC93B5
+- Explicit opt-in target PASS, 1/1 isolated gateway:
+  evidence/builds/gateway-observability-20261029-174259-8309543-81447772.json
+  SHA256=DFF3923A69E8E668930693FBCE4CBCE102C677C0C46248DAC909870B8DB792B4
+- FixturePass 2/2; FixtureFail, AbruptExit, SyntheticAccessViolation
+  and Timeout all correctly classified as LOOP; occupied loopback port
+  refused before child start. Negative path traversal, duplicate input,
+  malformed schema rejected. Post-run exclusive port-bind succeeds.
+- Frozen Cycle0018 ten-row matrix revalidated PASS for 3 live runs.
+- Locked SDK10.0.403 Release restore/build PASS, 0 warnings/errors;
+  102/102 governance tests PASS:
+  evidence/builds/core-20261029-174320.json
+- Standalone DevUI OpenAPI/Scalar/MCP and Production DENY PASS:
+  evidence/builds/dev-surfaces-20261029-174338.json
+- Disposable PostgreSQL18.3 test role-bound 102/102 PASS:
+  evidence/builds/checkpoint-cycle-0019-20261029.trx
+  public.pmcro_checkpoint_candidate_v1 RLS=true FORCE=true.
+  Temporary loopback-only tmpfs container pmcro-candidate-pg-0019
+  stopped and removed, no persistent volumes touched.
+- Authority preflight HALT:
+  evidence/builds/authority-preflight-20261029-174447.json
+  Windows identity observed but issuer, independent signed Checker,
+  effective grants, revocation, protected KMS and private ACL unverified.
+- Historical native CoreCLR Event1000 0xc0000005 unchanged, unknown
+  root cause; synthetic exit 0xc0000005 is NOT native causal evidence.
+- Git branch main UNBORN; all source untracked, git remote name list
+  empty. No Git provenance recovered or committed.
+- No full Aspire startup, real key operations, grants, worker admission,
+  models, production A2A/AG-UI mount, checkpoints migration or GC.
+
+SOURCE SHA256
+eng/verify-gateway-observability.ps1=7B63A3B71FE689A04C5F3CE67A281CE1C34870B0CE1B0B888C6A4AE2F9D8FDC7
+eng/correlate-gateway-exits.ps1=E4D0FA4F0B7C004F75234E924907714BE07037E7EADB65500BD73FF8AC871923
+tests/fixtures/validate-gateway-correlation.ps1=3E6C2D495E0E91BFAA8818BB5CC9A2F6E4869F11165CB0E81FFB94F72A8536CC
+docs/GATEWAY-OBSERVABILITY-0019-2026-10-29.md=47F5AD75E9D27157CC0CBDB08B6B14774AFB7FBB97AF1E7892AA6894C1B64CB3
+.pmcro/seeds/staged-nextseed-after-seed-0018.txt=07AFE465085E5493B456E3A4FD4F810F1DFE74C3A20450823290FB9C4D0173C2
+.pmcro/seeds/seed-0019-development-continuation.txt=31816B90F89A435DE426169F3B3555867E12822C25CF88AD3B693E79C39DF06C
+.pmcro/reflections/reflection-0019-gateway-observability.md=FDC641E5FF9723F3775CA37963ECBD3E580EFD1BE4EA9DD2DC6055604BDE8180
+.pmcro/next-seed.txt=B215BE40432C89BF21474DE0EAA7BDDD6EB653873BCB314467D48210A2981B0E
+src/Services/ProjectName.AgentGateway/Program.cs=ED25FD1B30273859F5D65F235118ED880F09B49489DB1F6E12261C2966CCF169
+src/Hosting/ProjectName.AppHost/AppHost.cs=4D8F9C8247D6E9BEDC490272769D6AD5AEF0AA368A4ACBB2692C9CA873747BF1
+evidence/builds/sha256-20261029-174612.csv=87AAACBA38AF93B32834DED1B80EF0AC959B754DE2A83CAD806F902E30B4BD60
+SourceSnapshotFileCount=703
+
+CHECKER AUTHORITY
+Local maker self-validation only, not signed independent Checker PASS.
+No verified issuer/grants/revocation/KMS/ACL and no production authority.
+REFLECT
+Exactly one new NextSeed in .pmcro/next-seed.txt:
+nextSeedExecuted=false
+nextSeedAuthorized=false
+productionActivationAllowed=false
+checkerPass=false

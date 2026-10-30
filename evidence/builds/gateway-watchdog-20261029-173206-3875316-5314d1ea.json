@@ -1,0 +1,58 @@
+{
+  "schema": "projectname.gateway-watchdog/v1",
+  "mode": "Gateway",
+  "scope": "ISOLATED_DEVELOPMENT_ONLY",
+  "maxIterations": 3,
+  "childTimeoutSeconds": 45,
+  "result": "PASS",
+  "failureCode": null,
+  "events": null,
+  "runs": [
+    {
+      "iteration": 1,
+      "childProcessId": 8240,
+      "exitCodeSigned": 0,
+      "exitCodeHex": "0x00000000",
+      "status": "PASS",
+      "startedUtc": "2026-10-29T22:32:06.4116228Z",
+      "finishedUtc": "2026-10-29T22:32:09.7420157Z",
+      "elapsedMs": 3325,
+      "stdoutFile": "evidence\\builds\\gateway-watchdog-20261029-173206-3875316-5314d1ea-run1.stdout.txt",
+      "stderrFile": "evidence\\builds\\gateway-watchdog-20261029-173206-3875316-5314d1ea-run1.stderr.txt",
+      "portReleased": true,
+      "errorClass": null
+    },
+    {
+      "iteration": 2,
+      "childProcessId": 4360,
+      "exitCodeSigned": 0,
+      "exitCodeHex": "0x00000000",
+      "status": "PASS",
+      "startedUtc": "2026-10-29T22:32:10.2656753Z",
+      "finishedUtc": "2026-10-29T22:32:13.4971500Z",
+      "elapsedMs": 3231,
+      "stdoutFile": "evidence\\builds\\gateway-watchdog-20261029-173206-3875316-5314d1ea-run2.stdout.txt",
+      "stderrFile": "evidence\\builds\\gateway-watchdog-20261029-173206-3875316-5314d1ea-run2.stderr.txt",
+      "portReleased": true,
+      "errorClass": null
+    },
+    {
+      "iteration": 3,
+      "childProcessId": 22280,
+      "exitCodeSigned": 0,
+      "exitCodeHex": "0x00000000",
+      "status": "PASS",
+      "startedUtc": "2026-10-29T22:32:13.9993381Z",
+      "finishedUtc": "2026-10-29T22:32:17.2263360Z",
+      "elapsedMs": 3226,
+      "stdoutFile": "evidence\\builds\\gateway-watchdog-20261029-173206-3875316-5314d1ea-run3.stdout.txt",
+      "stderrFile": "evidence\\builds\\gateway-watchdog-20261029-173206-3875316-5314d1ea-run3.stderr.txt",
+      "portReleased": true,
+      "errorClass": null
+    }
+  ],
+  "childProcessMemoryCaptured": false,
+  "checkerPass": false,
+  "productionActivationAllowed": false,
+  "timestampUtc": "2026-10-29T22:32:17.7507398Z"
+}

@@ -1,0 +1,71 @@
+{
+  "receiptId": "mcp-authorization-development-20261029-02",
+  "root": "G:\\ProjectName",
+  "timestampUtc": "2026-10-29",
+  "phase": "CHECK_CANDIDATE",
+  "status": "DEVELOPMENT_CANDIDATE_VERIFIED_NO_HOST_APPROVAL",
+  "scope": "offline MCP invocation gate in ProjectName.ControlPlane; no endpoint or AppHost registration",
+  "sourceSha256": {
+    "src/Governance/ProjectName.ControlPlane/McpToolAuthorizationGate.cs": "371c572d373fdf9e6490beda601737e584849bd6e2138679eb24fabe1597f2a2",
+    "tests/ProjectName.Governance.Tests/McpToolAuthorizationGateTests.cs": "058684f80d5e2800bc7f4532ec9974521eab9c5feae139c89005405b3912a1d3",
+    "docs/MCP-TOOL-AUTHORIZATION-DEVELOPMENT-2026-10-29.md": "baf98e287dd688577145e65b80458b34e90fb3b622b851dff31a6befdc5dbb92"
+  },
+  "checks": [
+    {
+      "command": "dotnet test G:\\ProjectName\\ProjectName.slnx -c Release --no-restore --nologo",
+      "outcome": "PASS",
+      "passed": 66,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "command": "dotnet build G:\\ProjectName\\ProjectName.slnx -c Release --no-restore --nologo",
+      "outcome": "PASS",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "command": "certutil -hashfile [the three listed files] SHA256",
+      "outcome": "PASS",
+      "sourceDigestsMatched": true
+    }
+  ],
+  "checksInclude": [
+    "missing host grant denied",
+    "missing or forged identity denied",
+    "wildcard and traversal denied",
+    "grant tool binding denied on mismatch",
+    "expired grant denied",
+    "revoked grant denied",
+    "host error fails closed",
+    "missing registration denied",
+    "missing independent checker denied",
+    "missing human approval denied on side effects",
+    "caller cannot downgrade host side-effect classification",
+    "human arguments and identity mismatch denied"
+  ],
+  "externalChecker": {
+    "authenticated": false,
+    "verdict": null
+  },
+  "authority": {
+    "approvedMcpAllowlist": false,
+    "verifiedHostGrant": false,
+    "verifiedHumanApproval": false,
+    "productionWorkerAdmission": "DENY_UNCHANGED_NOT_ACTIVATED",
+    "developmentMcpServersRegistered": false,
+    "aspireTopologyChanged": false,
+    "mcpToolsExecuted": 0
+  },
+  "limitations": [
+    "Host authentication and signing provider for MCP approval not yet implemented.",
+    "No signed approved tool allowlist or authenticated Checker receipt exists.",
+    "Positive unit cases use explicit test-only fake providers, not live authorization.",
+    "No live Aspire/resource health verification was part of this bounded cycle."
+  ],
+  "nextSeed": {
+    "intent": "Implement and independently validate a trusted Windows approval issuer/revocation store and exact signed MCP allowlist within the approved charter; require separate Checker evidence before registration of any MCP candidate.",
+    "executed": false,
+    "authorized": false
+  }
+}

@@ -1,0 +1,92 @@
+PMCR-O Development Cycle 0017 — Gateway Watchdog Self-Check
+Date=2026-10-29
+CanonicalRoot=G:\ProjectName
+RawUserIntent=coninue
+EngineeringVerdict=LOOP (watchdog implemented and checked; prior runtime root cause unresolved)
+ProductionGovernanceVerdict=HALT
+AuthenticatedIndependentCheckerPass=false
+ProductionWorkerAdmission=DENY
+ProductionActivationAllowed=false
+FullAspireAppHostStarts=0
+WorkerStarts=0
+ModelCalls=0
+NewProductionGrants=0
+NewProductionKeys=0
+
+ORCHESTRATE:
+- G:\ProjectName\AGENTS.md read.
+- Prior staged seed copied intact to
+  .pmcro/seeds/staged-nextseed-after-seed-0016.txt
+  SHA256=2AD4754E6F8DF06295297D96ACB9D6D00C7709D2C80EDAF616AACC60637AC1E7
+- Raw intent saved .pmcro/seeds/seed-0017-development-continuation.txt.
+- Historical G:\workspace Trails and Seed 0033 HALT/0034 UNEXECUTED untouched.
+
+MAKE:
+- Added eng/watch-agent-gateway.ps1 (bounded parent-owned
+  subprocess watchdog and FileMode.CreateNew receipt).
+- Added tests/fixtures/watchdog-child.ps1 (synthetic process modes).
+- Added tests/fixtures/inspect-coreclr-unavailable.ps1 (explicit mocked denial).
+- Added docs/GATEWAY-WATCHDOG-0017-2026-10-29.md.
+- No application, AgentGateway, AppHost, native A2A/AG-UI or PostgreSQL
+  candidate code changes. No tool/model/worker admission.
+
+CHECK — watchdog fixtures, each separately saved in evidence/builds/:
+- FixturePass: 2 successful iterations (exit 0), PASS
+  gateway-watchdog-20261029-151313-5182805-731e4e9e.json
+- FixtureFail: exit 23 recorded and stopped after 1 run, LOOP
+  gateway-watchdog-20261029-151321-6056899-3d4d9f17.json
+- FixtureAbruptExit: synthetic -1073740791/0xC0000409 recorded, LOOP
+  gateway-watchdog-20261029-151322-3269995-4d091183.json
+- FixtureTimeout: 2-second timeout, child PID stopped, LOOP
+  gateway-watchdog-20261029-151323-0306968-15ec13f0.json
+- Standalone real gateway smoke: 3/3 PASS in Dev+Prod with native
+  agent protocol 403 and admission DENIED, port released each run:
+  gateway-watchdog-20261029-151343-4493450-d4bcc154.json
+- Prior historical .NET CoreCLR native 0xc0000005 event not repeated;
+  a synthetic child 0xC0000409 is NOT evidence of same root cause.
+- Redacted event-inspector historical match 2:
+  coreclr-events-20261029-151429-6185131-df830153.json
+- Later event-inspector empty match 0:
+  coreclr-events-20261029-151430-0497201-985a7cd7.json
+- Invalid 48-hour input rejected; mocked event-log error rejected without
+  fabricated successful authority receipt.
+- Latest 15:10+ event-inspector matched 0:
+  coreclr-events-20261029-151624-2624930-d1de5901.json
+- Locked SDK 10.0.403 .NET 10 Release restore/build PASSED
+  0 warnings / 0 errors; governance 102/102 PASSED:
+  evidence/builds/core-20261029-151500.json
+- DevUI, Scalar, development MCP, simulated workflow denial,
+  Production API denial: PASS
+  evidence/builds/dev-surfaces-20261029-151523.json
+- Explicit disposable PostgreSQL 18.3 forced-RLS/CAS/revocation/
+  termination test: 102/102 PASS, 0 failures, 0 skipped:
+  evidence/builds/checkpoint-cycle-0017-20261029.trx
+- public.pmcro_checkpoint_candidate_v1 has RLS=TRUE and FORCE=TRUE.
+- Named tmpfs container pmcro-candidate-pg-0017 loopback 127.0.0.1:54562
+  stopped and auto-removed. No production volumes touched.
+- Read-only host authority preflight HALT:
+  evidence/builds/authority-preflight-20261029-151618.json
+  issuer=false, signed Checker=false, effective grant=false,
+  revocation=false, KMS config=false, protected ACL=false.
+- No currently listening process on isolated test ports 58439/58440.
+- Authorized separate-host failover fixture absent; test NOT EXECUTED.
+
+SOURCE SHA-256:
+eng/watch-agent-gateway.ps1=024B551BE97771D263F5FF30B1A917FDC066C72BA2BF48BAB254D91D5494C99C
+tests/fixtures/watchdog-child.ps1=7B88A215F52B7944139401B69AFDF4212D8403C944553E7C2184BCBA5683197C
+tests/fixtures/inspect-coreclr-unavailable.ps1=D8F59F86DD7057BC220A44EB3AAC6E99076A7E663D2CA304C27832CE72659F95
+docs/GATEWAY-WATCHDOG-0017-2026-10-29.md=428071DFD29341C88FC78E2A77C412F923062BCE880E7E9C0FB57AFFE8F6FCEE
+.pmcro/reflections/reflection-0017-gateway-watchdog.md=143CBDABDA8F74041127CBB355E1D31767DB6895DF005B52BB8CF1E596D4C6A5
+.pmcro/next-seed.txt=9F0D40E067D07C79E06E4A2073BD32F3FADFD717027F00954931DD819D2115D7
+src/Services/ProjectName.AgentGateway/Program.cs=ED25FD1B30273859F5D65F235118ED880F09B49489DB1F6E12261C2966CCF169
+src/Hosting/ProjectName.AppHost/AppHost.cs=4D8F9C8247D6E9BEDC490272769D6AD5AEF0AA368A4ACBB2692C9CA873747BF1
+evidence/builds/sha256-20261029-151741.csv=8F7240C6FB04D358E439AAF426621CB5D2CC39E96FD2867C842B010ECE9BBA3B
+SnapshotFiles=691
+
+CHECKER_BOUNDARY:
+All checks above are local Maker/development self-check.
+No authenticated independent Checker route was verified or invoked.
+No claimed signed Checker PASS, production activation, promotion or publication.
+Git HEAD remains unborn/untracked; hash snapshot is not Git provenance.
+REFLECT:
+Exactly one NextSeed remains UNEXECUTED and UNAUTHORIZED.

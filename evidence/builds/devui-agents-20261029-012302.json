@@ -1,0 +1,19 @@
+﻿{
+    "timestampUtc":  "2026-10-29T06:23:02.7462097Z",
+    "verdict":  "HALT",
+    "mode":  "SIMULATION_ONLY",
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "modelCalls":  0,
+    "entities":  [
+                     "pmcro-orchestrator",
+                     "pmcro-planner",
+                     "pmcro-maker",
+                     "pmcro-checker",
+                     "pmcro-reflector"
+                 ],
+    "allFive":  true,
+    "catalogDenied":  true,
+    "error":  "The remote server returned an error: (400) Bad Request.",
+    "errorDetail":  "{\"error\":{\"message\":\"No \u0027agent.name\u0027 or \u0027metadata[\\\"entity_id\\\"]\u0027 specified in the request.\",\"type\":\"invalid_request_error\",\"code\":\"missing_required_parameter\",\"param\":null}}"
+}

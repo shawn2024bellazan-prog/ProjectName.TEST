@@ -1,0 +1,40 @@
+Seed 0014 — bounded engineering evidence receipt
+Date: 2026-10-29
+Root: G:\ProjectName
+Result: LOOP (development gateway smoke failure and Aspire stopped); production HALT.
+Authority: issuer=false; signedChecker=false; effectiveGrant=false; revocation=false; protectedKms=false; protectedAcl=false. WindowsIdentityObserved=true is not an issuer assertion.
+Policy: production worker admission DENY; checkerPass=false; productionActivationAllowed=false.
+
+MAKE (development-only):
+- PostgreSQL candidate: enforce exact tenant database principal and row_security_active for all 4 API operations; return PrincipalDenied/UnauthorizedAccessException on mismatch or disabled RLS.
+- Integration fixture: ephemeral PostgreSQL 18.3 with two non-superuser/non-BYPASSRLS logins, forced RLS and role-scoped policy. Existing persistent Aspire volumes not mounted.
+- Regression: even when fixture RLS is disabled, candidate denies both write and read; RLS restored in test finally block.
+- Added docs/CHECKPOINT-RLS-SEED-0014-2026-10-29.md with separate-host partition, fencing and failover test protocol NOT EXECUTED.
+- Smoke scripts amended to return nonzero on failure, gateway health has 5-second client request timeout and checks test process exit. No runtime AppHost/service topology changed.
+
+CHECK:
+- SDK: .NET 10.0.403.
+- ProjectName.slnx locked restore: PASS (eng/verify-core.ps1).
+- Release build: PASS; warnings=0; errors=0 (eng/verify-core.ps1).
+- Release governance tests: 102/102 PASS, 0 failed, 0 skipped.
+- Explicit PostgreSQL integration: PASS using 127.0.0.1:51103 and database pmcro_checkpoint_candidate_tests; TRX evidence/builds/checkpoint-rls-final-20261029.trx.
+- Role query: pmcro_tenant_a|superuser false|BYPASSRLS false; pmcro_tenant_b|superuser false|BYPASSRLS false; table RLS true/FORCE true; policy USING and WITH CHECK tenant_id=current_user.
+- Direct SQL under tenant A counted 0 rows with tenant_id=tenant B; tenant B counted 1 own row.
+- Terminated actual PostgreSQL backend AFTER update BEFORE commit: older revision visible on reconnect and later valid CAS accepted. Not physical host crash or multi-host failover.
+- Disposable container pmcro-candidate-pg-20261029-1418 stopped and auto-removed (docker ps -a filter returned empty). No real data deleted.
+- Core receipt: evidence/builds/core-20261029-142321.json PASS.
+- Orchestration API/Scalar/development MCP/simulation/production route denial smoke: evidence/builds/dev-surfaces-20261029-142354.json PASS.
+- Gateway smoke: evidence/builds/gateway-20261029-142358.json HALT (Development PASS; Production NOT_RUN). Child Production gateway fatal CLR internal error 0x80131506 in System.Text.Json while replying /healthz. See evidence/builds/gateway-20261029-142358.stderr.txt. A bounded rerun exited 1 without PASS receipt; no PASS claimed. Prior Seed 0013 pass is historical, not fresh proof.
+- Aspire read-only live verification: evidence/builds/aspire-dev-20261029-142351.json HALT because no AppHost running. Full Aspire start intentionally skipped to honor no worker-process starts. Existing Aspire topology builds, but live resource health/MCP discovery NOT VERIFIED this cycle.
+- Read-only authority: evidence/builds/authority-preflight-20261029-142143.json HALT; no signed independent Checker route.
+- Signed independent Checker: NOT INVOKED, PASS=false.
+
+Changed-file SHA-256:
+src/BuildingBlocks/ProjectName.Persistence/PostgresTransactionalCheckpointCandidate.cs = 7167DB6E7EDD8EE27E04EB950E923C72FEC182868F99EB4D8AB55210257550BA
+tests/ProjectName.Governance.Tests/PostgresTransactionalCheckpointCandidateTests.cs = BA57B0D0FA9D7DCC5307FB66C6AC73BB7DE0245CFDE069C8E923C33065DCC749
+eng/smoke-agent-gateway.ps1 = 5C85BC71EBE839D4410B6902E552D030FA1D6432FCEE0654A8C2DFC61044B7E3
+eng/smoke-dev-surfaces.ps1 = 88B69B1E761EE1DA1E2A4BFAD58A125F36DF14AD2B090FD1FD32C8EBD18F0213
+docs/CHECKPOINT-RLS-SEED-0014-2026-10-29.md = DA08855D4010690F15574888226A50A820EFCB38EBF7C37117864F4B87F47E5F
+
+Limits:
+No real host-issued grant or signature, no protected KMS key provider, no directory ACL proof, no native EncryptedMafSessionStore mount, no A2A/AG-UI/OpenAI route, no model call, no worker start, no publication, no production activation. Historical G:\workspace evidence/Seed 0033/Seed 0034 unchanged.

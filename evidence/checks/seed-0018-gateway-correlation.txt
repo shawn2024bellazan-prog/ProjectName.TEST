@@ -1,0 +1,99 @@
+PMCR-O Cycle 0018 — Development gateway correlation evidence
+Date=2026-10-29
+CanonicalRoot=G:\ProjectName
+OriginalUserIntent=Continue.
+EngineeringVerdict=LOOP (matrix/checks PASS, historical crash cause unresolved)
+ProductionGovernanceVerdict=HALT
+IndependentAuthenticatedCheckerPass=false
+ProductionAdmission=DENY
+ProductionActivationAllowed=false
+WorkerStarts=0
+FullAspireAppHostStarts=0
+ModelCalls=0
+KeysProvisioned=0
+GrantsIssued=0
+
+ORCHESTRATE:
+- Read AGENTS.md and Cycle 0017 NextSeed.
+- Archived prior seed unchanged:
+  .pmcro/seeds/staged-nextseed-after-seed-0017.txt
+  SHA256=9F0D40E067D07C79E06E4A2073BD32F3FADFD717027F00954931DD819D2115D7
+- New raw user intent .pmcro/seeds/seed-0018-development-continuation.txt.
+- No historical G:\workspace Trails, Seed 0033 HALT or Seed 0034 UNEXECUTED modified.
+
+MAKE:
+- Extended eng/watch-agent-gateway.ps1: per-child start/end UTC,
+  synthetic 0xC0000005 fixture and fail-closed exclusive bind port guard.
+- Extended tests/fixtures/watchdog-child.ps1.
+- Created tests/fixtures/test-gateway-port-guard.ps1.
+- Created eng/correlate-gateway-exits.ps1: accepts 1–10 named receipts;
+  restricts paths, validates schemas, size, SHA-256 and DENY flags;
+  never claims process-identity-bound root cause from timestamps.
+- Created tests/fixtures/validate-gateway-correlation.ps1.
+- Added docs/GATEWAY-CORRELATION-0018-2026-10-29.md.
+- No changes to AppHost, AgentGateway, persistence or runtime source.
+
+CHECK — preserved initial failure:
+- First occupied-port fixture failed to detect reserved port using old
+  Get-NetTCPConnection -ErrorAction SilentlyContinue; child launched,
+  timed out. Evidence/builds/
+  gateway-watchdog-20261029-173004-0535554-1c4e0eca.json.
+- Diagnosed guard insufficiency; controlled double-bind probe denied.
+- Replaced check with exclusive localhost bind/release, fail-closed.
+- Retested occupied port: HALT before child start, fixture PASS,
+  evidence/builds/gateway-watchdog-20261029-173539-5093413-0ccb0a06.json.
+
+CHECK — current results:
+- Synthetic 0xC0000005 fixture (NOT a real native fault) captured
+  negative exit -1073741819 and one LOOP:
+  evidence/builds/gateway-watchdog-20261029-173135-9583061-da7a888b.json.
+- Actual isolated gateway denial: 3/3 child runs PASS, exit 0,
+  exclusive loopback port available after each:
+  evidence/builds/gateway-watchdog-20261029-173206-3875316-5314d1ea.json.
+- Redacted event-correlation matrix, 10 rows, input SHA-256-bound,
+  no process-identity binding or proven root cause:
+  evidence/builds/gateway-correlation-20261029-173604-7288625-4021d93c.json.
+- Stored matrix validator PASS; malicious path traversal rejected.
+- Historical Event 1000 native coreclr.dll 0xc0000005 preserved in
+  prior evidence; simulated exit 0xc0000005 is NOT the same.
+- Redacted 17:25+ CoreCLR event query found 0 matching new events:
+  evidence/builds/coreclr-events-20261029-173517-1755679-6650d7d0.json.
+  No claim of absence of other crash types.
+- Locked .NET SDK 10.0.403 Release restore/build PASS 0 warnings/errors,
+  governance tests 102/102 PASS:
+  evidence/builds/core-20261029-173332.json.
+- Standalone DevUI, Scalar, MCP and Production denial PASS:
+  evidence/builds/dev-surfaces-20261029-173404.json.
+- Explicit disposable PostgreSQL 18.3 tests PASS 102/102, 0 skipped:
+  evidence/builds/checkpoint-cycle-0018-20261029.trx.
+- public.pmcro_checkpoint_candidate_v1 RLS=true and FORCE=true.
+- Dedicated temporary Docker pmcro-candidate-pg-0018 (loopback port
+  50573, tmpfs) stopped and removed, no persistent volumes altered.
+- Read-only authority preflight HALT:
+  evidence/builds/authority-preflight-20261029-173510.json.
+  Issuer=false, independent signed Checker=false, grants=false,
+  revocation=false, protected KMS=false, private directory ACL=false.
+- Direct exclusive bind verified test port 58440 free at final check.
+- No authorized separate-host fenced failover fixture; NOT EXECUTED.
+- Git HEAD remains unborn/untracked; hashes are not signed Git provenance.
+
+SOURCE SHA-256:
+eng/watch-agent-gateway.ps1=E58D0F4D869C906F305BE0648BB5DADB07B93E8709E8C7A87C0927B4A9F8A971
+eng/correlate-gateway-exits.ps1=CA613B230D9AB2D872F1A886E2832FD431B0EEC04F496F83E27926FFA6A268C3
+tests/fixtures/watchdog-child.ps1=1073F08511E3B1B0372A813C188A4D36175E03B09AC023FB81AB684F04B6FCB9
+tests/fixtures/test-gateway-port-guard.ps1=BA607E010F120A0DFF40F44DA467594D78F9041D5605DBA0DCE5B98AB7727A5B
+tests/fixtures/validate-gateway-correlation.ps1=0D2C170154B62D06484EF67FC511478BD3899CB3B0A7C8F1837982D26E34FBE4
+docs/GATEWAY-CORRELATION-0018-2026-10-29.md=25A23EA9D4B8514E06DFF1B4C414D26BB3A2F0E7DA7C5B07A6765C078CFB40CD
+.pmcro/reflections/reflection-0018-gateway-correlation.md=E5A3CF954B6AC9A04EBE5F490E619771D53848230C59ED39C65A43DD1B3E31D5
+.pmcro/next-seed.txt=07AFE465085E5493B456E3A4FD4F810F1DFE74C3A20450823290FB9C4D0173C2
+src/Services/ProjectName.AgentGateway/Program.cs=ED25FD1B30273859F5D65F235118ED880F09B49489DB1F6E12261C2966CCF169
+src/Hosting/ProjectName.AppHost/AppHost.cs=4D8F9C8247D6E9BEDC490272769D6AD5AEF0AA368A4ACBB2692C9CA873747BF1
+evidence/builds/sha256-20261029-173659.csv=32437F1BF4B14EE6AABB81ADF71A6322A9E282A4CACCFBFABC86308763AD9DB4
+SourceSnapshotFileCount=698
+
+CHECKER_BOUNDARY:
+This is local development self-check, NOT host-authenticated
+independent Checker PASS or promotion permission.
+Production worker admission remains DENY.
+REFLECT:
+Exactly one unexecuted, unauthorized NextSeed is staged.

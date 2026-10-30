@@ -1,0 +1,2 @@
+AGENT_GATEWAY_SMOKE_PASS
+RECEIPT: evidence\builds\gateway-20261029-173210.json

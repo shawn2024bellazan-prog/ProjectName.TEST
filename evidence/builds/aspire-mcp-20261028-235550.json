@@ -1,0 +1,11 @@
+﻿{
+    "start":  "PASS",
+    "devui":  "PASS",
+    "mcpList":  "PASS",
+    "stopped":  "PASS",
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "gateway":  "PASS",
+    "discoveredTool":  "orchestration-api/get_admission_status",
+    "timestampUtc":  "2026-10-29T04:55:58.3332107Z"
+}

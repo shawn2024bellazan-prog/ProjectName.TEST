@@ -1,0 +1,60 @@
+{
+  "receiptId": "mcp-windows-signature-preflight-20261029-03",
+  "root": "G:\\ProjectName",
+  "timestampUtc": "2026-10-29",
+  "phase": "CHECK_CANDIDATE",
+  "candidate": "PinnedWindowsApprovalSignatureVerifier",
+  "status": "CANDIDATE_BUILT_TESTED_NO_EFFECTIVE_APPROVAL",
+  "implementation": {
+    "targetFramework": "net10.0",
+    "algorithm": "ECDSA P-256 / SHA-256",
+    "trustAnchor": "EXTERNALLY_CONFIGURED_ONLY",
+    "configuredCertificate": false,
+    "installedPrivateKey": false,
+    "issuedGrants": 0,
+    "registeredMcpServices": 0
+  },
+  "sourceSha256": {
+    "src/Governance/ProjectName.ControlPlane/PinnedWindowsApprovalSignatureVerifier.cs": "d8363997f1f541ef155d73a2df7979d3cd0626bbac857a0a9e52b2a4d4b5582a",
+    "tests/ProjectName.Governance.Tests/PinnedWindowsApprovalSignatureVerifierTests.cs": "a136528a5978e59dc5486ad73ce3fd3f43e4826b8a1138bafa4cf89888c55015",
+    "docs/WINDOWS-MCP-SIGNATURE-VERIFIER-DEVELOPMENT-2026-10-29.md": "df26e87ae7e8a759d4f1562260c63d231dffcd243116e91228d3f38b62af5970"
+  },
+  "checks": {
+    "testCommand": "dotnet test G:\\ProjectName\\ProjectName.slnx -c Release --no-restore --nologo",
+    "testResult": "PASS",
+    "passed": 74,
+    "failed": 0,
+    "skipped": 0,
+    "buildCommand": "dotnet build G:\\ProjectName\\ProjectName.slnx -c Release --no-restore --nologo",
+    "buildResult": "PASS",
+    "warnings": 0,
+    "errors": 0,
+    "hashCommand": "certutil -hashfile [listed source files] SHA256",
+    "negativeTests": [
+      "no trust anchor",
+      "wrong certificate pin",
+      "tampered signed payload",
+      "malformed signature",
+      "expired cert",
+      "missing digitalSignature usage",
+      "cross-purpose replay"
+    ],
+    "positiveTest": "test-only ephemeral certificate; no live grant"
+  },
+  "governance": {
+    "productionWorkers": "DENY_UNCHANGED",
+    "existingAspireTopology": "UNCHANGED",
+    "hostSignerConfigured": false,
+    "toolAllowlistApproved": false,
+    "revocationStoreConfigured": false,
+    "humanApprovalRuntimeConfigured": false,
+    "independentCheckerPass": false,
+    "credentialProvisioning": false,
+    "liveMcpApprovalVerified": false
+  },
+  "nextSeed": {
+    "intent": "Obtain host-authorized approver certificate and exact signed MCP allowlist, implement independently authenticated revocation/freshness and single-use human invocation approval store, then submit for separate Checker review before any MCP service registration.",
+    "state": "UNEXECUTED",
+    "authorized": false
+  }
+}

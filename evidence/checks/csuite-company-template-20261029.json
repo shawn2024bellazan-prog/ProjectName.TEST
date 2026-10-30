@@ -1,0 +1,37 @@
+{
+  "schema": "projectname.evidence/v1",
+  "kind": "csuite-company-template-self-validation",
+  "validatedOn": "2026-10-29",
+  "result": "SELF_VALIDATION_PASS",
+  "checkerPass": false,
+  "productionActivationAllowed": false,
+  "summary": {
+    "generatedAgents": 40,
+    "generatedSkills": 19,
+    "companyValidatorFailures": 0,
+    "unitTests": 6,
+    "unitTestResult": "PASS",
+    "rootCatalogValidation": "CATALOGS_PASS: 10 draft executives, 5 PMCR-O roles, zero activations",
+    "agentCreatorValidation": "agents: 50; failures: 0",
+    "zipEntries": 190,
+    "zipAgentSpecs": 40,
+    "zipSkillFiles": 19,
+    "zipCacheFiles": 0
+  },
+  "commands": [
+    "py -3.12 -m unittest discover -s templates\\csuite-pmcro-company\\tests -v",
+    "py -3.12 templates\\csuite-pmcro-company\\tools\\validate.py templates\\csuite-pmcro-company\\example-company",
+    "powershell.exe -NoProfile -File eng\\validate-catalogs.ps1",
+    "powershell.exe -NoProfile -File marketplaces\\agent-marketplace\\agent-creator\\skills\\create-agent\\scripts\\validate-agents.ps1"
+  ],
+  "source": {
+    "root": "templates/csuite-pmcro-company",
+    "fileCount": 188,
+    "manifestSha256": "3440e1dbdb7e55f272aeb788ff07562a861c0a3019beec7a4642ddc0611940da"
+  },
+  "artifact": {
+    "path": "artifacts/csuite-pmcro-company-template-2026-10-29.zip",
+    "sha256": "bb6a3c933c77ebaa13ccd151acd794d54ecda1239b5ffe2cf291b2c5cf6f5eb2"
+  },
+  "note": "This is maker self-validation, not an independent authenticated Checker PASS. No model, worker, tool, grant, activation, or mounted A2A route was used."
+}

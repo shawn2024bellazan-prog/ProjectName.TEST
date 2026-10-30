@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "aspire": {
+      "type": "stdio",
+      "command": "dotnet",
+      "args": ["aspire", "agent", "mcp", "--non-interactive"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "scope": "G:\\ProjectName development GPU Ollama only",
+  "host": {
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "memoryMiB": 8188,
+    "driver": "616.92",
+    "dockerNvidiaRuntimeSeen": true
+  },
+  "appHost": {
+    "sdk": "Aspire.AppHost.Sdk/13.6.4",
+    "restart": "PASS",
+    "resourcesHealthy": 13,
+    "resourcesTotal": 13
+  },
+  "dockerOllama": {
+    "image": "ollama/ollama:0.34.4",
+    "deviceRequests": [
+      {
+        "driver": "",
+        "count": -1,
+        "capabilities": [
+          [
+            "gpu"
+          ]
+        ]
+      }
+    ],
+    "volume": "projectname-ollama-data",
+    "containerNvidiaSmi": "NVIDIA GeForce RTX 4070 Laptop GPU, 8188 MiB",
+    "ollamaDetectedLibrary": "CUDA",
+    "computeCapability": "8.9",
+    "gpuMemoryTotalGiB": 8,
+    "gpuMemoryAvailableGiB": 6.9,
+    "apiTagsHttpStatus": 200,
+    "installedModels": 0,
+    "inferenceExecuted": false
+  },
+  "gatewayUnknownPathHttpStatus": 403,
+  "buildReceipt": "evidence/builds/core-20261029-005041.json",
+  "productionWorkerAdmission": "DENY",
+  "independentCheckerPass": false,
+  "productionActivationAllowed": false,
+  "verdict": "DEVELOPMENT_PASS_PRODUCTION_HALT"
+}

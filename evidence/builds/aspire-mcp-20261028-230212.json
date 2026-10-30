@@ -1,0 +1,10 @@
+﻿{
+    "start":  "NOT_RUN",
+    "devui":  "NOT_RUN",
+    "mcpList":  "NOT_RUN",
+    "stopped":  "NOT_RUN",
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "failure":  "\u001b[2mStarting Aspire AppHost in the background...\u001b[0m",
+    "timestampUtc":  "2026-10-29T04:02:12.8400085Z"
+}

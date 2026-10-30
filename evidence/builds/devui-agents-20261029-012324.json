@@ -1,0 +1,18 @@
+﻿{
+    "timestampUtc":  "2026-10-29T06:23:24.9224532Z",
+    "verdict":  "ENGINEERING_PASS",
+    "mode":  "SIMULATION_ONLY",
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "modelCalls":  0,
+    "entities":  [
+                     "pmcro-orchestrator",
+                     "pmcro-planner",
+                     "pmcro-maker",
+                     "pmcro-checker",
+                     "pmcro-reflector"
+                 ],
+    "allFive":  true,
+    "catalogDenied":  true,
+    "responsesSimulation":  true
+}

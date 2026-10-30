@@ -1,0 +1,33 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261028223030
+Username: PMCRO_Company\pmcro
+RunAs User: PMCRO_Company\pmcro
+Configuration Name: 
+Machine: PMCRO_COMPANY (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File G:\ProjectName\eng\validate.ps1
+Process ID: 24156
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+VALIDATION: SDK
+
+VALIDATION: RESTORE
+
+VALIDATION: RELEASE BUILD
+
+VALIDATION: TEST
+
+VALIDATION: CLI STATUS
+
+VALIDATION: SOURCE HASHES
+**********************
+Windows PowerShell transcript end
+End time: 20261028223106
+**********************

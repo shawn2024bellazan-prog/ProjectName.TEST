@@ -1,0 +1,10 @@
+﻿{
+    "sdk":  "10.0.403",
+    "restore":  "NOT_RUN",
+    "build":  "NOT_RUN",
+    "tests":  "NOT_RUN",
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "failure":  "RESTORE_FAILED",
+    "timestampUtc":  "2026-10-29T03:45:59.5035991Z"
+}

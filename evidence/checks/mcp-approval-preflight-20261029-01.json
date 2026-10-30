@@ -1,0 +1,45 @@
+{
+  "schema": "projectname.mcp-authorization-preflight/v1",
+  "observedDate": "2026-10-29",
+  "canonicalRoot": "G:\\ProjectName",
+  "status": "HALT",
+  "phase": "ORCHESTRATE_PLAN_AUTHORITY_PREFLIGHT",
+  "reasons": [
+    "NO_CONFIGURED_VERIFIED_IDENTITY_ISSUER",
+    "NO_EFFECTIVE_MCP_GRANT",
+    "NO_APPROVED_TOOL_ALLOWLIST",
+    "NO_SIGNED_INDEPENDENT_CHECKER_RECEIPT"
+  ],
+  "observed": {
+    "identityResolver": "DenyAllVerifiedIdentityResolver.Resolve returns null",
+    "authorityRepository": "DenyAllAuthorityRepository registered in OrchestrationApi",
+    "receiptVerifier": "DenyAllReceiptVerifier registered in OrchestrationApi",
+    "proposedPolicy": "docs/MCP-PORT-ALLOWLIST-PROPOSAL-2026-10-29.md",
+    "allowlistPresent": false,
+    "approvalRecordPresent": false,
+    "effectiveGrantPresent": false,
+    "newMcpProjectsBuilt": 0,
+    "newMcpProjectsStarted": 0,
+    "mcpToolInvocations": 0,
+    "productionWorkerAdmission": "DENY",
+    "nextSeedExecuted": false
+  },
+  "sourceSha256": {
+    "src/Governance/ProjectName.ControlPlane/VerifiedIdentity.cs": "fdebbe8350647a8084b461e2577a8c1dc171dfb6ffaf59e553993cfd8204275a",
+    "src/Governance/ProjectName.ControlPlane/AdmissionGate.cs": "2356cda87c2a2d44bb15f7d6ed424b2443b28558aaa6fec5330d52a9c2e4bc5a",
+    "src/Services/ProjectName.OrchestrationApi/Program.cs": "1e337b55008368be47e978d8de03ce86e5d8bda340d90c6041b862715ddeb832",
+    "docs/MCP-PORT-ALLOWLIST-PROPOSAL-2026-10-29.md": "74fdd281c9e7a5d18835c64d0425b09cea90ec6dee5faf9f528e997a7b18ea38"
+  },
+  "requiredNextAuthorityEvidence": {
+    "trustedIssuer": "Host-selected identity provider and configured validating adapter",
+    "principal": "Authenticated tenant and actor IDs issued by trusted authority",
+    "policy": "Exact server/tool names, scope, data class, expiry, revocation and digest",
+    "grant": "Authenticated issuer-bound effective grant; no wildcard or implicit grant",
+    "independentCheck": "Distinct signed Checker PASS bound to exact artifacts",
+    "sideEffects": "Per-invocation authenticated HIL enforcement inside server"
+  },
+  "independentCheckerPass": false,
+  "authorityGranted": false,
+  "executed": false,
+  "note": "Engineering preflight only. This is not a signed activation receipt."
+}

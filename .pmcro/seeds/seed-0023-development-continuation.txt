@@ -1,0 +1,9 @@
+Cycle: 0023
+RawUserIntent: continue
+DerivedScope: Resume Cycle0022 NextSeed as an isolated mock-only rotation replay. Implement in-memory two-proposal CAS race, spoofed identity/approval/expiry/revocation, duplicate/replayed evidence, and crash-before-publication simulation; verify development surfaces, locked .NET10, and preserve production HALT.
+Authorization: User's new continue allows bounded local development and validation only. No host-issued authority or independent Checker may be simulated as real.
+PriorNextSeedArchive: .pmcro/seeds/staged-nextseed-after-seed-0022.txt
+PriorNextSeedSha256: 76BC028607E15F9EFA882C25BE82AB5D01DA78DAC9D35D714081D4C1A2EDEDE9
+ModelCalls: 0
+WorkersStarted: 0
+ProductionAdmission: DENY

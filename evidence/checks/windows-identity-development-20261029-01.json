@@ -1,0 +1,68 @@
+{
+  "receiptId": "windows-identity-development-20261029-01",
+  "timestampUtc": "2026-10-29",
+  "root": "G:\\ProjectName",
+  "status": "DEVELOPMENT_IDENTITY_PROBE_VERIFIED_APPROVAL_NOT_GRANTED",
+  "provider": "Windows Integrated Authentication via ASP.NET Core Negotiate",
+  "identityHandshake": {
+    "platform": "Windows",
+    "transport": "local direct Kestrel HTTP loopback",
+    "anonymous": "401 WWW-Authenticate Negotiate",
+    "crossSiteRequest": "403",
+    "windowsDefaultCredentials": "200 verified=true; fingerprint only; grantIssued=false; independentCheckerPass=false; workerAdmission=deny-all",
+    "productionIdentityRoute": "404",
+    "productionCapabilityStatus": "200 workerAdmission=deny-all",
+    "developmentCapabilityStatus": "200 workerAdmission=deny-all"
+  },
+  "build": {
+    "command": "dotnet build G:\\ProjectName\\ProjectName.slnx -c Release --no-restore --nologo",
+    "result": "SUCCESS",
+    "warnings": 0,
+    "errors": 0,
+    "note": "Target framework net10.0; installed SDK 11.0.100-rc.1.26425.128."
+  },
+  "tests": {
+    "command": "dotnet test G:\\ProjectName\\ProjectName.slnx -c Release --no-restore --nologo",
+    "result": "SUCCESS",
+    "passed": 52,
+    "failed": 0,
+    "skipped": 0,
+    "added": [
+      "missing authentication denied",
+      "fabricated Negotiate claims rejected",
+      "wrong scheme denied",
+      "unauthenticated identity rejected"
+    ]
+  },
+  "sourceSha256": {
+    "Directory.Packages.props": "f4bd7cfad31e84b15335e3310a1c410456dcfd6f85afb8982f0c1a8f6aa42108",
+    "src/Services/ProjectName.OrchestrationApi/ProjectName.OrchestrationApi.csproj": "4ecd9bd09f9fd9a75831460a8b68ba708931f213e7b5efbcd22efa2d15dc83d7",
+    "src/Services/ProjectName.OrchestrationApi/Program.cs": "c95c70fd850a117b5fd0768ed3b1f05e49b93125854336b56167736072d5f6f5",
+    "src/Services/ProjectName.OrchestrationApi/WindowsDevelopmentIdentityEndpoint.cs": "05925b056c1863d8593934bc8efec56d6de7c876a854d46b3304d622b37b7758",
+    "tests/ProjectName.Governance.Tests/ProjectName.Governance.Tests.csproj": "4d21338be619fc8ad859636e90666f12c86c830761f647e372ffd01c920f2fa8",
+    "tests/ProjectName.Governance.Tests/WindowsDevelopmentIdentityTests.cs": "837119e2d200a4484a44652eadac467d6d2a8d4fd385f3bc94a9dcaa74586a3b",
+    "docs/WINDOWS-DEV-IDENTITY.md": "d723febb88ccec437d675f6de711e2428a48aebd9b147a914a05e01c4dc9e884"
+  },
+  "authority": {
+    "toolAllowlistApproved": false,
+    "grantIssued": false,
+    "independentCheckerPass": false,
+    "productionAdmission": "DENY",
+    "mcpToolExecutionAuthorized": false,
+    "filesystemPorted": false,
+    "playwrightPorted": false,
+    "terminalPorted": false
+  },
+  "preserve": {
+    "aspireAppHostTopology": "unchanged",
+    "historicalTrailEvidence": "not modified",
+    "frozenSeed0033": "not modified",
+    "seed0034Execution": "not authorized",
+    "temporarySmokeServers": "terminated"
+  },
+  "nextSeed": {
+    "intent": "Obtain separately authenticated operator approval to a bounded development MCP allowlist naming tool/principal/scope/digest/expiry/revocation and independent Checker evidence before any MCP port, registration or activation.",
+    "executed": false,
+    "authorized": false
+  }
+}

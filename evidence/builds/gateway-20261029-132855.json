@@ -1,0 +1,10 @@
+﻿{
+    "development":  "NOT_RUN",
+    "production":  "NOT_RUN",
+    "nativeProtocolsDenied":  false,
+    "throttled":  false,
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "failure":  "Development POST /v1/responses HTTP 400, expected 403",
+    "timestampUtc":  "2026-10-29T18:28:59.9796622Z"
+}

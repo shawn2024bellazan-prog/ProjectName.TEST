@@ -1,0 +1,83 @@
+PMCR-O Cycle 0016 — Development self-check evidence
+Date: 2026-10-29 (Windows host local)
+CanonicalRoot: G:\ProjectName
+Raw user intent: continue
+EngineeringVerdict: LOOP (intermittent runner/coreclr error unresolved)
+ProductionGovernanceVerdict: HALT
+IndependentAuthenticatedCheckerPass: false
+ProductionWorkerAdmission: DENY
+ProductionActivationAllowed: false
+WorkerStartsByCycle: 0
+ModelCallsByCycle: 0
+FullAspireAppHostStartsByCycle: 0
+
+ORCHESTRATE / PLAN:
+- AGENTS.md loaded; no G:\workspace historical Trails modified.
+- Previous UNEXECUTED next-seed archived byte-identically at
+  .pmcro/seeds/staged-nextseed-after-seed-0015.txt
+  SHA256=86B6EF0AF176D2DD5010731DE0B722BFF5E5E9EC46ED23524D8923091EB3BBF0
+- New user intent stored .pmcro/seeds/seed-0016-development-continuation.txt.
+- No authorized separate-host failover fixture; partition test NOT EXECUTED.
+
+MAKE:
+- Added read-only event inspector eng/inspect-coreclr-events.ps1; bounded
+  maximum 24h, redacts event message/pid/path and captures no dump or memory.
+- Added docs/CORECLR-0016-2026-10-29.md and cycle reflection.
+- No change to AgentGateway Program.cs, AppHost.cs, checkpoint persistence.
+- Inspector explicitly treats event-log errors as errors; unique file name
+  and FileMode.CreateNew prevent overwriting any existing receipt.
+
+CHECK:
+- Redacted historical Event 1023 / 1000:
+  evidence/builds/coreclr-events-20261029-150209-0558558-7e1a8525.json,
+  2 matches (0x80131506; coreclr.dll 0xc0000005).
+- Narrow subsequent window:
+  evidence/builds/coreclr-events-20261029-150209-4821080-3e029db3.json,
+  0 matching CoreCLR events. This cannot rule out other crash classes.
+- Negative inspector test: a 48-hour window rejected (expected).
+- Earlier draft inspector generated same-second collision:
+  coreclr-events-20261029-150131.json was created and then rewritten by
+  the second call in this SAME cycle, before unique CreateNew correction.
+  That file was not historical or independently checked. Corrected script
+  wrote two distinct receipts in one second; no older Trail modified.
+- Gateway standalone synthetic denial loop:
+  iteration 1 evidence/builds/gateway-20261029-145804.json PASS.
+  iteration 2 runner exit -1073740791 (0xC0000409) with no JSON receipt;
+  evidence/builds/gateway-20261029-145808.stdout.txt ends at HTTP 429.
+  Loop stopped; iteration 3 NOT RUN. No new matching CoreCLR Event 1000/1023.
+  Root cause UNKNOWN, no speculative gateway source patch.
+- dotnet restore ProjectName.slnx --locked-mode PASS, SDK 10.0.403.
+- dotnet build ProjectName.slnx -c Release --no-restore PASS,
+  0 warnings, 0 errors; evidence/builds/core-20261029-145845.json.
+- Governance tests: 102/102 PASS in locked Release.
+- Standalone OrchestrationApi Development DevUI/Scalar/MCP,
+  native simulation DENY, Production routes disabled:
+  evidence/builds/dev-surfaces-20261029-145904.json PASS.
+- Explicit isolated PostgreSQL 18.3 tests:
+  evidence/builds/checkpoint-cycle-0016-20261029.trx,
+  102 passed / 0 failed, includes role-bound RLS/CAS/revocation/
+  backend termination test. public.pmcro_checkpoint_candidate_v1:
+  relrowsecurity=true, relforcerowsecurity=true.
+- Ephemeral container pmcro-candidate-pg-0016 on dynamic loopback
+  127.0.0.1:60964 with tmpfs and no volume was stopped and auto-removed.
+  No user PostgreSQL data or persistent volume touched.
+- Host authority preflight: evidence/builds/authority-preflight-20261029-150025.json,
+  HALT. Windows identity observed, but issuer/signed Checker/grant/
+  revocation/protected KMS/private ACL all unverified.
+- No TCP listeners on isolated test ports 58439/58440 at final check.
+- Source-only snapshot evidence/builds/sha256-20261029-150311.csv,
+  684 files, hash 557AF2A5547A24C62BED1AC3D906B57DC2FCC50E4D534EBC58B85DBDE77FA065.
+
+SHA256 verified:
+eng/inspect-coreclr-events.ps1=09AC86ACC1A4FADDF9CBDFCB0099D8398E37C624D1A030B0346FFEB398976538
+docs/CORECLR-0016-2026-10-29.md=A265EF306A690E6953A2B10BCC5438A59286983D3FFB6B101D7293794000F531
+.pmcro/reflections/reflection-0016-gateway-coreclr-observation.md=CB54878CAC249349BCEC4057C8746F74552DF5BB1E3C488ED701FD24B391252F
+.pmcro/next-seed.txt=2AD4754E6F8DF06295297D96ACB9D6D00C7709D2C80EDAF616AACC60637AC1E7
+src/Services/ProjectName.AgentGateway/Program.cs=ED25FD1B30273859F5D65F235118ED880F09B49489DB1F6E12261C2966CCF169
+src/Hosting/ProjectName.AppHost/AppHost.cs=4D8F9C8247D6E9BEDC490272769D6AD5AEF0AA368A4ACBB2692C9CA873747BF1
+src/BuildingBlocks/ProjectName.Persistence/PostgresTransactionalCheckpointCandidate.cs=7167DB6E7EDD8EE27E04EB950E923C72FEC182868F99EB4D8AB55210257550BA
+
+No authenticated Checker route was discovered or invoked.
+No model call, keys, grants, source promotion, publication, garbage
+collection, full Aspire start, worker admission or production activation.
+REFLECT: Exactly one subsequent UNEXECUTED NextSeed remains.

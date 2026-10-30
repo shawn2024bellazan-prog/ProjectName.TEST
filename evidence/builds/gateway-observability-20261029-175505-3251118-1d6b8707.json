@@ -1,0 +1,69 @@
+{
+  "schema": "projectname.gateway-observability/v1",
+  "scope": "ISOLATED_DEVELOPMENT_ONLY",
+  "syntheticByDefault": true,
+  "liveGatewayExplicitlyOptedIn": true,
+  "liveGatewayIterations": 1,
+  "maxGatewayIterations": 3,
+  "status": "PASS",
+  "sourceHashes": {
+    "watch-agent-gateway.ps1": "E58D0F4D869C906F305BE0648BB5DADB07B93E8709E8C7A87C0927B4A9F8A971",
+    "correlate-gateway-exits.ps1": "207DF594CC8FDD2177E356D555F0EE5AD79B70F54B73FCEAEB3E93F7AA4742BE",
+    "validate-gateway-correlation.ps1": "3E6C2D495E0E91BFAA8818BB5CC9A2F6E4869F11165CB0E81FFB94F72A8536CC",
+    "test-gateway-port-guard.ps1": "BA607E010F120A0DFF40F44DA467594D78F9041D5605DBA0DCE5B98AB7727A5B",
+    "gateway-receipt-contract.ps1": "A87BEF48AEADAA928DA244726C0A6DDE1C8ACBA801B1D0540639C6AE00C2B181",
+    "test-gateway-receipt-contract.ps1": "A09545725D7C2A6ABA60B57B089B703813C57A9B8BCF024019A5A733D884D736",
+    "test-gateway-concurrent-port-guard.ps1": "D71B1AA95740EE81CFAC5E51C0DC1B1CCBCC78549900A7DDFC53E323747AF664"
+  },
+  "watchdogReceiptNames": [
+    "gateway-watchdog-20261029-175506-9518639-e9109244.json",
+    "gateway-watchdog-20261029-175508-1715313-2718ede0.json",
+    "gateway-watchdog-20261029-175508-9471080-7f93b621.json",
+    "gateway-watchdog-20261029-175509-6960659-52fcf178.json",
+    "gateway-watchdog-20261029-175510-4451895-4cc7fc2a.json",
+    "gateway-watchdog-20261029-175513-0599872-e7e5e388.json",
+    "gateway-watchdog-20261029-175513-5140067-030207bb.json"
+  ],
+  "watchdogReceiptSha256": [
+    "F1B560E29A810879F3674845D1741D3FFAFA63342E6DF18D63D9ADBCBD05BEAB",
+    "A7A8BF838A500DC378552328FC7DB8D3639163E759D690A79AD3D3F22D2D6596",
+    "00495577C138A7F20A492C351287783F94C2DD0013585973A284374D73378765",
+    "E087242424E4EB9F6C684F42CFDCC407790FC8D9468DEC063EB607668C61CF8C",
+    "3E8FC12A66366455819F862E80531EAF4CE1D9460563DEAFDA17CC7B47CD369F",
+    "6631B47E0EE03D598408A1A5E071F8B1D852DDFA5E30174EEC14863DD0AA9174",
+    "8BACC944AD1667054B6A96716C7ACE017D9DF5166B8C5602A5FB21E957E42074"
+  ],
+  "concurrentRefusalReceiptNames": [
+    "gateway-watchdog-20261029-175506-4085996-a70ea935.json",
+    "gateway-watchdog-20261029-175506-4748758-03c260a6.json"
+  ],
+  "concurrentRefusalReceiptSha256": [
+    "9D2ED92CFF89DDCB6D88C4E541EB2DE178966169183A6BB1E8807F6C449BC6E4",
+    "F8F23740ADD495185D4569B225B69CE5EC8A6827998E48829869F3B65430047B"
+  ],
+  "contractAssertionCount": 15,
+  "correlationReceiptName": "gateway-correlation-20261029-175519-0477778-d500e4fb.json",
+  "correlationReceiptSha256": "6715B202D2CE98304FDE192A37F741D45E2B2313FD36405B31404A1351CE2FC4",
+  "assertions": [
+    "inMemoryContract=PASS_15",
+    "concurrentPortRefusal=PASS_2",
+    "FixturePass=PASS",
+    "FixtureFail=LOOP",
+    "FixtureAbruptExit=LOOP",
+    "FixtureSyntheticAccessViolation=LOOP",
+    "FixtureTimeout=LOOP",
+    "occupiedPort=REFUSED_BEFORE_CHILD",
+    "Gateway=PASS",
+    "postLivePort=RELEASED",
+    "negative:pathTraversal=REJECTED",
+    "negative:duplicateReceipts=REJECTED",
+    "negative:malformedSchema=REJECTED"
+  ],
+  "rootCauseProven": false,
+  "checkerPass": false,
+  "productionActivationAllowed": false,
+  "fullAspireStarted": false,
+  "workerStarts": 0,
+  "modelCalls": 0,
+  "timestampUtc": "2026-10-29T22:55:19.4679554Z"
+}

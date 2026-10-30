@@ -1,0 +1,3 @@
+continue
+
+Derived bounded intent: one development-only Cycle 0021 from the staged Cycle 0020 NextSeed, no production rights or automatic next cycle.

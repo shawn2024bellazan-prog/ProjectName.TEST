@@ -1,0 +1,9 @@
+Cycle: 0022
+RawUserIntent: continue
+DerivedScope: Resume the bounded, development-only Cycle0021 NextSeed. Produce an UNEXECUTED redacted CoreCLR allowlist rotation proposal with a fresh read-only observation, exact SHA pin, monotonic revision/CAS preconditions, fixed-clock denial tests and a mandatory-argument contract. Preserve active manifest and all production DENY.
+Authorization: User's new "continue" authorizes routine development changes and tests only; it does not authenticate any issuer, grant, Checker, key or production activation.
+PriorNextSeedArchive: .pmcro/seeds/staged-nextseed-after-seed-0021.txt
+PriorNextSeedSha256: D0DCFA698DA55626734CA1550FB1DCE93350BFF49261C411F1671C1826ED448B
+WorkersStarted: 0
+ModelCalls: 0
+ProductionAdmission: DENY

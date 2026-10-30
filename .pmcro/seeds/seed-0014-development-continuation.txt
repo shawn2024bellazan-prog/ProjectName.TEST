@@ -1,0 +1,4 @@
+Raw user intent (verbatim): continue
+Date: 2026-10-29
+Previous staged NextSeed preserved unchanged at .pmcro/seeds/staged-nextseed-after-seed-0013.txt.
+Bounded interpretation: development-only work on tenant RBAC/RLS and separate-host failover design in G:\ProjectName. No production authority granted, no workers started, no models called, and no Checker PASS inferred.

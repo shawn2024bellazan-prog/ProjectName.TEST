@@ -1,0 +1,45 @@
+{
+  "schema": "projectname.coreclr-diagnostics/v1",
+  "mode": "READ_ONLY_EVENTS_NO_DUMPS",
+  "project": "G:\\ProjectName",
+  "sourceSha256": "ED25FD1B30273859F5D65F235118ED880F09B49489DB1F6E12261C2966CCF169",
+  "startUtc": "2026-10-29T18:55:38.8315764Z",
+  "endUtc": "2026-10-29T22:55:38.8374923Z",
+  "installedNetCoreRuntimes": [
+    "8.0.33",
+    "10.0.14",
+    "11.0.0-rc.1.26425.128"
+  ],
+  "installedSdkVersions": [
+    "10.0.403",
+    "11.0.100-rc.1.26425.128"
+  ],
+  "matchingEventCount": 2,
+  "events": [
+    {
+      "eventId": 1000,
+      "provider": "Application Error",
+      "occurredUtc": "2026-10-29T19:24:01.1591516Z",
+      "module": "coreclr.dll",
+      "exceptionCode": "0xc0000005",
+      "internalCode": null,
+      "faultingProcessId": null,
+      "faultingProcessIdSource": null
+    },
+    {
+      "eventId": 1023,
+      "provider": ".NET Runtime",
+      "occurredUtc": "2026-10-29T19:24:00.7254257Z",
+      "module": "CoreCLR",
+      "exceptionCode": null,
+      "internalCode": "0x80131506",
+      "faultingProcessId": null,
+      "faultingProcessIdSource": null
+    }
+  ],
+  "evidenceType": "LOCAL_OBSERVATION_NOT_INDEPENDENT_CHECKER",
+  "independentCheckerPass": false,
+  "productionActivationAllowed": false,
+  "capturedProcessMemory": false,
+  "timestampUtc": "2026-10-29T22:55:39.0879144Z"
+}

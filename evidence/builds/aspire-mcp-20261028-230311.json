@@ -1,0 +1,10 @@
+﻿{
+    "start":  "PASS",
+    "devui":  "NOT_RUN",
+    "mcpList":  "NOT_RUN",
+    "stopped":  "PASS",
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "failure":  "Aspire AppHost did not list DevUI",
+    "timestampUtc":  "2026-10-29T04:03:26.7423498Z"
+}

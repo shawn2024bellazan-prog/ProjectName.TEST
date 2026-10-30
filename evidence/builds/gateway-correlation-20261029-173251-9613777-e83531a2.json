@@ -1,0 +1,114 @@
+{
+  "schema": "projectname.gateway-correlation/v1",
+  "scope": "LOCAL_OBSERVATION_AND_SYNTHETIC_FIXTURES",
+  "coreClrReceipt": "coreclr-events-20261029-151429-6185131-df830153.json",
+  "coreClrReceiptSha256": "0F94D8588C835AA800784D65274DDBC2D51AC270CEEA7A3A8F99E68782473FB9",
+  "historicalNativeEvent1000Count": 1,
+  "corroboratedChildIdentity": false,
+  "rootCauseProven": false,
+  "checkerPass": false,
+  "productionActivationAllowed": false,
+  "results": [
+    {
+      "receiptName": "gateway-watchdog-20261029-151313-5182805-731e4e9e.json",
+      "receiptSha256": "D3B45DA8738D057B67E868DCABAFA17662F5A97F3515044B9AC3F92696B1B1A1",
+      "mode": "FixturePass",
+      "iteration": 1,
+      "status": "CLEAN_CHILD_EXIT",
+      "exitCodeHex": "0x00000000",
+      "correlation": "NOT_APPLICABLE_SYNTHETIC",
+      "rootCauseProven": false
+    },
+    {
+      "receiptName": "gateway-watchdog-20261029-151313-5182805-731e4e9e.json",
+      "receiptSha256": "D3B45DA8738D057B67E868DCABAFA17662F5A97F3515044B9AC3F92696B1B1A1",
+      "mode": "FixturePass",
+      "iteration": 2,
+      "status": "CLEAN_CHILD_EXIT",
+      "exitCodeHex": "0x00000000",
+      "correlation": "NOT_APPLICABLE_SYNTHETIC",
+      "rootCauseProven": false
+    },
+    {
+      "receiptName": "gateway-watchdog-20261029-151321-6056899-3d4d9f17.json",
+      "receiptSha256": "7B2058C46D83FF1E2A4E8D35FDE1E40CA70335C097A6928374C788F2DE056062",
+      "mode": "FixtureFail",
+      "iteration": 1,
+      "status": "SYNTHETIC_EXIT_ONLY",
+      "exitCodeHex": "0x00000017",
+      "correlation": "NOT_APPLICABLE_SYNTHETIC",
+      "rootCauseProven": false
+    },
+    {
+      "receiptName": "gateway-watchdog-20261029-151322-3269995-4d091183.json",
+      "receiptSha256": "4139B1B0A0BBBBFF26935DD9D2B2501FCCC728A29A41D6D7E42CF549E8577346",
+      "mode": "FixtureAbruptExit",
+      "iteration": 1,
+      "status": "SYNTHETIC_EXIT_ONLY",
+      "exitCodeHex": "0xC0000409",
+      "correlation": "NOT_APPLICABLE_SYNTHETIC",
+      "rootCauseProven": false
+    },
+    {
+      "receiptName": "gateway-watchdog-20261029-151323-0306968-15ec13f0.json",
+      "receiptSha256": "F3A6F16623DE056137096D5D07D214692549BBD5A7647E1485788AE032E935D6",
+      "mode": "FixtureTimeout",
+      "iteration": 1,
+      "status": "CHILD_TIMEOUT",
+      "exitCodeHex": "0xFFFFFFFF",
+      "correlation": "NOT_APPLICABLE_SYNTHETIC",
+      "rootCauseProven": false
+    },
+    {
+      "receiptName": "gateway-watchdog-20261029-173130-1596618-54419468.json",
+      "receiptSha256": "2F138D6952F1AC21574F6182956DA164D7A7D7F4BE258C99134037FB2E9A0B89",
+      "mode": "Gateway",
+      "iteration": null,
+      "status": "PORT_GUARD_REFUSAL",
+      "exitCodeHex": null,
+      "correlation": "NO_CHILD_WAS_LAUNCHED",
+      "rootCauseProven": false
+    },
+    {
+      "receiptName": "gateway-watchdog-20261029-173135-9583061-da7a888b.json",
+      "receiptSha256": "32914AFB5DB9B55EEBA712D71D2C3A196EA1FDE5071CE617E05D2D18F623A062",
+      "mode": "FixtureSyntheticAccessViolation",
+      "iteration": 1,
+      "status": "SYNTHETIC_EXIT_ONLY",
+      "exitCodeHex": "0xC0000005",
+      "correlation": "NOT_APPLICABLE_SYNTHETIC",
+      "rootCauseProven": false
+    },
+    {
+      "receiptName": "gateway-watchdog-20261029-173206-3875316-5314d1ea.json",
+      "receiptSha256": "2FE92A4BB50759F0D1CD7D2A39A9232CCFDA820D3DB2C5AE78CC5C6BD6E51FE2",
+      "mode": "Gateway",
+      "iteration": 1,
+      "status": "CLEAN_CHILD_EXIT",
+      "exitCodeHex": "0x00000000",
+      "correlation": "NO_PID_BOUND_EVENT",
+      "rootCauseProven": false
+    },
+    {
+      "receiptName": "gateway-watchdog-20261029-173206-3875316-5314d1ea.json",
+      "receiptSha256": "2FE92A4BB50759F0D1CD7D2A39A9232CCFDA820D3DB2C5AE78CC5C6BD6E51FE2",
+      "mode": "Gateway",
+      "iteration": 2,
+      "status": "CLEAN_CHILD_EXIT",
+      "exitCodeHex": "0x00000000",
+      "correlation": "NO_PID_BOUND_EVENT",
+      "rootCauseProven": false
+    },
+    {
+      "receiptName": "gateway-watchdog-20261029-173206-3875316-5314d1ea.json",
+      "receiptSha256": "2FE92A4BB50759F0D1CD7D2A39A9232CCFDA820D3DB2C5AE78CC5C6BD6E51FE2",
+      "mode": "Gateway",
+      "iteration": 3,
+      "status": "CLEAN_CHILD_EXIT",
+      "exitCodeHex": "0x00000000",
+      "correlation": "NO_PID_BOUND_EVENT",
+      "rootCauseProven": false
+    }
+  ],
+  "timestampUtc": "2026-10-29T22:32:51.9593766Z"
+}

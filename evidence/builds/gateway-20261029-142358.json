@@ -1,0 +1,10 @@
+{
+  "development": "PASS",
+  "production": "NOT_RUN",
+  "nativeProtocolsDenied": true,
+  "throttled": true,
+  "checkerPass": false,
+  "productionEnabled": false,
+  "failure": "Gateway health endpoint unavailable",
+  "timestampUtc": "2026-10-29T19:25:38.0378891Z"
+}

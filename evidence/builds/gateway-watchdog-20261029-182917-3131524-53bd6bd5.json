@@ -1,0 +1,16 @@
+{
+  "schema": "projectname.gateway-watchdog/v1",
+  "mode": "Gateway",
+  "scope": "ISOLATED_DEVELOPMENT_ONLY",
+  "maxIterations": 1,
+  "childTimeoutSeconds": 5,
+  "result": "HALT",
+  "failureCode": "PORT_BUSY_BEFORE_START",
+  "events": null,
+  "runs": [],
+  "childProcessMemoryCaptured": false,
+  "checkerPass": false,
+  "productionActivationAllowed": false,
+  "errorClass": "System.Management.Automation.RuntimeException",
+  "timestampUtc": "2026-10-29T23:29:17.3479208Z"
+}

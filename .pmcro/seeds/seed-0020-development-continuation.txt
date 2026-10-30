@@ -1,0 +1,3 @@
+Continue
+
+Derived intent (not a new grant): one bounded Cycle 0020 in G:\ProjectName from staged Cycle 0019 NextSeed. No production admission, independent Checker claim, Git changes, or automatic subsequent seed execution.

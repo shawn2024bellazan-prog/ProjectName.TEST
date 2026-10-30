@@ -1,0 +1,33 @@
+@orchestrator /pmcro:seed
+"Authorize a new bounded development-only cycle in G:\ProjectName.
+
+First replace hardcoded authority-preflight placeholders
+with real, read-only verification interfaces and tests.
+
+Implement identity issuer discovery, signed Checker receipt
+verification, grant and revocation lookup, protected KMS
+configuration checks, and Windows directory ACL inspection.
+
+Use mocks and isolated test fixtures where real infrastructure
+is unavailable. Never report a mock as authenticated authority.
+
+Then implement an isolated PostgreSQL transactional
+multi-host checkpoint candidate using disposable test storage.
+
+Test concurrency, tenant isolation, compare-and-swap,
+rollback prevention, revocation and crash recovery.
+
+Preserve the existing Aspire topology and source evidence.
+Run locked .NET 10 Release builds, tests and Aspire checks.
+
+Do not provision production keys, grant permissions,
+start workers, call models, migrate real checkpoints,
+delete historical data or activate production.
+
+Maintain production DENY.
+
+Record evidence and exact hashes.
+Request independent Checker review only through
+a verified authorized route.
+
+REFLECT exactly one UNEXECUTED NextSeed."

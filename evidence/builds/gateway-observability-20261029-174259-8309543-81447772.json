@@ -1,0 +1,55 @@
+{
+  "schema": "projectname.gateway-observability/v1",
+  "scope": "ISOLATED_DEVELOPMENT_ONLY",
+  "syntheticByDefault": true,
+  "liveGatewayExplicitlyOptedIn": true,
+  "liveGatewayIterations": 1,
+  "maxGatewayIterations": 3,
+  "status": "PASS",
+  "sourceHashes": {
+    "watch-agent-gateway.ps1": "E58D0F4D869C906F305BE0648BB5DADB07B93E8709E8C7A87C0927B4A9F8A971",
+    "correlate-gateway-exits.ps1": "E4D0FA4F0B7C004F75234E924907714BE07037E7EADB65500BD73FF8AC871923",
+    "validate-gateway-correlation.ps1": "3E6C2D495E0E91BFAA8818BB5CC9A2F6E4869F11165CB0E81FFB94F72A8536CC",
+    "test-gateway-port-guard.ps1": "BA607E010F120A0DFF40F44DA467594D78F9041D5605DBA0DCE5B98AB7727A5B"
+  },
+  "watchdogReceiptNames": [
+    "gateway-watchdog-20261029-174300-0924805-9099badf.json",
+    "gateway-watchdog-20261029-174301-3709723-90db3c8f.json",
+    "gateway-watchdog-20261029-174302-1919961-1954e49d.json",
+    "gateway-watchdog-20261029-174302-9799750-f87404eb.json",
+    "gateway-watchdog-20261029-174303-7597314-91de451d.json",
+    "gateway-watchdog-20261029-174306-4017643-0ea5f353.json",
+    "gateway-watchdog-20261029-174306-8867021-751ecbe2.json"
+  ],
+  "watchdogReceiptSha256": [
+    "81F6E924CCBD7946335510D9664A43C50A1DC886D58E2E12951845C2488B748E",
+    "7F594DDC5C29A9E6337287153499350B1E5D4D9ACE48F5602694182CBCC51EC0",
+    "2FD6D712EDDF59C2F2ADF700046F29E8EAB5EE75D1A18A635E9CC8FC33D21870",
+    "EF7B3BB83CC9BBB388B1A4546C497D78CD51F099CA34C63F5D475AC005F9C467",
+    "FFD5C27895C7216769F962960FC22F2C472A141F3A975AA5444EBB90D22013F9",
+    "9B2470DDE8EF985C12E19C4107AFD3F6F32420FC06EA7146DAA283E9A20817A9",
+    "390A95EFD59B41326AB5B1F2BF5C2E5560A57B2342E4615663069EE5B3292DFA"
+  ],
+  "correlationReceiptName": "gateway-correlation-20261029-174312-4088548-f96003df.json",
+  "correlationReceiptSha256": "68195DDDA0041ECA85A98EFC405D0363D9A2F9F32CBE137F04D64D3535001A45",
+  "assertions": [
+    "FixturePass=PASS",
+    "FixtureFail=LOOP",
+    "FixtureAbruptExit=LOOP",
+    "FixtureSyntheticAccessViolation=LOOP",
+    "FixtureTimeout=LOOP",
+    "occupiedPort=REFUSED_BEFORE_CHILD",
+    "Gateway=PASS",
+    "postLivePort=RELEASED",
+    "negative:pathTraversal=REJECTED",
+    "negative:duplicateReceipts=REJECTED",
+    "negative:malformedSchema=REJECTED"
+  ],
+  "rootCauseProven": false,
+  "checkerPass": false,
+  "productionActivationAllowed": false,
+  "fullAspireStarted": false,
+  "workerStarts": 0,
+  "modelCalls": 0,
+  "timestampUtc": "2026-10-29T22:43:12.9786345Z"
+}

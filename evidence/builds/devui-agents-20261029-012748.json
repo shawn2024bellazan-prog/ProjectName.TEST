@@ -1,0 +1,30 @@
+﻿{
+    "timestampUtc":  "2026-10-29T06:27:48.8994185Z",
+    "verdict":  "ENGINEERING_PASS",
+    "mode":  "SIMULATION_ONLY",
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "modelCalls":  0,
+    "entities":  [
+                     "pmcro-orchestrator",
+                     "pmcro-planner",
+                     "pmcro-maker",
+                     "pmcro-checker",
+                     "pmcro-reflector",
+                     "csuite-ceo",
+                     "csuite-cto",
+                     "csuite-coo",
+                     "csuite-cfo",
+                     "csuite-cpo",
+                     "csuite-cmo",
+                     "csuite-clo",
+                     "csuite-chro",
+                     "csuite-cso",
+                     "csuite-cio"
+                 ],
+    "allAgents":  true,
+    "catalogDenied":  true,
+    "crossSiteDenied":  true,
+    "responsesSimulation":  true,
+    "executiveSimulation":  true
+}

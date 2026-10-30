@@ -1,0 +1,69 @@
+{
+  "receiptId": "checkpoint-mock-migration-20261029-06",
+  "timestampUtc": "2026-10-29",
+  "root": "G:\\ProjectName",
+  "phase": "CHECK_CANDIDATE",
+  "status": "DEVELOPMENT_CANDIDATE_BUILT_TESTED_PRODUCTION_HALT",
+  "implemented": [
+    "Metadata-only mock versioned key ring with revocation and monotonic epochs",
+    "In-memory tenant/workflow-bound migration manifest with revision plus digest CAS and bounded retries",
+    "Non-deleting orphan/retention decision simulation",
+    "Unmounted developer OpenAI Responses and Conversations routes from agent gateway"
+  ],
+  "exactSourceSha256": {
+    "src/Governance/ProjectName.ControlPlane/MockCheckpointKeyRing.cs": "b2281fc0e176936ea63d6e82d716b5c069d118f352506042c59607095c9a52e0",
+    "src/Governance/ProjectName.ControlPlane/MockCheckpointMigrationManifest.cs": "59a6af1354f0aa6892ebb662fbb55a43f5cd2e83edc8e960b8bee52558b8a13d",
+    "tests/ProjectName.Governance.Tests/MockCheckpointRotationTests.cs": "f32689e1f55026a931dd478e724d67da86aed2ec283524d81351c3ce2907113d",
+    "docs/CHECKPOINT-MOCK-MIGRATION-2026-10-29.md": "2b9eba07b76c9b0f346ac887ca8a9d3f0201ed64a095e7022d4d9519b310a3cb",
+    "src/Services/ProjectName.AgentGateway/Program.cs": "ed25fd1b30273859f5d65f235118ed880f09b49489db1f6e12261c2966ccf169"
+  },
+  "commands": {
+    "sdkVersion": "cmd /d /c cd G:\\ProjectName then dotnet --version",
+    "observedSdk": "10.0.403",
+    "lockedRestore": "dotnet restore ProjectName.slnx --locked-mode --nologo --verbosity quiet",
+    "lockedRestoreResult": "PASS",
+    "releaseBuild": "dotnet build ProjectName.slnx -c Release --no-restore --nologo --verbosity quiet",
+    "releaseBuildResult": "PASS",
+    "warnings": 0,
+    "errors": 0,
+    "releaseTests": "dotnet test ProjectName.slnx -c Release --no-restore --nologo --verbosity quiet",
+    "testsPassed": 95,
+    "testsFailed": 0,
+    "testsSkipped": 0,
+    "hashSnapshot": "evidence/builds/sha256-20261029-133213.csv",
+    "hashSnapshotRows": 474
+  },
+  "smokeEvidence": {
+    "scalarMcpSimulation": "evidence/builds/dev-surfaces-20261029-132900.json",
+    "scalarMcpSimulationResult": "PASS",
+    "nativeGatewayDenial": "evidence/builds/gateway-20261029-133043.json",
+    "nativeGatewayDenialResult": "PASS",
+    "aspireMcpDevuiDiscovery": "evidence/builds/aspire-mcp-20261029-133132.json",
+    "aspireMcpDevuiDiscoveryResult": "PASS",
+    "devuiInteractiveAgents": "evidence/builds/devui-agents-20261029-133141.json",
+    "devuiInteractiveAgentsResult": "INCONCLUSIVE_STARTED_BEFORE_ASPIRE_READY",
+    "authority": "evidence/builds/authority-preflight-20261029-132905.json",
+    "authorityResult": "HALT"
+  },
+  "governance": {
+    "realKeysProvisioned": 0,
+    "workersStarted": 0,
+    "modelCalls": 0,
+    "activeMcpToolsAdded": 0,
+    "prodRolesActivated": false,
+    "productionAdmission": "DENY",
+    "nativeEncryptedMafSessionStoreMounted": false,
+    "nativeResponsesConversationsRoutesMounted": false,
+    "independentAuthenticatedCheckerPass": false,
+    "hostIssuerVerified": false,
+    "effectiveGrantsVerified": false,
+    "revocationProviderVerified": false,
+    "protectedKmsVerified": false,
+    "directoryAclVerified": false,
+    "garbageCollectionPerformed": false,
+    "historicalGWorkspaceTrailsModified": false
+  },
+  "verdict": "HALT_PRODUCTION_AUTHORITY_NOT_PRESENT",
+  "nextSeedExecuted": false,
+  "productionActivationAllowed": false
+}

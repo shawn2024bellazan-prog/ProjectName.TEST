@@ -1,0 +1,10 @@
+﻿{
+    "start":  "NOT_RUN",
+    "devui":  "NOT_RUN",
+    "mcpList":  "NOT_RUN",
+    "stopped":  "NOT_RUN",
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "failure":  "Aspire start failed: dotnet.exe : \u001b[2mStarting Aspire AppHost in the background...\u001b[0m\r\nAt G:\\ProjectName\\eng\\smoke-aspire-mcp.ps1:11 char:21\r\n+ ... rtOutput = (\u0026 dotnet aspire start --no-build --apphost $apphost --for ...\r\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (\u001b[2mStarting As...ckground...\u001b[0m:String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\n\u001b[38;5;9mΓ¥î\u001b[0m \u001b[1;38;5;9mFailed to start the AppHost.\u001b[0m\r\n\u001b[38;5;12mΓä╣∩╕Å\u001b[0m Recent AppHost startup output:\r\nUnhandled exception: An error occurred trying to start process \r\n\u0027G:\\ProjectName\\src\\Hosting\\ProjectName.AppHost\\bin\\Debug\\net10.0\\ProjectName.A",
+    "timestampUtc":  "2026-10-29T04:02:37.4355621Z"
+}

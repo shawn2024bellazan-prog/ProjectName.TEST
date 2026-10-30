@@ -1,0 +1,9 @@
+﻿{
+    "development":  "PASS",
+    "production":  "PASS",
+    "nativeProtocolsDenied":  true,
+    "throttled":  true,
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "timestampUtc":  "2026-10-29T18:30:47.2913111Z"
+}

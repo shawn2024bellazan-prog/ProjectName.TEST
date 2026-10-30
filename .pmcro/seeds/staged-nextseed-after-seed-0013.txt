@@ -1,0 +1,5 @@
+@orchestrator /pmcro:seed "Resume only upon fresh user intent and authorized development scope. Verify the frozen G:\ProjectName authority and transactional checkpoint candidate hashes, repeat locked .NET 10 Release checks, and design a separate-host network-partition/failover test on isolated disposable PostgreSQL infrastructure. Strengthen tenant RBAC/RLS and independently host-pinned issuer, grant, revocation, Checker signature and KMS provider attestation without provisioning real secrets or modifying existing state. Require an independently authenticated Checker PASS bound to exact digests before any promotion or production capability. Preserve Aspire topology, five-phase Checker privacy, unmounted native EncryptedMafSessionStore/agent execution routes, historical G:\workspace Trails, and production worker DENY. Do not activate, publish, grant, start workers, call models, migrate real checkpoints or perform garbage collection. REFLECT one UNEXECUTED NextSeed."
+nextSeedExecuted=false
+nextSeedAuthorized=false
+productionActivationAllowed=false
+checkerPass=false

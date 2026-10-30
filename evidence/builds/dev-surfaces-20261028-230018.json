@@ -1,0 +1,10 @@
+﻿{
+    "development":  "NOT_RUN",
+    "production":  "NOT_RUN",
+    "mcp":  "NOT_RUN",
+    "cyclesDenied":  true,
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "failure":  "MCP inspection tool missing",
+    "timestampUtc":  "2026-10-29T04:00:20.5292579Z"
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "pmcro.evidence/v1",
+  "kind": "host-authority-liaison-inspection",
+  "agent": "host-authority-liaison",
+  "utcLocalNote": "2026-10-29 local America/Chicago evening",
+  "subjects": [
+    { "path": "docs/HOST-ADMIN-REQUEST-SIGNER-ALLOWLIST-2026-10-29.md", "sha256": "5326EF355308AC55182AE66F4C1755E5C1EC1DDE4A6B9745D6C4555F61354E6F" },
+    { "path": "docs/CORECLR-DIAGNOSIS-0025-2026-10-29.md", "sha256": "CD9BCFA658F596C0355CD1E8DA7735D00BF0E305D19EB65BEE3EAE2312F19F02" }
+  ],
+  "claimsChecked": [
+    { "claim": "5 Kernel-Power 41 events today", "observed": 5, "result": "MATCH" },
+    { "claim": "2 bugchecks today", "observed": 2, "result": "MATCH" },
+    { "claim": "26 WHEA corrected events", "observed": 26, "result": "MATCH" },
+    { "claim": "pwsh faulted twice in clrjit.dll", "observed": 2, "result": "MATCH" },
+    { "claim": "repro: 25 JitLoop + 15 WebHammer on 10.0.14 (15+15 labelled A/B plus 10 mislabelled C), 5+5 on 11 RC", "observed": "A=15 B=15 C=10 (ran on 10.0.14); runs11 jit=5 web=5", "result": "MATCH" },
+    { "claim": "zero dumps produced", "observed": 0, "result": "MATCH" },
+    { "claim": "no tools/allowlist.json exists", "observed": false, "result": "MATCH" },
+    { "claim": "request leaves signer fields blank", "observed": true, "result": "MATCH" },
+    { "claim": "KAPS.exe faulted 4 times, same offset", "observed": 3, "result": "DEFECT" }
+  ],
+  "defects": [
+    {
+      "id": "D1",
+      "file": "docs/CORECLR-DIAGNOSIS-0025-2026-10-29.md",
+      "finding": "KAPS.exe fault count is stated as 4; the Application log shows 3 today (05:08, 06:33, 14:53).",
+      "proposedFix": "Replace '`KAPS.exe` (4 times, same fault offset)' with '`KAPS.exe` (3 times, same fault offset)'. Reversible, one line. NOT applied; a human or the owning Maker applies it.",
+      "impact": "Low. The wider conclusion does not depend on the count."
+    }
+  ],
+  "notVerified": [
+    "Hypothesis that the cause is host platform instability. It is unconfirmed; no dump of the real crash exists and MEMORY.DMP was not opened.",
+    "Whether the Windows servicing channel for build 26300 is pre-release.",
+    "That the administrator exists, received the request, or will reply. No delivery channel was available."
+  ],
+  "earnedConstraint": "I recommend a change only when I can name the measure that will show it worked.",
+  "checker": { "independentCheckerRequested": true, "independentCheckerPass": false, "note": "This is self-inspection by the agent's own read-only checks. Not a PASS." },
+  "authority": { "registered": false, "granted": false, "activated": false, "executed": false, "productionActivationAllowed": false },
+  "nextSeedExecuted": false
+}

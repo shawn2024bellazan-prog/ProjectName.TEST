@@ -1,0 +1,9 @@
+{
+  "sdk": "10.0.403",
+  "restore": "PASS",
+  "build": "PASS",
+  "tests": "PASS",
+  "checkerPass": false,
+  "productionEnabled": false,
+  "timestampUtc": "2026-10-29T19:23:33.5042270Z"
+}

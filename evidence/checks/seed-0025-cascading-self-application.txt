@@ -1,0 +1,88 @@
+PMCR-O DEVELOPMENT SELF-APPLICATION — CYCLE 0025
+CanonicalRoot=G:\ProjectName
+Status=ENGINEERING_LOOP
+ProductionGovernance=HALT
+TimestampLocal=2026-10-29
+IndependentCheckerPass=false
+ProductionActivationAllowed=false
+WorkerAdmission=DENY
+WorkersStarted=0
+ModelsCalled=0
+FineTuningExecuted=false
+GrantsIssued=0
+KeysProvisioned=0
+A2ANativeRoutesMounted=false
+HistoricalTrailsModified=false
+NextSeedExecuted=false
+NextSeedAuthorized=false
+
+SCOPE:
+One bound, development-only self-application of the PMCR-O role/phase command grammar.
+Five roles: orchestrator, planner, maker, checker, reflector.
+Five ordered skills: orchestrate, plan, make, check, reflect.
+25 simulated phase frames are exercised by xUnit; no independent worker identity.
+
+ARTIFACTS:
+src/Governance/ProjectName.ControlPlane/CascadingOrchestrationCandidate.cs SHA256=267BD75279EEC3A2E3607BFE48A2543495E366A57401402BD69A47F8B385921E
+tests/ProjectName.Governance.Tests/CascadingOrchestrationCandidateTests.cs SHA256=FF054D993632BBAAEA5579979D08948BA961886D4701B7BC01947FCCDA060CBF
+marketplaces/pmcro-core/marketplace.json SHA256=BFAC452464237822003F803A5E3BDCA61EC787BDE2FCF74526EEB3C4EBEE8F2E
+marketplaces/pmcro-core/cascading-orchestration.candidate.json SHA256=80C564653AE1C58F8261F813C829764232984D49D99BDDCF330006F10E153027
+eng/verify-cascading-contract.ps1 SHA256=466C41A1484FDD275EB587BDA062E59C258E46C6A1BC3C02738AD6B1439A1CB7
+eng/validate-catalogs.ps1 SHA256=BEE80B00D18A10F6CC5A2EDD29AC96928CE5FE8E3C5594F79AB18F7142B5144D
+docs/adr/README.md SHA256=B9BA129E36565829924AD3E1EA7EA73B944616488CCDD7E910272D5D199AF2BF
+docs/adr/0001-cascading-orchestrator-authority.md SHA256=A1E2F508FC5743FEECF84FEFFD07B5598E6D96A9793BBB37F26B5CDAA8DEC233
+docs/adr/0002-structured-commands-and-trail-training.md SHA256=F76777D4537A4BED95D24020C05F8F815836EB6F68D54212A0BDF2110357E105
+.pmcro/seeds/seed-0025-cascading-self-application.txt SHA256=5932B3A7460ABE39DA537C350896EE2C42EA2B56A6D91554154CC159167D7AC6
+.pmcro/seeds/staged-nextseed-after-seed-0024.txt SHA256=D2031607AE641BC58163D2CE0A489091740E4A99ED62478E62EF1AD149E7798E
+.pmcro/reflections/reflection-0025-cascading-self-application.md SHA256=E6472DE23253DEBA912F5BD387F4F318888E1B0A18B01AE64761BC6A63934CA2
+.pmcro/next-seed.txt SHA256=645AF0293DBA5AD64C4F3A27EBBA131E53A15DE2F56763081C97806D0E582B90
+
+VALIDATION:
+pwsh -NoProfile -NonInteractive -File eng/validate-catalogs.ps1
+  CASCADING_CONTRACT=PASS
+  SELF_APPLICATION_ROLE_PHASE_CELLS=25
+  SIMULATED_ONLY=true
+  INDEPENDENT_CHECKER_PASS=false
+  PRODUCTION_ADMISSION=DENY
+  CATALOGS_PASS 10 draft executives, 5 PMCR-O roles, zero activations
+
+pwsh -NoProfile -NonInteractive -File eng/verify-core.ps1
+  SDK=10.0.403
+  LOCKED_RESTORE=PASS
+  RELEASE_BUILD=PASS (0 warnings, 0 errors)
+  GOVERNANCE_TESTS=PASS (114 passed, 0 failed, 0 skipped)
+  RECEIPT=evidence/builds/core-20261029-200109.json
+  RECEIPT_SHA256=82A7217C50DFBA215E9E67003B4A469E7D1D19C6407B55B3ED18FED5888CF7FC
+
+pwsh -NoProfile -NonInteractive -File eng/smoke-dev-surfaces.ps1
+  DEV_SURFACE_SMOKE_PASS (development DevUI/Scalar/MCP/simulation, production routes denied)
+  RECEIPT=evidence/builds/dev-surfaces-20261029-200139.json
+  RECEIPT_SHA256=0ABF84EFD234BFC8EFC7B112CE9FB4FCFA9D8AB60485F25CCF2F86ACB515B207
+
+pwsh -NoProfile -NonInteractive -File eng/verify-authority-prerequisites.ps1
+  AUTHORITY_PREFLIGHT=HALT
+  ISSUER_VERIFIED=False CHECKER_VERIFIED=False GRANT_VERIFIED=False
+  REVOCATION_VERIFIED=False KMS_CONFIGURATION_VERIFIED=False ACL_VERIFIED=False
+  RECEIPT=evidence/builds/authority-preflight-20261029-200153.json
+  RECEIPT_SHA256=749E3FE9577EF0C4A37D2C4D848A8DFF9DDCE215332DCB9860CD9BA2CB93E4CF
+
+SOURCE INTEGRITY:
+  Prior baseline evidence/builds/sha256-20261029-183607.csv = 737 paths.
+  Exactly two unrelated Agent Marketplace files had pre-existing drift:
+    marketplaces/agent-marketplace/marketplace.json
+    marketplaces/agent-marketplace/subjects.json
+  Neither file was modified by this cycle.
+  New snapshot evidence/builds/sha256-20261029-200315.csv
+  SHA256=64DB22A2B503910FF10E458A9F68FFD284A3FBF900A1DA25C8BEB3B68564D533
+  SOURCE_ROWS=753
+  REHASH_DRIFT=0
+  APPHOST_TOPOLOGY_CHANGED=false
+
+GOVERNANCE LIMITATION:
+This is local self-validation. The Maker has not independently checked or approved its own artifacts.
+The @checker role in the test matrix is a simulated candidate identity, never a signed principal.
+Production admission and worker activation remain DENY/HALT.
+
+REFLECT:
+One fresh NextSeed staged in .pmcro/next-seed.txt; it is UNEXECUTED.
+The prior Seed0024 NextSeed was archived byte-for-byte and remains UNEXECUTED.

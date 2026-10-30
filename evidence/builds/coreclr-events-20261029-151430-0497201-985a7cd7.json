@@ -1,0 +1,24 @@
+{
+  "schema": "projectname.coreclr-diagnostics/v1",
+  "mode": "READ_ONLY_EVENTS_NO_DUMPS",
+  "project": "G:\\ProjectName",
+  "sourceSha256": "ED25FD1B30273859F5D65F235118ED880F09B49489DB1F6E12261C2966CCF169",
+  "startUtc": "2026-10-29T20:00:00.0000000Z",
+  "endUtc": "2026-10-29T20:14:30.0363659Z",
+  "installedNetCoreRuntimes": [
+    "8.0.33",
+    "10.0.14",
+    "11.0.0-rc.1.26425.128"
+  ],
+  "installedSdkVersions": [
+    "10.0.403",
+    "11.0.100-rc.1.26425.128"
+  ],
+  "matchingEventCount": 0,
+  "events": [],
+  "evidenceType": "LOCAL_OBSERVATION_NOT_INDEPENDENT_CHECKER",
+  "independentCheckerPass": false,
+  "productionActivationAllowed": false,
+  "capturedProcessMemory": false,
+  "timestampUtc": "2026-10-29T20:14:30.1766536Z"
+}

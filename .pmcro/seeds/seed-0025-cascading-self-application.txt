@@ -1,0 +1,8 @@
+@orchestrator /pmcro:seed "Self-apply the ProjectName PMCR-O declarative cognitive framework in one development-only cycle. Include all five specialized agents (@orchestrator, @planner, @maker, @checker, @reflector), each with ordered @agent /pmcro:orchestrate|plan|make|check|reflect commands. Preserve the existing marketplace, create minimal ADR/contract/test candidates, validate domain contraction and independent Checker non-impersonation, and run local self-checks plus locked .NET10 Release tests. Preserve Aspire topology, all historical Trails and existing production DENY, source evidence, and previous staged seed unexecuted. Do not issue grants, start workers, run models, activate MCP/A2A/AG-UI native routes, train weights, promote, publish, or fabricate Checker PASS. REFLECT exactly one UNEXECUTED NextSeed."
+rawAdditionalHumanIntent="Yes dont forget the other @maker @checker ... etc init now and run it on itself"
+environment=Development
+executionScope=DeclarativeCandidateAndTestsOnly
+selfApplicationDepth=1
+nextSeedExecuted=false
+checkerPass=false
+productionActivationAllowed=false

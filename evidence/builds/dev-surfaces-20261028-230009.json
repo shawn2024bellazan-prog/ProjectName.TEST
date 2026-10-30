@@ -1,0 +1,10 @@
+﻿{
+    "development":  "NOT_RUN",
+    "production":  "NOT_RUN",
+    "mcp":  "NOT_RUN",
+    "cyclesDenied":  true,
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "failure":  "MCP tools/list HTTP 400, expected 200; {\"error\":{\"code\":-32602,\"message\":\"Requests using protocol version \\u00272026-07-28\\u0027 must include \\u0027_meta/io.modelcontextprotocol/clientCapabilities\\u0027 as a JSON object.\"},\"id\":1,\"jsonrpc\"",
+    "timestampUtc":  "2026-10-29T04:00:10.6004397Z"
+}

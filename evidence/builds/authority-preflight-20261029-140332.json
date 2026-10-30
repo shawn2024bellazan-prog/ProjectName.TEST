@@ -1,0 +1,22 @@
+{
+  "scope": "G:\\ProjectName development authority discovery only",
+  "hostWindowsIdentityObserved": true,
+  "hostIdentityIssuerVerified": false,
+  "signedCheckerRouteVerified": false,
+  "effectiveGrantRegistryVerified": false,
+  "revocationEvidenceVerified": false,
+  "protectedKmsConfigurationVerified": false,
+  "protectedKeySourceVerified": false,
+  "privateStorageAclVerified": false,
+  "checkerArtifactCount": 0,
+  "registryArtifactCount": 0,
+  "policyArtifactCount": 0,
+  "gatewayExplicitDenyAll": true,
+  "orchestrationApiExplicitDenyAll": true,
+  "independentCheckerPass": false,
+  "productionActivationAllowed": false,
+  "sourceSha256": "D7899E33A3CF486184DEED605E0D335049D8B3F7D7EA787BC4710C7E42259636",
+  "verdict": "HALT",
+  "reason": "PRODUCTION_AUTHORITY_AND_INDEPENDENT_CHECKER_NOT_VERIFIED",
+  "timestampUtc": "2026-10-29T19:03:32.4949597+00:00"
+}

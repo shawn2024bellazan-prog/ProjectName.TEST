@@ -1,0 +1,121 @@
+﻿{
+    "generatedUtc":  "2026-10-29T05:59:58.4837446Z",
+    "verdict":  "HALT",
+    "productionEnabled":  false,
+    "checkerPass":  false,
+    "resources":  [
+                      {
+                          "name":  "agent-gateway",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      },
+                      {
+                          "name":  "checker",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      },
+                      {
+                          "name":  "devui",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      },
+                      {
+                          "name":  "maker",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      },
+                      {
+                          "name":  "model-orchestrator",
+                          "state":  "Downloading qwen3:4b 15 percent",
+                          "health":  null
+                      },
+                      {
+                          "name":  "ollama",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      },
+                      {
+                          "name":  "orchestration-api",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      },
+                      {
+                          "name":  "orchestrator",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      },
+                      {
+                          "name":  "planner",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      },
+                      {
+                          "name":  "postgres",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      },
+                      {
+                          "name":  "projectname",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      },
+                      {
+                          "name":  "redis",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      },
+                      {
+                          "name":  "reflector",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      },
+                      {
+                          "name":  "web",
+                          "state":  "Running",
+                          "health":  "Healthy"
+                      }
+                  ],
+    "http":  [
+                 {
+                     "name":  "api-health",
+                     "expected":  200,
+                     "observed":  0,
+                     "passed":  false
+                 },
+                 {
+                     "name":  "scalar",
+                     "expected":  200,
+                     "observed":  0,
+                     "passed":  false
+                 },
+                 {
+                     "name":  "devui",
+                     "expected":  200,
+                     "observed":  0,
+                     "passed":  false
+                 },
+                 {
+                     "name":  "gateway-health",
+                     "expected":  200,
+                     "observed":  0,
+                     "passed":  false
+                 },
+                 {
+                     "name":  "gateway-unauthorized-deny",
+                     "expected":  403,
+                     "observed":  0,
+                     "passed":  false
+                 },
+                 {
+                     "name":  "ollama-tags",
+                     "expected":  200,
+                     "observed":  0,
+                     "passed":  false
+                 }
+             ],
+    "model":  {
+                  "name":  "qwen3:4b",
+                  "installed":  false,
+                  "inferenceInvoked":  false
+              }
+}

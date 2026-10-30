@@ -1,0 +1,111 @@
+PMCR-O Cycle 0020 — Fail-closed gateway receipt contracts evidence
+Date=2026-10-29
+CanonicalRoot=G:\ProjectName
+UserRawIntent=Continue
+Phases=ORCHESTRATE -> PLAN -> MAKE -> CHECK -> REFLECT
+RoleReporting=single-assistant simulated voices, not independently admitted agents
+EngineeringVerdict=LOOP (local checks PASS, historic native root cause unproven)
+ProductionGovernanceVerdict=HALT
+IndependentAuthenticatedCheckerPass=false
+ProductionAdmission=DENY
+ProductionActivationAllowed=false
+FullAspireAppHostStarts=0
+WorkerStarts=0
+ModelCalls=0
+KeysProvisioned=0
+GrantsIssued=0
+GitCommitsOrPushes=0
+HistoricalWorkspaceTrailChanges=0
+
+ORCHESTRATE:
+- Loaded AGENTS.md and Cycle0019 staged NextSeed.
+- Baseline sha256-20261029-174612.csv checked read-only:
+  703 frozen source files, DRIFT_COUNT=0 before edits.
+- Saved Cycle0019 NextSeed verbatim to
+  .pmcro/seeds/staged-nextseed-after-seed-0019.txt
+  SHA256=B215BE40432C89BF21474DE0EAA7BDDD6EB653873BCB314467D48210A2981B0E.
+- Original user intent saved as .pmcro/seeds/seed-0020-development-continuation.txt.
+- Git main unborn, no remote name; no Git write.
+
+MAKE:
+- New eng/gateway-receipt-contract.ps1 pure validation:
+  required fields, schema, scope, bounds, type, time, deny flags,
+  CoreCLR count, event time, cautious PID+time metadata noncausal labels.
+- New tests/fixtures/test-gateway-receipt-contract.ps1
+  15 in-memory positive/negative assertions.
+- New tests/fixtures/test-gateway-concurrent-port-guard.ps1:
+  two concurrent watchdogs denied by single exclusive localhost port
+  lease with no gateway child and port released after.
+- Revised eng/correlate-gateway-exits.ps1 to import shared strict contract.
+- Revised eng/verify-gateway-observability.ps1 to run new tests by
+  default and digest-bind their source + child receipts.
+- Revised eng/inspect-coreclr-events.ps1 to extract fault PID ONLY
+  from explicitly named FaultingProcessId EventData if present.
+  Provider System.Execution.ProcessID is not used.
+- Added docs/GATEWAY-RECEIPT-CONTRACTS-0020-2026-10-29.md.
+- No changes to AppHost, gateway production code or checkpoint schema.
+
+CHECK:
+- Initial PowerShell7 ConvertFrom-Json materialized Int64/DateTime, not
+  PowerShell5 Int32/string; corrected tests and contract handling.
+- Final in-memory contract tests 15 PASS.
+- Concurrent occupied-port refusal 2/2 PASS:
+  evidence/builds/gateway-watchdog-20261029-175347-3588374-a3350346.json
+  evidence/builds/gateway-watchdog-20261029-175347-4448564-1307d78c.json.
+- Synthetic-only developer verification PASS, 0 live:
+  evidence/builds/gateway-observability-20261029-175449-9991183-235de9cd.json
+  SHA256=0B5B914956BC6ED25312AC055E56FE0D1F5F27E58C88A8AB56E13A8EE1F8BBA2.
+- Opt-in gateway 1/1 isolated denial PASS:
+  evidence/builds/gateway-observability-20261029-175505-3251118-1d6b8707.json
+  SHA256=D1845DE6A2A79C01F72AC2E8A6CFC8A6BFB04C994E52DAD23E4D9785170EC138.
+- 64 Windows Event1000 metadata observations, no explicitly named
+  FaultingProcessId field. Two historic CoreCLR events with null PID:
+  evidence/builds/coreclr-events-20261029-175538-8528699-65d45e4a.json
+  SHA256=62A723AD1223DCF48F90158B0B66AA1D3342372341BAE5E11712DBA5775D6F81.
+- New 8-row correlation matrix PASS, no process identity or native root
+  cause proven; historical 0xc0000005 distinct from synthetic exit:
+  evidence/builds/gateway-correlation-20261029-175553-0185774-c592a294.json
+  SHA256=11547A703E86558120C677082B67917AA523377C2B2B64A9C9190971598DCCB5.
+- Locked SDK 10.0.403 Release restore/build PASS, 0 warnings/error,
+  102/102 governance tests PASS:
+  evidence/builds/core-20261029-175608.json.
+- Standalone Development DevUI, Scalar, MCP and Production denial PASS:
+  evidence/builds/dev-surfaces-20261029-175625.json.
+- Disposable PostgreSQL18.3 102/102 test PASS:
+  evidence/builds/checkpoint-cycle-0020-20261029.trx.
+  public.pmcro_checkpoint_candidate_v1 RLS=true FORCE=true.
+  pmcro-candidate-pg-0020 loopback-only tmpfs container stopped and
+  auto removed. No real data migration/GC.
+- Read-only authority preflight HALT:
+  evidence/builds/authority-preflight-20261029-175726.json.
+  Issuer, signed independent Checker, grants, revocation, protected
+  KMS and private ACL remain not verified.
+
+SOURCE_SHA256:
+eng/gateway-receipt-contract.ps1=A87BEF48AEADAA928DA244726C0A6DDE1C8ACBA801B1D0540639C6AE00C2B181
+eng/correlate-gateway-exits.ps1=207DF594CC8FDD2177E356D555F0EE5AD79B70F54B73FCEAEB3E93F7AA4742BE
+eng/inspect-coreclr-events.ps1=B390E444A1141B613EFE45585103F41937750A2312515F130EF4E0163F530A34
+eng/verify-gateway-observability.ps1=535D36EBD7416126A2AA7BBD01C79FCFED721247DBEB9E762CF01641C04D790F
+tests/fixtures/test-gateway-receipt-contract.ps1=A09545725D7C2A6ABA60B57B089B703813C57A9B8BCF024019A5A733D884D736
+tests/fixtures/test-gateway-concurrent-port-guard.ps1=D71B1AA95740EE81CFAC5E51C0DC1B1CCBCC78549900A7DDFC53E323747AF664
+docs/GATEWAY-RECEIPT-CONTRACTS-0020-2026-10-29.md=88A1BADDD46B0970D387B01ADB5F091FE86D16CD6E40C1F0FDBF5FBD14C4BB0D
+.pmcro/seeds/staged-nextseed-after-seed-0019.txt=B215BE40432C89BF21474DE0EAA7BDDD6EB653873BCB314467D48210A2981B0E
+.pmcro/seeds/seed-0020-development-continuation.txt=2338C6FED6C77A01D72EC30AACAAC5BDA493D8BE0E61ABB2CC4C96C688AF3C25
+.pmcro/reflections/reflection-0020-gateway-contracts.md=6DF700B3943FC35BA401422D80DF5655AD105F5723005BEAAAC2481B0C0B7F73
+.pmcro/next-seed.txt=5B64E09AF981A214CA3F693FAF3220A32372112679E0A7CD4943E4F54E962928
+src/Services/ProjectName.AgentGateway/Program.cs=ED25FD1B30273859F5D65F235118ED880F09B49489DB1F6E12261C2966CCF169
+src/Hosting/ProjectName.AppHost/AppHost.cs=4D8F9C8247D6E9BEDC490272769D6AD5AEF0AA368A4ACBB2692C9CA873747BF1
+evidence/builds/sha256-20261029-175835.csv=88FA80FD6D4601BFDAE42DBB6AB46D6EACAE6FCD4AE015915AD37B5CCCF24626
+SourceSnapshotFileCount=710
+
+CHECKER_AUTHORITY:
+All observed passes are development-only local self-verification.
+No independently authenticated Checker called; no signed PASS.
+Production worker admission DENY; no activation.
+
+REFLECT:
+Exactly one UNEXECUTED NextSeed in .pmcro/next-seed.txt.
+nextSeedExecuted=false
+nextSeedAuthorized=false
+productionActivationAllowed=false
+checkerPass=false

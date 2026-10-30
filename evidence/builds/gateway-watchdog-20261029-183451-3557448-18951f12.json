@@ -1,0 +1,30 @@
+{
+  "schema": "projectname.gateway-watchdog/v1",
+  "mode": "FixtureFail",
+  "scope": "ISOLATED_DEVELOPMENT_ONLY",
+  "maxIterations": 1,
+  "childTimeoutSeconds": 10,
+  "result": "LOOP",
+  "failureCode": null,
+  "events": null,
+  "runs": [
+    {
+      "iteration": 1,
+      "childProcessId": 42308,
+      "exitCodeSigned": 23,
+      "exitCodeHex": "0x00000017",
+      "status": "FAILED_EXIT",
+      "startedUtc": "2026-10-29T23:34:51.3749628Z",
+      "finishedUtc": "2026-10-29T23:34:51.9487357Z",
+      "elapsedMs": 567,
+      "stdoutFile": "evidence\\builds\\gateway-watchdog-20261029-183451-3557448-18951f12-run1.stdout.txt",
+      "stderrFile": "evidence\\builds\\gateway-watchdog-20261029-183451-3557448-18951f12-run1.stderr.txt",
+      "portReleased": null,
+      "errorClass": null
+    }
+  ],
+  "childProcessMemoryCaptured": false,
+  "checkerPass": false,
+  "productionActivationAllowed": false,
+  "timestampUtc": "2026-10-29T23:34:51.9700044Z"
+}

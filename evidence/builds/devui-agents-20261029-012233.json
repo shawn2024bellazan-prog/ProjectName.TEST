@@ -1,0 +1,18 @@
+﻿{
+    "timestampUtc":  "2026-10-29T06:22:33.5083446Z",
+    "verdict":  "HALT",
+    "mode":  "SIMULATION_ONLY",
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "modelCalls":  0,
+    "entities":  [
+                     "pmcro-orchestrator",
+                     "pmcro-planner",
+                     "pmcro-maker",
+                     "pmcro-checker",
+                     "pmcro-reflector"
+                 ],
+    "allFive":  true,
+    "catalogDenied":  true,
+    "error":  "The remote server returned an error: (400) Bad Request."
+}

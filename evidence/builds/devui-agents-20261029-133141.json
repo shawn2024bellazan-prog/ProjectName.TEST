@@ -1,0 +1,9 @@
+﻿{
+    "timestampUtc":  "2026-10-29T18:31:41.8400477Z",
+    "verdict":  "HALT",
+    "mode":  "SIMULATION_ONLY",
+    "checkerPass":  false,
+    "productionEnabled":  false,
+    "modelCalls":  0,
+    "error":  "You cannot call a method on a null-valued expression."
+}

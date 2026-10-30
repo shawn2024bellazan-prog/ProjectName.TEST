@@ -1,0 +1,123 @@
+{
+  "generatedUtc": "2026-10-29T19:23:51.2236574Z",
+  "verdict": "HALT",
+  "productionEnabled": false,
+  "checkerPass": false,
+  "resources": [
+    {
+      "name": "agent-gateway",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "checker",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "devui",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "maker",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "model-orchestrator",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "ollama",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "orchestration-api",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "orchestrator",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "planner",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "postgres",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "projectname",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "redis",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "reflector",
+      "state": "Missing",
+      "health": "Missing"
+    },
+    {
+      "name": "web",
+      "state": "Missing",
+      "health": "Missing"
+    }
+  ],
+  "http": [
+    {
+      "name": "api-health",
+      "expected": 200,
+      "observed": 0,
+      "passed": false
+    },
+    {
+      "name": "scalar",
+      "expected": 200,
+      "observed": 0,
+      "passed": false
+    },
+    {
+      "name": "devui",
+      "expected": 200,
+      "observed": 0,
+      "passed": false
+    },
+    {
+      "name": "gateway-health",
+      "expected": 200,
+      "observed": 0,
+      "passed": false
+    },
+    {
+      "name": "gateway-unauthorized-deny",
+      "expected": 403,
+      "observed": 0,
+      "passed": false
+    },
+    {
+      "name": "ollama-tags",
+      "expected": 200,
+      "observed": 0,
+      "passed": false
+    }
+  ],
+  "model": {
+    "name": "qwen3:4b",
+    "digest": null,
+    "installed": false,
+    "localOnly": false,
+    "inferenceInvoked": false
+  }
+}

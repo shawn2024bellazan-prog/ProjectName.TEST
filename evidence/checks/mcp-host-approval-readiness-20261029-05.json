@@ -1,0 +1,51 @@
+{
+  "receiptId": "mcp-host-approval-readiness-20261029-05",
+  "root": "G:\\ProjectName",
+  "dateUtc": "2026-10-29",
+  "phase": "CHECK_CANDIDATE",
+  "status": "OFFLINE_SECURITY_CANDIDATE_TESTED_HOST_APPROVAL_PENDING",
+  "baseReceipt": "mcp-human-approval-consumption-20261029-04",
+  "newComponents": [
+    "FileMcpApprovalUseStore (host-managed directory required; not registered)",
+    "PinnedMcpRevocationSnapshotVerifier (external trust anchor required; not registered)"
+  ],
+  "sourceSha256": {
+    "src/Governance/ProjectName.ControlPlane/FileMcpApprovalUseStore.cs": "6a0924aa628dc00c80679478074413d0681afeb59090bb4ab90b8b75bba835bf",
+    "tests/ProjectName.Governance.Tests/FileMcpApprovalUseStoreTests.cs": "0810974a2fa7c85ec86c589d55471770ddc4c060f522a0312d0fb0f8504a8f5f",
+    "src/Governance/ProjectName.ControlPlane/PinnedMcpRevocationSnapshotVerifier.cs": "3d7b0bee37deeb8ad307e7dc0bea820e6a716e1162e07dec7be38579ed502f85",
+    "tests/ProjectName.Governance.Tests/PinnedMcpRevocationSnapshotVerifierTests.cs": "cedc67db302bb2867c6ec5d4552dc29e02c221b7f2c8ba1f0b277ab7ee6985c1",
+    "docs/MCP-HOST-APPROVAL-READINESS-2026-10-29.md": "15bba742481f1e9884ca65552cd801317433be4a34cc472af19ee3177e1b560a"
+  },
+  "checks": {
+    "testCommand": "dotnet test G:\\ProjectName\\ProjectName.slnx -c Release --no-restore --nologo --verbosity quiet",
+    "testResult": "PASS",
+    "testsPassed": 86,
+    "testsFailed": 0,
+    "testsSkipped": 0,
+    "buildCommand": "dotnet build G:\\ProjectName\\ProjectName.slnx -c Release --no-restore --nologo --verbosity quiet",
+    "buildResult": "PASS",
+    "warnings": 0,
+    "errors": 0,
+    "hashesBy": "certutil -hashfile [path] SHA256",
+    "claims": "Test-only ephemeral P256 certificates and ephemeral filesystem directories; no real host identity or effective approval"
+  },
+  "authority": {
+    "userAutonomousDevelopmentDirection": true,
+    "validHostAuthenticatedExactToolGrant": false,
+    "signerCertificatePinnedInHost": false,
+    "approvedToolsAllowlistPresent": false,
+    "independentCheckerPass": false,
+    "productionWorkerAdmission": "DENY_UNCHANGED",
+    "aspireTopologyModified": false,
+    "candidateServicesMounted": false,
+    "anyMcpToolCalled": false,
+    "productionActivation": false,
+    "frozenGWorkspaceTrailsModified": false
+  },
+  "governanceVerdict": "HALT_ON_MCP_SERVICE_EXPOSURE_PENDING_HOST_AUTHENTICATION",
+  "nextSeed": {
+    "intent": "Have designated host authority sign an exact bounded development MCP allowlist, provision pinned signer and protected atomic ledger, connect signed revocation/approval provider and independent Checker, then port three isolated .NET 10 MCP services; do not change production worker DENY.",
+    "state": "UNEXECUTED",
+    "authorized": false
+  }
+}

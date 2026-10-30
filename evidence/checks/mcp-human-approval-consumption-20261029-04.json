@@ -1,0 +1,56 @@
+{
+  "receiptId": "mcp-human-approval-consumption-20261029-04",
+  "root": "G:\\ProjectName",
+  "timestampUtc": "2026-10-29",
+  "phase": "CHECK_CANDIDATE",
+  "status": "CANDIDATE_BUILT_TESTED_NO_AUTHORITY_TO_ACTIVATE",
+  "candidate": "McpToolAuthorizationGate single-use human approval boundary",
+  "implementation": {
+    "targetFramework": "net10.0",
+    "newContract": "IHostMcpApprovalUseStore.TryConsume",
+    "productionConsumptionStoreRegistered": false,
+    "grantsIssued": 0,
+    "mcpToolsActivated": 0,
+    "registeredMcpServices": 0
+  },
+  "sourceSha256": {
+    "src/Governance/ProjectName.ControlPlane/McpToolAuthorizationGate.cs": "6042bb0e4e3350ff0a149a6d8105ccc54f6ff92f321c801b3eba770b4fced176",
+    "tests/ProjectName.Governance.Tests/McpToolAuthorizationGateTests.cs": "8f36d7f200cddf025f8762ad4d40565e940402467b72e7ce11d7641346e0d28e",
+    "docs/MCP-HUMAN-APPROVAL-CONSUMPTION-2026-10-29.md": "7ad8c9f8a7d3c335fac1523c188b0f24743034deb14b755e7f03b85459564ad0"
+  },
+  "checks": {
+    "testCommand": "dotnet test G:\\ProjectName\\ProjectName.slnx -c Release --no-restore --nologo",
+    "testResult": "PASS",
+    "passed": 76,
+    "failed": 0,
+    "skipped": 0,
+    "buildCommand": "dotnet build G:\\ProjectName\\ProjectName.slnx -c Release --no-restore --nologo --verbosity quiet",
+    "buildResult": "PASS",
+    "warnings": 0,
+    "errors": 0,
+    "hashCommand": "certutil -hashfile [each listed source file] SHA256",
+    "negativeTests": [
+      "no approved consumption store denies",
+      "single approval replay denied in test-only synchronized store"
+    ],
+    "positiveTest": "test-only double; no live host issuer or effective grant"
+  },
+  "governance": {
+    "productionWorkers": "DENY_UNCHANGED",
+    "existingAspireTopology": "UNCHANGED",
+    "hostSignerConfigured": false,
+    "toolAllowlistApproved": false,
+    "revocationStoreConfigured": false,
+    "humanApprovalRuntimeConfigured": false,
+    "independentCheckerPass": false,
+    "liveMcpApprovalVerified": false,
+    "credentialsProvisioned": false,
+    "liveMcpDiscoveryTested": false,
+    "originalFrozenTrailsModified": false
+  },
+  "nextSeed": {
+    "intent": "Host authority names exact MCP tool IDs/principals/scopes/digests and supplies approved signer/trust anchor, effective grant, revocation ledger and persistent atomic approval use store; independent Checker binds evidence before any registration, then port isolated .NET 10 MCP candidates.",
+    "state": "UNEXECUTED",
+    "authorized": false
+  }
+}

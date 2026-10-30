@@ -1,0 +1,60 @@
+PMCR-O Cycle 0015 — bounded development evidence
+Date: 2026-10-29
+CanonicalRoot: G:\ProjectName
+OriginalUserIntent: continue
+Verdict: LOOP (intermittent CoreCLR crash cause unresolved); production HALT.
+IndependentCheckerPass: false
+ProductionWorkerAdmission: DENY
+ProductionActivationAllowed: false
+SourceCodeChanges: 0
+WorkerStarts: 0
+ModelCalls: 0
+
+ORCHESTRATE / PLAN:
+- Prior staged seed archived unchanged: .pmcro/seeds/staged-nextseed-after-seed-0014.txt.
+- Read AGENTS.md and isolated gateway Program.cs; no native agent routes, no production authority.
+- Live AppHost intentionally not started; would start role services contrary to seed.
+
+MAKE:
+- No application source changes because the old crash did not reproduce in a bounded three-run smoke.
+- Only new PMCR-O cycle records, engineering evidence, and one subsequent unexecuted seed are authored.
+
+CHECK:
+- Gateway smoke run A: evidence/builds/gateway-20261029-144820.json PASS.
+- Gateway smoke run B: evidence/builds/gateway-20261029-144834.json PASS.
+- Gateway smoke run C: evidence/builds/gateway-20261029-144842.json PASS.
+  Each checks Development+Production /v1/protocols advertised DENIED and 0 agents,
+  GET/POST native A2A, AG-UI, OpenAI routes 403, and development throttling.
+- Historic gateway crash receipt: evidence/builds/gateway-20261029-142358.json HALT.
+- Historic crash stderr: evidence/builds/gateway-20261029-142358.stderr.txt.
+- Windows Application log 2026-10-29 14:24:00 .NET Runtime event 1023:
+  dotnet.exe CoreCLR 10.0.1426.52326; .NET 10.0.14 internal error 0x80131506.
+- Windows Application Error event 1000 at 14:24:01: dotnet.exe fault module
+  C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.14\coreclr.dll,
+  exception 0xc0000005, fault offset 0x000000000002279f.
+  This establishes a native runtime access violation, not a proven source-code cause.
+- Locked .NET SDK 10.0.403 restore/build Release/tests:
+  evidence/builds/core-20261029-144906.json PASS, warnings=0, errors=0, tests=102/102.
+- Explicit isolated PostgreSQL 18.3 integration:
+  evidence/builds/checkpoint-cycle-0015-20261029.trx, 102/102 PASS,
+  0 failed, 0 skipped; table RLS enabled and FORCE true.
+- Disposable fixture pmcro-candidate-pg-20261029-1450 was loopback-only on
+  dynamic TCP 62167, tmpfs, no named volume, stopped and auto-removed.
+- Standalone API Scalar/Development MCP/simulation and Production denial:
+  evidence/builds/dev-surfaces-20261029-145037.json PASS.
+- Host read-only authority preflight:
+  evidence/builds/authority-preflight-20261029-145034.json HALT;
+  issuer=false, grant=false, revocation=false, Checker=false,
+  protectedKmsConfiguration=false, privateAcl=false. Windows identity alone is not authority.
+- No independently authenticated Checker route verified or invoked.
+- Multi-host network partition / fenced failover NOT EXECUTED:
+  no separately authorized disposable multi-host environment established.
+
+SHA-256:
+src/Services/ProjectName.AgentGateway/Program.cs = ED25FD1B30273859F5D65F235118ED880F09B49489DB1F6E12261C2966CCF169
+eng/smoke-agent-gateway.ps1 = 5C85BC71EBE839D4410B6902E552D030FA1D6432FCEE0654A8C2DFC61044B7E3
+tests/ProjectName.Governance.Tests/PostgresTransactionalCheckpointCandidateTests.cs = BA57B0D0FA9D7DCC5307FB66C6AC73BB7DE0245CFDE069C8E923C33065DCC749
+src/BuildingBlocks/ProjectName.Persistence/PostgresTransactionalCheckpointCandidate.cs = 7167DB6E7EDD8EE27E04EB950E923C72FEC182868F99EB4D8AB55210257550BA
+
+No production workers, live native routes, real key material, grants, promotion,
+publication, checkpoint migrations, GC, or edits to G:\workspace historical Trails.

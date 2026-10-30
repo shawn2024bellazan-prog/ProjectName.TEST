@@ -1,0 +1,5 @@
+@orchestrator /pmcro:seed "After independently verified host authority and signed Checker evidence, continue development-only G:\ProjectName checkpoint migration readiness: verify the mock key-ring/CAS manifest source hashes and 95-test baseline, then test a persistent transaction-only multi-host checkpoint candidate on isolated ephemeral test storage with tenant/workflow CAS, rollback/revocation and crash/race safety. Reconcile DevUI simulation discovery with unmounted OpenAI Responses/Conversations routes without exposing an agent execution endpoint. Require host-configured KMS, effective grants, revocation, ACL, independent Checker before any actual encrypted checkpoint migration. Do not provision real keys, garbage-collect user state, start workers, call models, activate MCP tools, promote/publish, or touch frozen G:\workspace Trails. Production admission DENY."
+nextSeedExecuted=false
+nextSeedAuthorized=false
+productionActivationAllowed=false
+checkerPass=false
