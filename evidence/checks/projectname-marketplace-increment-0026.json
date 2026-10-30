@@ -1,0 +1,94 @@
+{
+  "schema": "pmcro.evidence.increment/v1",
+  "id": "EV-0026",
+  "date": "2026-10-29",
+  "canonicalRoot": "G:\\ProjectName",
+  "sourceBaselineCommit": "b7f241f",
+  "candidateCommit": "f788db0",
+  "increment": "0026",
+  "rawIntentRef": ".pmcro/seeds/seed-0026-projectname-marketplace-adapter.txt",
+  "trailRef": ".pmcro/trails/TS-0026/cycle-0026.json",
+  "phaseOrder": [
+    "ORCHESTRATE",
+    "PLAN",
+    "MAKE",
+    "CHECK",
+    "REFLECT"
+  ],
+  "phaseRolesSimulated": true,
+  "sourceMarketplace": {
+    "root": "G:\\workspace\\pmcro-marketplace-v2",
+    "sourceCommit": "2b4608416f9e4cf8742788154c9428d2884df5e8",
+    "version": "0.3.0-dev",
+    "catalogSha256": "2d2c63cdee1aeb189db33bf68784b0a1e0f9288a82cca7b8a60efa9170650d5e",
+    "sourceManifestSha256": "62f87721c72f36be64971fbb1bc9c3e49f982373783209b314704e65efab1408",
+    "verifiedCatalogFixtureDigest": true
+  },
+  "sourceHashesSha256": {
+    "src/Governance/ProjectName.ControlPlane/PinnedDevelopmentMarketplaceAdapter.cs": "11b7b1592c7edebcb85c84c65ad2eab2a34c6b78450b1ba29adfd7cd51f6d272",
+    "tests/ProjectName.Governance.Tests/PinnedDevelopmentMarketplaceAdapterTests.cs": "1e9333e03eb4bd80436b116eec660f1f0bc77cd7191e06feab6172414280da5e",
+    "tests/fixtures/pmcro-marketplace-v2-0.3.0-dev.json": "2d2c63cdee1aeb189db33bf68784b0a1e0f9288a82cca7b8a60efa9170650d5e",
+    "marketplaces/pmcro-core/adapter.pin.json": "f1f655e456e7aa16184cf5a278380ce38c337f82296a396592fd4f97898b3a4f",
+    "docs/adr/0003-pinned-development-marketplace-adapter.md": "4e1b925ade7a3ccc187fc48b3550029d49c47209929f3fe3c07dfab1a8eda0ba",
+    ".pmcro/trails/TS-0026/cycle-0026.json": "94ac7d2d1a01d2be7a572ab96c1032a749d43dd0a4dad64213fc4af5b48e1544",
+    ".pmcro/seeds/seed-0026-projectname-marketplace-adapter.txt": "69e04b7ec8349c768b00d99f5b386630be5cdb1cd56de10ee9a049edcf033138",
+    ".pmcro/seeds/nextseed-after-0026-unexecuted.txt": "70e7c60b79511e4f8f6b2d9506fbcd158e7262699c0753d940cf7359529d3745",
+    "docs/reviews/checker-handoff-0026.json": "a6aafc26802913b4c4bfc49c6a27b6749679715e01f6efc1844172d380e49fc0"
+  },
+  "validation": {
+    "baselineReleaseBuild": "PASS_0_WARNINGS_0_ERRORS",
+    "baselineGovernanceTests": {
+      "passed": 114,
+      "failed": 0
+    },
+    "candidateReleaseBuild": "PASS_0_WARNINGS_0_ERRORS",
+    "candidateGovernanceTests": {
+      "passed": 136,
+      "failed": 0,
+      "skipped": 0
+    },
+    "candidatePostCommitGovernanceTests": {
+      "passed": 136,
+      "failed": 0,
+      "skipped": 0
+    },
+    "catalogs": "PASS",
+    "cascadingPhaseOrder": "PASS",
+    "selfApplicationRolePhaseCells": 25,
+    "liveAspireFlowReproduced": false,
+    "mauiBuildRerun": false,
+    "agtRuntimeMounted": false
+  },
+  "review": {
+    "kind": "SEPARATE_CALL_TECHNICAL",
+    "technicalVerdict": "HALT_NOT_VERIFIED",
+    "hostAuthenticatedIndependentCheckerPass": false,
+    "handoffRef": "docs/reviews/checker-handoff-0026.json",
+    "limitation": "Checker inspected fail-closed code but did not independently reproduce remote tests or hashes."
+  },
+  "authority": {
+    "productionAdmission": "DENY",
+    "developmentRuntimeAdmission": "DENY",
+    "registeredRuntimeCapabilities": 0,
+    "grantsIssued": 0,
+    "workersStarted": 0,
+    "modelsCalled": 0,
+    "hostTrustRootConfigured": false,
+    "liveToolBoundaryWired": false
+  },
+  "preservation": {
+    "historicalPmcrFiles": "PRESERVED_UNCHANGED_BY_THIS_INCREMENT_UNTRACKED",
+    "historicalEvidence": "PRESERVED_UNCHANGED_BY_THIS_INCREMENT_UNTRACKED",
+    "vscodeMcpConfig": "NOT_STAGED_OR_EDITED",
+    "aspireTopology": "NOT_CHANGED",
+    "existingRuntimeAndClients": "NOT_CHANGED",
+    "historicalHashesIndependentlyVerified": false
+  },
+  "nextSeed": {
+    "ref": ".pmcro/seeds/nextseed-after-0026-unexecuted.txt",
+    "state": "UNEXECUTED",
+    "authorizedToExecute": false
+  },
+  "result": "LOCAL_VALIDATION_PASS__PROMOTION_AND_ACTIVATION_HALT",
+  "earnedConstraint": "Versioned marketplace digest proves source integrity only; it cannot confer registration, scope grant, authenticated Checker identity or worker execution."
+}
